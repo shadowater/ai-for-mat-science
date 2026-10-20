@@ -1,0 +1,6 @@
+sample_id,displacement_mm,force_n
+DEMO-01,0.00,0
+DEMO-01,0.10,50
+DEMO-01,0.20,100
+DEMO-01,0.30,150
+DEMO-01,0.40,180

@@ -1,0 +1,6 @@
+sample_id,displacement_mm,force_n,stress_mpa
+DEMO-01,0.00,0,0.0
+DEMO-01,0.10,50,25.0
+DEMO-01,0.20,100,50.0
+DEMO-01,0.30,150,75.0
+DEMO-01,0.40,180,90.0

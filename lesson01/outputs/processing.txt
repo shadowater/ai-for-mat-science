@@ -1,0 +1,1 @@
+Synthetic teaching data; area_mm2=2.0; stress=force/initial_area; N/mm²=MPa. Not a material property report.

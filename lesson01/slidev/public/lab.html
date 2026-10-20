@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>材料科研 · 交互实验</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:22px;background:#0d1c2d;color:#e3edf6;font:18px system-ui,sans-serif}h2{margin:0 0 10px;color:#73e0c2;font-size:25px}p{line-height:1.5;margin:10px 0}.muted{color:#a4b8cb;font-size:14px}button{padding:9px 16px;background:#73e0c2;color:#102436;border:0;border-radius:7px;font:inherit;cursor:pointer;margin:5px 8px 5px 0}button:disabled{opacity:.4;cursor:wait}textarea{width:100%;height:195px;background:#071320;color:#ecf5ff;border:1px solid #395870;border-radius:8px;padding:14px;font:17px/1.5 monospace}pre{font:17px/1.4 monospace;white-space:pre-wrap;background:#071320;border-radius:8px;padding:12px;margin:10px 0;max-height:160px;overflow:auto}input{accent-color:#73e0c2;width:280px}svg{width:100%;max-height:250px}.nodes{display:flex;gap:10px;margin:20px 0}.node{padding:18px 12px;border:1px solid #395870;border-radius:8px;flex:1;opacity:.35;transition:opacity .4s,background .4s}.active{opacity:1;background:#21534e}.error{color:#ffb59f}#hint{min-height:26px}
+</style><main id="app"></main><script>
+const app=document.querySelector('#app');const mode=new URLSearchParams(location.search).get('mode')||'code';
+if(mode==='code'){
+app.innerHTML=`<h2>预测 → 修改 → 运行</h2><p class="muted">真实本机 Python · 每次运行独立进程 · 不调用 AI / 不消耗 token</p><textarea aria-label="Python代码" spellcheck="false">def stress(force_n, area_mm2):
+    if area_mm2 <= 0:
+        raise ValueError("初始截面积必须大于 0")
+    return force_n / area_mm2
+
+area = 2.0
+for force in [0, 50, 100, 150, 180]:
+    print(f"{force} N -> {stress(force, area):.1f} MPa")</textarea><button id="run">运行 Python</button><button id="bad">试试面积为 0</button><pre id="out">把 area 改为 4.0，预测 100 N 对应的应力。</pre><p class="muted">仅执行自己的课堂代码；此运行器不是隔离安全沙箱。完整文件实践使用 Notebook。</p>`;
+const editor=app.querySelector('textarea'),out=app.querySelector('#out');
+app.querySelector('#bad').onclick=()=>{editor.value=editor.value.replace(/area = [\d.]+/,'area = 0');};
+app.querySelector('#run').onclick=async(e)=>{const b=e.target;b.disabled=true;out.textContent='运行中…';try{const session=await fetch('/session').then(r=>r.json());const r=await fetch('/run',{method:'POST',headers:{'Content-Type':'application/json','X-Demo-Token':session.token},body:JSON.stringify({code:editor.value})});if(!r.ok)throw Error('本机运行器未启动');const v=await r.json();out.textContent=v.output||'运行结束，无打印输出';out.className=v.ok?'':'error';}catch(err){out.textContent='请使用 python scripts/demo_server.py 启动本机服务，再从 http://127.0.0.1:8765 打开。'+err.message;}finally{b.disabled=false;}};
+}else if(mode==='stress'){
+app.innerHTML=`<h2>同一组力，不同截面积</h2><p>初始面积 A₀ = <strong id="area">2.0</strong> mm²　<input aria-label="截面积" type="range" min="1" max="5" step="0.5" value="2"></p><svg viewBox="0 0 720 285" role="img" aria-label="应力随位移变化图"><path d="M70 20V240H680" stroke="#a4b8cb" fill="none"/><text x="5" y="18" fill="#a4b8cb" font-size="16">MPa</text><text x="460" y="279" fill="#a4b8cb" font-size="16">displacement (mm)</text><g id="ticks"></g><polyline id="line" fill="none" stroke="#73e0c2" stroke-width="4"/><g id="points"></g></svg><p id="answer"></p><p class="muted">固定纵轴 0–200 MPa；五行教学模拟数据。位移不是应变，不能据此报告弹性模量。</p>`;
+const range=app.querySelector('input');const ticks=app.querySelector('#ticks');ticks.innerHTML=[0,50,100,150,200].map(y=>`<text x="28" y="${245-y}" fill="#a4b8cb" font-size="14">${y}</text>`).join('')+[0,.1,.2,.3,.4].map((x,i)=>`<text x="${65+i*145}" y="260" fill="#a4b8cb" font-size="14">${x}</text>`).join('');
+function draw(){const a=Number(range.value);app.querySelector('#area').textContent=a.toFixed(1);const pts=[0,50,100,150,180].map((f,i)=>[70+i*145,240-f/a]);app.querySelector('#line').setAttribute('points',pts.map(x=>x.join(',')).join(' '));app.querySelector('#points').innerHTML=pts.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="#fff"/>`).join('');app.querySelector('#answer').textContent=`100 N ÷ ${a.toFixed(1)} mm² = ${(100/a).toFixed(1)} MPa`;}range.oninput=draw;draw();
+}else{
+const agent=mode==='agent';const names=agent?['目标','模型提出动作','工具执行','观察结果','验收 / 继续']:['磁盘 CSV','载入 RAM','CPU 计算','内存结果','保存到磁盘'];
+const notes=agent?['读取任务说明，确定输入与验收条件。','模型生成读取文件或运行代码的调用请求；此时尚未执行。','harness 根据权限执行工具；工具返回真实结果。','将标准输出、报错、文件结果送回模型，必要时修正。','检查单位与手算值；通过就停止，失败则再迭代或交给人。']:['数据保存在文件中，关机后仍可读取。','操作系统与程序将需要的数据载入内存。','Python 运行计算指令，本例不需要 GPU。','变量在当前进程中；关闭内核会丢失这些状态。','程序明确写文件后，结果才可在下一次运行中读取。'];
+app.innerHTML=`<h2>${agent?'Agent 如何工作':'程序如何运行'}</h2><p class="muted">${agent?'教学模拟流程，不是真实模型或工具调用日志。':'简化数据流动画；点击观察每一步。'}</p><div class="nodes">${names.map(n=>`<div class="node">${n}</div>`).join('')}</div><p id="hint"></p><button id="next">下一步</button><button id="reset">重置</button><p class="muted">${agent?'harness：提供上下文、工具、权限、记录与停止条件。':'编辑器写代码，解释器执行代码，操作系统管理文件与进程。'}</p>`;let step=-1;function update(){app.querySelectorAll('.node').forEach((n,i)=>n.classList.toggle('active',i<=step));app.querySelector('#hint').textContent=step<0?'先预测：这一步有没有产生可保存的结果？':notes[step];}app.querySelector('#next').onclick=()=>{step=(step+1)%5;update()};app.querySelector('#reset').onclick=()=>{step=-1;update()};update();
+}
+</script></html>

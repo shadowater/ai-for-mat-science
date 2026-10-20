@@ -1,0 +1,9 @@
+# Local development dependencies and caches
+node_modules/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+*.pyc
+
+# Locally generated distribution archives
+预习课/*.zip

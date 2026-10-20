@@ -1,0 +1,1 @@
+{"name":"aimat-lesson01","private":true,"type":"module","scripts":{"dev":"slidev --host 127.0.0.1","build":"slidev build --base ./"},"devDependencies":{"@slidev/cli":"53.0.0","@slidev/theme-default":"0.25.0","playwright-chromium":"1.63.0","markdown-it":"14.3.2"}}

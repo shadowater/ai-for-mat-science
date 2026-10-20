@@ -1,0 +1,5 @@
+# Suggested compatible ranges; installation was blocked by network in this workspace.
+jupyterlab>=4.1.2,<5
+jupyterlab-rise>=0.40,<1
+nbconvert>=7,<8
+matplotlib>=3.8,<4
