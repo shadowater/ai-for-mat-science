@@ -22,9 +22,46 @@
 
 阅读本地带配图的[《文件、文件名和文件类型》与《文件夹、路径和目录》选段](materials/missing-web/file-and-file-management.md)，原作是 Hans Wan 和 Windy Deng 的《你缺失的那门计算机课》。作者网站上的[完整章节](https://www.criwits.top/missing/file-and-file-management.html)还有其他内容。预习课一读过的 [SI100+ 2024 计算机基础讲义](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md)也简要回顾了后缀名。在本地选段中找到目录树图片，再到 `file-and-file-management` 子文件夹里找到对应的 `Tree.png` 文件。若不阅读中文，可使用英文导读前面的定义和目录树图片。结合正文，在自己的电脑上辨认一个文件名和一条路径即可，不要求背诵章节内容。
 
-像预习课一那样，在 VS Code 中打开整个 `预习课二` 文件夹（文件 → 打开文件夹）。在左侧文件列表中找到 [`figure.svg`](materials/figure.svg)、[`sample.csv`](materials/sample.csv) 和 [`sample.json`](materials/sample.json)。**CSV** 是按行和列组织的文本；**JSON** 是用名称和值组织信息的文本。这里仅需辨认文件类型，科研用途留到后续课程。
+像预习课一那样，在 VS Code 中打开整个 `预习课二` 文件夹（文件 → 打开文件夹）。在左侧文件列表中找到 [`figure.svg`](materials/figure.svg)、[`sample.csv`](materials/sample.csv) 和 [`sample.json`](materials/sample.json)。
 
 **动手试试：**把整个 `预习课二` 文件夹复制到一个新位置，打开复制出来的文件夹。在这个副本的导读中点击 [`figure.svg` 链接](materials/figure.svg)，仍应能找到图片。如果链接失效，检查 `materials` 是否与 `README.md`、`README.zh.md` 一起移动。原文件夹保留作对照。
+
+### 文本文件：把字符保存在文件里
+
+**纯文本文件**保存的是字母、汉字、数字、标点和换行等字符。VS Code 这样的文本编辑器可以让你直接阅读和修改这些字符。纯文本文件不保存 Word 那样的字体选择、页面排版或嵌入的图片。Word 文档和 PDF 即使包含文字，也不等于纯文本文件。
+
+在 VS Code 中打开 [`sample.zh.txt`](materials/sample.zh.txt)，它用普通句子描述本课的虚构样品。`.txt` 是纯文本常见的后缀，但不是唯一的后缀：这里的 `.csv`、`.json` 和 `.md` 文件也都是文本文件。不同格式规定了怎样组织或解释其中的字符。
+
+### CSV：用文本保存一张表
+
+**CSV** 是 **comma-separated values（逗号分隔的值）**的缩写，用文本保存表中的内容，通常用逗号分隔各列。在 VS Code 中打开 [`sample.csv`](materials/sample.csv)：
+
+```csv
+sample_id,file_name
+M-02,figure.svg
+```
+
+这份文件第一行给出了两列的名称：样品编号和文件名。第二行是一条样品记录，逗号把 `M-02` 与 `figure.svg` 分开。电子表格软件可以把同一份文件显示成单元格；VS Code 显示的是它的文本。CSV 不保存 Excel 工作簿中的多个工作表、图表或单元格样式。它常用于交换样品清单、仪器读数这样的简单表格。
+
+需要进一步了解时，选读[微软 CSV 说明](https://support.microsoft.com/en-us/excel/get-started/import-or-export-text-txt-or-csv-files)开头关于文本格式的介绍。实际文件可能使用其他分隔符；内容本身含逗号时还需要引号规则。本次不要求编辑这些情况。
+
+### JSON：用文本保存有名称的信息
+
+**JSON** 是 **JavaScript Object Notation** 的缩写，是一种保存和交换有组织的信息的文本格式。读懂它不需要先学习 JavaScript。打开 [`sample.json`](materials/sample.json)：
+
+```json
+{
+  "sample_id": "M-02",
+  "figure": "figure.svg",
+  "fictional": true
+}
+```
+
+这里的花括号 `{}` 包住一组**名称与值的配对**。冒号前的名称说明后面的值是什么：`"sample_id": "M-02"` 给出样品编号。各对信息用逗号隔开，名称和文字值用普通双引号包住。`true` 表示“是／真”，所以 `"fictional": true` 表示这个样品是虚构的。值还可以是数字、列表或另一组有名称的信息，这些情况以后再学。程序经常用 JSON 保存设置或返回信息，例如论文的题名与作者。
+
+可复用的讲解见 [MDN 的 JSON 入门](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON#no_really_what_is_json)，本次只选读“No, really, what is JSON?”一节。后面的 JavaScript 编程练习不属于本次预习。
+
+**动手对照：**在复制的文件夹里，用 VS Code 打开 TXT、CSV 和 JSON 三份样例，在每份文件里找到 `M-02` 和 `figure.svg`。把 TXT 副本里的 `M-02` 改为 `M-03`，保存后重新打开。在 CSV 中指出列名和一条记录，在 JSON 中指出一个名称及其值。三者可以描述同一个样品，但组织文字的规则不同。修改后缀不会把文件内容自动改写成另一种格式。
 
 ## 二、写一份可阅读的科研笔记
 
@@ -56,6 +93,7 @@ LaTeX 用文字命令描述文档结构和公式。有些 Markdown 阅读工具�
 
 ## 自己检查一下
 
+- 你能解释为什么 TXT、CSV 和 JSON 都是文本文件，并指出 CSV 的一列和 JSON 的一对名称与值吗？
 - **整个文件夹**移动以后，你还能打开示意图链接吗？
 - 修改后的笔记在 VS Code 预览里是否显示修改后的标题、列表、本地图片、代码块、`$d=2r$` 和独占一行的公式？
 - 你能解释两份 PDF 的区别，并找到论文的 DOI 和出版方页面吗？

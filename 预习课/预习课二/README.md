@@ -22,9 +22,46 @@ A **folder** holds files and other folders. A **path** tells you where an item i
 
 Read the local illustrated excerpt [“File Names and Types” and “Folders, Paths and Directories”](materials/missing-web/file-and-file-management.md) (Chinese), taken from Hans Wan and Windy Deng's *The Computer Class You Missed*. The [complete chapter on the authors' site](https://www.criwits.top/missing/file-and-file-management.html) includes further topics. The [SI100+ 2024 computer basics slides](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md) from class 1 give a short recap of file extensions. In the local excerpt, find the picture of a folder tree, then locate its `Tree.png` file in the `file-and-file-management` subfolder. If you do not read Chinese, use the English definitions above and the folder-tree picture. Use the reading to identify a file name and a path on your own computer; you do not need to memorize the chapter.
 
-Open the whole `预习课二` folder in VS Code (File → Open Folder), as in preparation class 1. In its file list, find [`figure.svg`](materials/figure.svg), [`sample.csv`](materials/sample.csv), and [`sample.json`](materials/sample.json). **CSV** is text arranged into rows and columns; **JSON** is text arranged as named pieces of information. You only need to recognize these as file types here. Their scientific use comes later.
+Open the whole `预习课二` folder in VS Code (File → Open Folder), as in preparation class 1. In its file list, find [`figure.svg`](materials/figure.svg), [`sample.csv`](materials/sample.csv), and [`sample.json`](materials/sample.json).
 
 **Try it:** Copy the whole `预习课二` folder to a new location and open the copy. Click the [`figure.svg` link](materials/figure.svg) from this guide in the copy. It should still find the figure. If a link fails, check that `materials` moved with `README.md` and `README.zh.md`. Keep the original folder as your reference.
+
+### Text files: characters saved in a file
+
+A **plain text file** stores characters such as letters, Chinese characters, numbers, punctuation, and line breaks. A text editor such as VS Code lets you read and change those characters. A plain text file does not store Word-style font choices, page layout, or embedded pictures. A Word document or PDF may contain words without being a plain text file.
+
+Open [`sample.en.txt`](materials/sample.en.txt) in VS Code. It describes our fictional sample in ordinary sentences. `.txt` is a common extension for plain text, but it is not the only one: the `.csv`, `.json`, and `.md` files used here are also text files. Their different formats specify how to organize or interpret the characters.
+
+### CSV: a table written as text
+
+**CSV** stands for **comma-separated values**. It stores table entries as text, usually with commas between columns. Open [`sample.csv`](materials/sample.csv) in VS Code:
+
+```csv
+sample_id,file_name
+M-02,figure.svg
+```
+
+In this file, the first line names the two columns: sample identifier and file name. The second line contains one sample record. The comma separates `M-02` from `figure.svg`. A spreadsheet app can display the same file as cells; VS Code shows its text. CSV does not store an Excel workbook’s multiple sheets, charts, or cell styling. It is useful for exchanging simple tables such as a sample list or instrument readings.
+
+For further reading, use the opening explanation of text formats in [Microsoft’s CSV guide](https://support.microsoft.com/en-us/excel/get-started/import-or-export-text-txt-or-csv-files). Real files may use a different separator, and text containing commas needs quoting rules; you do not need to edit those cases now.
+
+### JSON: named information written as text
+
+**JSON**, short for **JavaScript Object Notation**, is a text format for storing and exchanging organized information. You do not need to learn JavaScript to read it. Open [`sample.json`](materials/sample.json):
+
+```json
+{
+  "sample_id": "M-02",
+  "figure": "figure.svg",
+  "fictional": true
+}
+```
+
+Here the braces `{}` hold a set of **name–value pairs**. The name before a colon says what a value means: `"sample_id": "M-02"` gives the sample identifier. Commas separate the pairs. Names and text values use straight double quotation marks. The value `true` means “yes/true,” so `"fictional": true` says that the sample is fictional. A value can also be a number, a list, or another group of named information; those cases can wait. Programs often use JSON for settings or returned information, such as a paper’s title and authors.
+
+For an existing explanation, read only “No, really, what is JSON?” in [MDN’s JSON introduction](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON#no_really_what_is_json). The later JavaScript programming exercises are outside this preparation class.
+
+**Try and compare:** In your copied folder, open the TXT, CSV, and JSON examples in VS Code. Find `M-02` and `figure.svg` in all three. In your copy of the TXT file, change `M-02` to `M-03`, save, and reopen it. In the CSV, point to the column names and one record; in the JSON, point to a name and its value. All three can describe the same sample, but the rules for arranging the text differ. Changing a filename extension does not rewrite those contents into a new format.
 
 ## 2. Make a readable research note
 
@@ -56,6 +93,7 @@ Read the local [paper record](materials/paper-record.en.md), then open its link 
 
 ## Check yourself
 
+- Can you explain why TXT, CSV, and JSON are all text files, and point to a CSV column and a JSON name–value pair?
 - Can you still open the figure link after moving the **whole folder**?
 - Does your edited note show your changed heading, a list, a local image, a code block, `$d=2r$`, and your separate-line formula in the VS Code preview?
 - Can you explain the difference between the two PDFs, and can you find the paper's DOI and publisher page?
