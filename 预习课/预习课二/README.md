@@ -36,7 +36,19 @@ Open [`sample.en.txt`](materials/sample.en.txt) in VS Code. It describes our fic
 
 #### Optional: encoding, “锟斤拷”, and “烫烫烫”
 
-An **encoding** is a rule for turning characters into stored bytes (small units of computer data) and back. **UTF-8** is a common choice; some older Chinese files use **GBK**. Reading the same bytes with the wrong rule can produce garbled text.
+A computer stores a text file as **bytes**, small units of data. To show you the words, a program needs a rule for reading those bytes as characters. A **text encoding** supplies that rule: it specifies how characters are written as bytes and how those bytes are read back. **UTF-8** is a common encoding; some older Chinese files use **GBK**. Reading a file with the wrong encoding can turn familiar words into garbled text.
+
+It helps to think of opening a text file in two steps: **read the bytes as characters, then interpret how those characters are arranged.** Encoding governs the first step; a text file's **format** describes its structure in the second.
+
+| Question | What answers it? | Example |
+| --- | --- | --- |
+| Which characters do these stored bytes represent? | Text encoding | UTF-8 tells a program how to read the bytes for `样品`. |
+| How are these characters organized? | File format | CSV arranges entries into rows and columns; JSON associates names with values. We will try both below. |
+| Which program or format might this file use? | Filename extension | `.csv` gives software a useful clue, but the name alone does not establish what is inside. |
+
+For example, a CSV table and a JSON record can both be saved as UTF-8. They share an encoding while organizing their contents differently. In VS Code, our [`sample.csv`](materials/sample.csv) appears as lines of text with commas. A spreadsheet program can interpret those commas as column boundaries and display a table. The file has not changed; the programs present its contents differently. Renaming it from `.csv` to `.json` would not rearrange its contents into JSON.
+
+This distinction is useful when something looks wrong: garbled words are a reason to check the encoding, while readable words arranged in unexpected columns are a reason to check how the program is interpreting the table. Here are two memorable examples of how bytes can turn into unexpected characters:
 
 - **“锟斤拷”**: one route is that unreadable characters were replaced by `�`; saving two such replacement characters as UTF-8 and reading those bytes as GBK gives “锟斤拷”. If the original characters have already been replaced and saved, changing the encoding may not recover them.
 - **“烫烫烫”**: repeated bytes written as `CC` in hexadecimal give this text when read in pairs as GBK. Such bytes can occur when a program prints memory-filling data as text. This is a different situation: the displayed characters alone do not prove that a text file merely needs another encoding. You do not need to memorize byte values or study memory here.
