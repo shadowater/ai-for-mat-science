@@ -6,46 +6,21 @@ Answer based on what you can currently do. Please do not look up answers or ask 
 
 ## Your research and computer
 
-### Q1. What name or nickname should we use if you would like follow-up support?
+### Q1. Name
 
-Optional short answer. You may leave this blank. Providing a name allows the teaching team to follow up about your needs.
-
-### Q2. Which best describes your current stage?
-
-Single choice.
-
-- Undergraduate student
-- Master's student
-- Doctoral student
-- Research assistant, postdoctoral researcher, or other researcher
-- Other: ______
-- Prefer not to say
+Short answer.
 
 ### Q3. What is your research area or the topic you expect to work on?
 
 Short answer, one or two sentences. For example: “Polymer membranes; I compare thermal properties and contact angles across formulations.” You may write “Not yet decided.”
 
-### Q4. Which computer do you expect to use most often for this course?
-
-Single choice. Choose your main device if you have more than one.
-
-- My own Windows computer
-- My own Mac
-- My own Linux computer
-- A shared or laboratory computer
-- I currently only have a phone or tablet available
-- I am not sure which operating system my computer uses
-- Other: ______
-
-### Q5. Can you install course software on that computer?
+### Q4. What device do you mainly use?
 
 Single choice.
 
-- Yes, and I can usually install software myself
-- I have permission, but I would need installation guidance
-- I need someone else's permission or an administrator password
-- I am not sure
-- I do not currently have a suitable computer
+- Windows computer
+- Mac
+- Linux server
 
 ## Computer experience
 
@@ -68,33 +43,6 @@ One response per row. Use the same four choices for every row:
 | Open an entire project folder in VS Code | | | | |
 | Open a CSV table in spreadsheet software and identify the header row | | | | |
 | Copy an error message and search for a possible solution | | | | |
-
-### Q7. You downloaded a ZIP package containing course readings and images. Which action would you choose before working with the materials?
-
-Single choice.
-
-- Extract the package into a folder, then open that folder
-- Rename the ZIP file so that its filename ends in `.md`
-- Copy only the main reading file and delete the other files
-- I am not sure
-
-### Q8. You have `spectrum.csv`, containing the measured numbers, and `spectrum.png`, showing a plot of the same measurement. You want a program to calculate values from the measured numbers. Which file would you give it first?
-
-Single choice.
-
-- `spectrum.png`
-- `spectrum.csv`
-- Renaming either file will make it the other format
-- I am not sure
-
-### Q9. In a chat tool that has no access to your computer or files, you say, “Please analyse the spreadsheet on my desktop.” What would you expect?
-
-Single choice.
-
-- It can immediately read any file on my desktop
-- Its answer alone proves that it read the spreadsheet
-- I need to provide the data, or use a tool with the relevant file access, and check what it actually read
-- I am not sure
 
 ### Q10. What experience do you have with the following?
 
