@@ -41,12 +41,13 @@ One response per row. Use the same four choices for every row:
 | Show the complete filename, including endings such as `.csv` and `.png` | | | | |
 | Find and copy a file's path, meaning its location on the computer | | | | |
 | Open an entire project folder in VS Code | | | | |
-| Open a CSV table in spreadsheet software and identify the header row | | | | |
+| Edit a heading or link in Markdown, a text format that uses simple symbols, and view the formatted preview | | | | |
+| Modify a supplied LaTeX formula in a Markdown note and check its preview | | | | |
 | Copy an error message and search for a possible solution | | | | |
 
 ### Q10. What experience do you have with the following?
 
-One response per row:
+These tools relate to the optional Python classes and later practical work. Prior experience is not required. Choose one response per row:
 
 - A. I have not heard of it.
 - B. I have heard of it but have not used it.
@@ -66,17 +67,22 @@ One response per row:
 
 One response per row:
 
-- A. I have not heard of these terms.
-- B. I have heard of them but could not explain them clearly.
-- C. I could explain them using a simple example.
+- A. This is new to me.
+- B. I have come across it, but would need an explanation.
+- C. I could explain it using a simple example of my own.
+
+The short descriptions below help identify each topic. Simply understanding the description does not mean you need to choose C.
 
 | Ideas | A | B | C |
 |---|---|---|---|
-| Pixels and image resolution | | | |
-| The difference between CSV and JSON | | | |
+| Text files: how CSV tables and JSON records organise text | | | |
+| PDFs with selectable text and scanned PDFs that may need text recognition (OCR) | | | |
+| Pixels: the small units of colour that make up an image | | | |
+| Image scale bars: relating a length in an image to a real-world length | | | |
+| Bitmap and vector images: pictures stored as pixels or described by shapes | | | |
 | Training a machine learning model and using it to make predictions | | | |
-| Tokens and context in a large language model | | | |
-| The difference between a model and an Agent harness, the software that organises its tools and task execution | | | |
+| Context in an AI conversation: the information available to the model for its current reply | | | |
+| A model and an Agent tool: generating a response and using software to act on files or run commands | | | |
 
 ## Experience with AI
 
@@ -175,7 +181,14 @@ Choose up to three options and rank your choices, with 1 as your highest priorit
 
 ### Q18. Describe one specific task you would like help with.
 
-Short answer, about two to four sentences. You can mention what you start with, what you do repeatedly, the output you want, and how you would check it.
+Short answer, about two to four sentences. If helpful, use this outline:
+
+- I start with: ______
+- The repetitive or difficult part is: ______
+- I would like to produce: ______
+- I could check the result by: ______
+
+Fill in what you already know; leave anything undecided as “Not sure yet.”
 
 For example: “I have 20 infrared data files. I currently open them one by one to draw plots and label peaks. I would like consistently formatted plots and a table of candidate peak positions, which I would compare with the original curves.”
 
