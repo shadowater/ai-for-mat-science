@@ -8,7 +8,7 @@
 2. 复制这个文件夹，修改一份简短的 Markdown 笔记，加入本地链接、图片和公式。
 3. 比较文字可选择的 PDF 与只有图片的 PDF；记录一篇真实论文的来源。
 
-[`materials/`](materials/) 里的小样例专为本课制作。请阅读本导读链接的材料，在**自己复制的文件夹**里尝试操作。只有补充阅读和原始来源页面需要联网。本课不要求账号、编程环境或提交作业。
+[`materials/`](materials/) 里有一份现有计算机课程的本地选读正文及配图，也有为本课制作的小样例。请阅读本导读链接的材料，在**自己复制的文件夹**里尝试操作。原始来源页面和可选参考资料需要联网。本课不要求账号、编程环境或提交作业。
 
 ## 一、找到你要用的文件
 
@@ -16,7 +16,7 @@
 
 **文件夹**可以放文件和其他文件夹。**路径**说明文件在哪里。`materials/figure.svg` 从本导读所在的文件夹出发，因此是**相对路径**。从电脑根目录或磁盘开始的路径，例如 `C:\Users\...` 或 `/Users/...`，是**绝对路径**。相对路径方便我们整体移动文件夹。
 
-如果想看带图片的详细讲解，Hans Wan 和 Windy Deng 在[《你缺失的那门计算机课》“文件与文件管理”](https://www.criwits.top/missing/file-and-file-management.html)中介绍了文件名、文件类型、文件夹、路径和打开方式。重点阅读**“文件、文件名和文件类型”**与**“文件夹、路径和目录”**两节，其余按需选读。预习课一读过的 [SI100+ 2024 计算机基础讲义](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md)也简要回顾了后缀名。按自己的缺口选一种讲解，然后用下面的练习检验这些概念。
+阅读本地带配图的[《文件、文件名和文件类型》与《文件夹、路径和目录》选段](materials/missing-web/file-and-file-management.md)，原作是 Hans Wan 和 Windy Deng 的《你缺失的那门计算机课》。作者网站上的[完整章节](https://www.criwits.top/missing/file-and-file-management.html)还有其他内容。预习课一读过的 [SI100+ 2024 计算机基础讲义](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md)也简要回顾了后缀名。在本地选段中找到目录树图片，再到 `file-and-file-management` 子文件夹里找到对应的 `Tree.png` 文件。结合正文，在自己的电脑上辨认一个文件名和一条路径即可，不要求背诵章节内容。
 
 像预习课一那样，在 VS Code 中打开整个 `预习课二` 文件夹（文件 → 打开文件夹）。在左侧文件列表中找到 [`figure.svg`](materials/figure.svg)、[`sample.csv`](materials/sample.csv) 和 [`sample.json`](materials/sample.json)。**CSV** 是按行和列组织的文本；**JSON** 是用名称和值组织信息的文本。这里仅需辨认文件类型，科研用途留到后续课程。
 
@@ -26,7 +26,7 @@
 
 **Markdown** 是一种纯文本写法，用少量符号表示标题、列表、链接和图片，阅读工具可以把它们显示成排好版的内容。预习课一已经看过标题和链接。**源文件**是你编辑的文字；**预览**是阅读工具显示出来的样子，两者对应同一份保存的笔记。
 
-忘记标题、列表、链接或图片怎么写时，可以查阅 [Markdown Guide 的基础语法页](https://www.markdownguide.org/basic-syntax/)；本次只需使用笔记里用到的写法。
+忘记标题、列表、链接或图片怎么写时，可以查阅 [Markdown Guide 的基础语法页](https://www.markdownguide.org/basic-syntax/)；本次只需使用笔记里用到的写法。下面的本地示例笔记还链接回原阅读材料，可以看看怎样在 Markdown 文件中记录来源。
 
 在复制的文件夹里打开 [`materials/note.zh.md`](materials/note.zh.md)，再复制一份，命名为 `my-note.md`，放在 **`materials` 文件夹里**。修改样品名，增加一条列表内容，检查它指向 `figure.svg` 的链接能否打开。要在笔记中直接显示图片，写 `![简短描述](figure.svg)`；描述能在图片无法显示时告诉读者图片内容。只想链接文件而不直接显示图片，写 `[图片](figure.svg)`。
 
@@ -58,4 +58,4 @@ LaTeX 用文字命令描述文档结构和公式。有些 Markdown 阅读工具�
 
 ## 来源与致谢
 
-`materials/` 中的笔记、公式速查、示意图、小数据文件及两份 PDF 都是为本课制作的；PDF 页面里的样品文字是虚构的。外部说明及真实论文只链接原始页面：[Hans Wan 和 Windy Deng 的《你缺失的那门计算机课》](https://www.criwits.top/missing/file-and-file-management.html)、[SI100+ 2024 讲义](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md)、[Markdown Guide](https://www.markdownguide.org/basic-syntax/)、[VS Code 的 Markdown 说明](https://code.visualstudio.com/docs/languages/markdown)、[GitHub 的公式说明](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)、[Adobe 的 OCR 说明](https://helpx.adobe.com/ae_en/acrobat/desktop/create-documents/scan-documents-to-pdfs/recognize-text.html)、[DOI 基金会](https://www.doi.org/the-identifier/what-is-a-doi/)、[Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/)；论文的出版方链接见[文献记录](materials/paper-record.zh.md)。本文件夹没有收录第三方论文的正文或图片。
+本地选段和八张配图来自 [Hans Wan 与 Windy Deng 的《你缺失的那门计算机课》](materials/missing-web/SOURCE.md)，来源、版本、许可和改动均记录在选段旁。示例笔记、公式速查、示意图、小数据文件及两份 PDF 是为本课制作的；PDF 页面里的样品文字是虚构的。其他说明链接到原始页面：[SI100+ 2024 讲义](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md)、[Markdown Guide](https://www.markdownguide.org/basic-syntax/)、[VS Code 的 Markdown 说明](https://code.visualstudio.com/docs/languages/markdown)、[GitHub 的公式说明](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)、[Adobe 的 OCR 说明](https://helpx.adobe.com/ae_en/acrobat/desktop/create-documents/scan-documents-to-pdfs/recognize-text.html)、[DOI 基金会](https://www.doi.org/the-identifier/what-is-a-doi/)、[Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/)；论文的出版方链接见[文献记录](materials/paper-record.zh.md)。本文件夹没有收录第三方科研论文的正文或图片。

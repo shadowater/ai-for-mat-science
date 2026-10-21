@@ -34,6 +34,8 @@ VS Code's Markdown preview and GitHub Markdown support math display. Other Markd
 | Multiplication | `$a\times b$` | A multiplication sign. |
 | Units | `$r=5\,\mu\mathrm{m}$` | `\,` adds a small space; `\mu` means micro; `\mathrm{m}` makes the unit m upright. |
 
+Use the original references when you need more than these examples: [Overleaf on powers and subscripts](https://www.overleaf.com/learn/latex/Subscripts_and_superscripts), [Greek letters and symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), [fractions](https://www.overleaf.com/learn/latex/Fractions_and_Binomials), and [spacing in math mode](https://www.overleaf.com/learn/latex/Spacing_in_math_mode). These are lookup pages; there is no need to read them all now.
+
 For example, a simple mass-change expression can be written on its own lines as:
 
 ```text

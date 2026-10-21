@@ -34,6 +34,8 @@ VS Code 的 Markdown 预览和 GitHub 的 Markdown 页面都支持显示公式�
 | 乘号 | `$a\times b$` | 乘法符号。 |
 | 单位 | `$r=5\,\mu\mathrm{m}$` | `\,` 加一点空隙；`\mu` 表示微；`\mathrm{m}` 让单位 m 正体显示。 |
 
+需要更多写法时，直接查原始资料：[Overleaf 的上下标说明](https://www.overleaf.com/learn/latex/Subscripts_and_superscripts)、[希腊字母与符号表](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols)、[分数说明](https://www.overleaf.com/learn/latex/Fractions_and_Binomials)和[数学公式间距说明](https://www.overleaf.com/learn/latex/Spacing_in_math_mode)。这些是按需查询的页面，本次不需要全部读完。
+
 例如，可以把一个简单的质量变化表达式单独写成：
 
 ```text
