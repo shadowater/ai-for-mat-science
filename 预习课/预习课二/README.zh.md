@@ -28,11 +28,26 @@
 
 ### 文本文件：把字符保存在文件里
 
+先看[苹果《创建、打开和转换文稿》](https://support.apple.com/zh-cn/guide/textedit/txtee6663a0e/mac)中的“转换为纯文本或多信息文本”。**多信息文本（也称富文本）**可以带有字体样式等格式。重点看 `.txt` 与 `.rtf` 的区别；这个概念适用于其他系统，课程练习仍可在 VS Code 中完成。
+
 **纯文本文件**保存的是字母、汉字、数字、标点和换行等字符。VS Code 这样的文本编辑器可以让你直接阅读和修改这些字符。纯文本文件不保存 Word 那样的字体选择、页面排版或嵌入的图片。Word 文档和 PDF 即使包含文字，也不等于纯文本文件。
 
 在 VS Code 中打开 [`sample.zh.txt`](materials/sample.zh.txt)，它用普通句子描述本课的虚构样品。`.txt` 是纯文本常见的后缀，但不是唯一的后缀：这里的 `.csv`、`.json` 和 `.md` 文件也都是文本文件。不同格式规定了怎样组织或解释其中的字符。
 
+#### 可选了解：文件编码、“锟斤拷”和“烫烫烫”
+
+**编码**是把字符转换成电脑存储的字节、再读回字符的一套规则；字节是电脑数据的小单位。**UTF-8** 是常见编码，一些旧中文文件使用 **GBK**。用错规则读取同一份数据，就可能出现乱码。
+
+- **“锟斤拷”**：一种形成过程是，无法识别的字符先被替换为 `�`，两个这样的替代字符按 UTF-8 保存，再按 GBK 读取，就显示成“锟斤拷”。若原字符已被替换并保存，切换编码未必能找回原文。
+- **“烫烫烫”**：一串用十六进制写成 `CC` 的字节，按 GBK 每两个一组读取，会显示成这些字。程序把填充内存的数据当文字输出时，就可能出现这种现象。这与上一种情况不同：单凭显示出的字，不能断定只是文本文件选错了编码。本次不用记字节数值或学习内存原理。
+
+第一个例子直接选读[《你缺计课》“万言皆数：字符与编码规则”](https://www.criwits.top/missing/characters-and-encodings.html)中的“恼人的乱码”一节即可。第二个是本课程核对过的字节解码示例；[微软运行时检查说明](https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks)说明调试为何会涉及非零值的内存填充，感兴趣可留到以后阅读。
+
+**可选试一下：**打开 [`sample.zh.txt`](materials/sample.zh.txt) 的副本，即使不阅读中文也可以观察字形。先看看正常显示的样子，再点击 VS Code 底部状态栏的 **UTF-8**，选择**通过编码重新打开（Reopen with Encoding）→ GBK**，观察变化；随后再用 **UTF-8 重新打开**，恢复正常显示。显示不对时不要编辑或保存。**通过编码重新打开**改变读取现有字节的规则；**通过编码保存（Save with Encoding）**会按所选规则把当前文字写入文件。操作配图见 [VS Code 官方编码说明](https://code.visualstudio.com/docs/editing/codebasics#_file-encoding-support)。这个选学动作不计入必做自测。
+
 ### CSV：用文本保存一张表
+
+先读本地 [Data Carpentry 的 CSV 讲解选段（中文译文）](materials/data-carpentry/csv.zh.md)，再看本课样例。它解释了科研数据为什么常以文本交换，以及 CSV 为什么能用不同程序打开。[原始课程](https://datacarpentry.github.io/spreadsheet-ecology-lesson/05-exporting-data.html)；本次读本地选段即可。
 
 **CSV** 是 **comma-separated values（逗号分隔的值）**的缩写，用文本保存表中的内容，通常用逗号分隔各列。在 VS Code 中打开 [`sample.csv`](materials/sample.csv)：
 
@@ -59,7 +74,7 @@ M-02,figure.svg
 
 这里的花括号 `{}` 包住一组**名称与值的配对**。冒号前的名称说明后面的值是什么：`"sample_id": "M-02"` 给出样品编号。各对信息用逗号隔开，名称和文字值用普通双引号包住。`true` 表示“是／真”，所以 `"fictional": true` 表示这个样品是虚构的。值还可以是数字、列表或另一组有名称的信息，这些情况以后再学。程序经常用 JSON 保存设置或返回信息，例如论文的题名与作者。
 
-可复用的讲解见 [MDN 的 JSON 入门](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON#no_really_what_is_json)，本次只选读“No, really, what is JSON?”一节。后面的 JavaScript 编程练习不属于本次预习。
+现成讲解选用 [MDN《使用 JSON》中文版](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Scripting/JSON)：只读“什么是 JSON？”及“JSON 结构”的第一个例子。打开作者原样提供的本地 [superheroes.json](materials/mdn-json/superheroes.json)，找到 `squadName`（文字值）、`formed`（数字）和 `active`（真或假）。`members` 是方括号中的成员列表，细节可以以后再学。[示例来源与许可](materials/mdn-json/SOURCE.md)。后面的 JavaScript 编程练习不属于本次预习。
 
 **动手对照：**在复制的文件夹里，用 VS Code 打开 TXT、CSV 和 JSON 三份样例，在每份文件里找到 `M-02` 和 `figure.svg`。把 TXT 副本里的 `M-02` 改为 `M-03`，保存后重新打开。在 CSV 中指出列名和一条记录，在 JSON 中指出一个名称及其值。三者可以描述同一个样品，但组织文字的规则不同。修改后缀不会把文件内容自动改写成另一种格式。
 

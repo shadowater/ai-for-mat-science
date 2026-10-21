@@ -28,11 +28,26 @@ Open the whole `预习课二` folder in VS Code (File → Open Folder), as in pr
 
 ### Text files: characters saved in a file
 
+Start with “Convert to plain or rich text” in [Apple’s TextEdit guide](https://support.apple.com/guide/textedit/txtee6663a0e/mac). **Rich text** can carry formatting such as text styles. Read the contrast between `.txt` and `.rtf`; the distinction is useful on any system, and you can do our exercise in VS Code.
+
 A **plain text file** stores characters such as letters, Chinese characters, numbers, punctuation, and line breaks. A text editor such as VS Code lets you read and change those characters. A plain text file does not store Word-style font choices, page layout, or embedded pictures. A Word document or PDF may contain words without being a plain text file.
 
 Open [`sample.en.txt`](materials/sample.en.txt) in VS Code. It describes our fictional sample in ordinary sentences. `.txt` is a common extension for plain text, but it is not the only one: the `.csv`, `.json`, and `.md` files used here are also text files. Their different formats specify how to organize or interpret the characters.
 
+#### Optional: encoding, “锟斤拷”, and “烫烫烫”
+
+An **encoding** is a rule for turning characters into stored bytes (small units of computer data) and back. **UTF-8** is a common choice; some older Chinese files use **GBK**. Reading the same bytes with the wrong rule can produce garbled text.
+
+- **“锟斤拷”**: one route is that unreadable characters were replaced by `�`; saving two such replacement characters as UTF-8 and reading those bytes as GBK gives “锟斤拷”. If the original characters have already been replaced and saved, changing the encoding may not recover them.
+- **“烫烫烫”**: repeated bytes written as `CC` in hexadecimal give this text when read in pairs as GBK. Such bytes can occur when a program prints memory-filling data as text. This is a different situation: the displayed characters alone do not prove that a text file merely needs another encoding. You do not need to memorize byte values or study memory here.
+
+For the first example, read only “恼人的乱码” in [《你缺计课》: characters and encodings](https://www.criwits.top/missing/characters-and-encodings.html). The second example is a byte-decoding illustration checked for this course; [Microsoft’s runtime-check documentation](https://learn.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks) explains why debugging can involve nonzero memory fill, for later interest.
+
+**Optional try:** Open a copy of [`sample.zh.txt`](materials/sample.zh.txt), even if you do not read Chinese. Note its appearance, then click **UTF-8** in VS Code’s bottom status bar. Choose **Reopen with Encoding → GBK** and observe the change; then **Reopen with Encoding → UTF-8** to restore it. Do not edit or save while the text looks wrong. **Reopen with Encoding** changes how existing bytes are read; **Save with Encoding** writes the current text using the chosen rule. See the illustrated [VS Code encoding guide](https://code.visualstudio.com/docs/editing/codebasics#_file-encoding-support). This optional action is not part of the required self-check.
+
 ### CSV: a table written as text
+
+Read the short local [Data Carpentry CSV excerpt](materials/data-carpentry/csv.en.md) before looking at our sample. It explains why researchers exchange data as text and why a CSV can be opened in different programs. [Original lesson](https://datacarpentry.github.io/spreadsheet-ecology-lesson/05-exporting-data.html); the local selection is enough for this class.
 
 **CSV** stands for **comma-separated values**. It stores table entries as text, usually with commas between columns. Open [`sample.csv`](materials/sample.csv) in VS Code:
 
@@ -59,7 +74,7 @@ For further reading, use the opening explanation of text formats in [Microsoft�
 
 Here the braces `{}` hold a set of **name–value pairs**. The name before a colon says what a value means: `"sample_id": "M-02"` gives the sample identifier. Commas separate the pairs. Names and text values use straight double quotation marks. The value `true` means “yes/true,” so `"fictional": true` says that the sample is fictional. A value can also be a number, a list, or another group of named information; those cases can wait. Programs often use JSON for settings or returned information, such as a paper’s title and authors.
 
-For an existing explanation, read only “No, really, what is JSON?” in [MDN’s JSON introduction](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON#no_really_what_is_json). The later JavaScript programming exercises are outside this preparation class.
+For an existing explanation, read “No, really, what is JSON?” and the first example under “JSON structure” in [MDN’s JSON introduction](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON#no_really_what_is_json). Open the authors’ unchanged local [superheroes.json](materials/mdn-json/superheroes.json): find `squadName` (a text value), `formed` (a number), and `active` (true/false). The `members` section is a list in square brackets; you can leave its details for later. [Example source and license](materials/mdn-json/SOURCE.md). The later JavaScript programming exercises are outside this preparation class.
 
 **Try and compare:** In your copied folder, open the TXT, CSV, and JSON examples in VS Code. Find `M-02` and `figure.svg` in all three. In your copy of the TXT file, change `M-02` to `M-03`, save, and reopen it. In the CSV, point to the column names and one record; in the JSON, point to a name and its value. All three can describe the same sample, but the rules for arranging the text differ. Changing a filename extension does not rewrite those contents into a new format.
 

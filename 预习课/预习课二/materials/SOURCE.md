@@ -7,3 +7,7 @@ The class-created files in this folder are two short Markdown notes, two version
 The bibliographic record in `paper-record.en.md` and `paper-record.zh.md` names a real publication and links to its DOI and original publisher page. It includes only identifying metadata. The `markdown-guide/` folder contains a reused Markdown Guide cheat sheet and its course translation; see its [source and changes](markdown-guide/SOURCE.md). Other external teaching references point to their original pages. No third-party research paper or paper image is redistributed here.
 
 `paper-record.en.md` 和 `paper-record.zh.md` 记录真实文献的题名、作者、年份、DOI 与出版方原始页面，仅含识别文献所需的元数据。`markdown-guide/` 收录复用的 Markdown Guide 语法速查及课程译文，详见其[来源与改动](markdown-guide/SOURCE.md)。其余外部教学参考资料链接到原始页面；这里没有重新分发第三方科研论文的正文或图片。
+
+Additional reused resources: [Data Carpentry CSV excerpt and translation](data-carpentry/SOURCE.md) (CC BY 4.0) and the [MDN JSON example](mdn-json/SOURCE.md) (CC0). Apple, MDN article text, the encoding chapter, and VS Code instructions are linked to their original pages.
+
+新增复用资料：[Data Carpentry CSV 原文选段及译文](data-carpentry/SOURCE.md)（CC BY 4.0）、[MDN JSON 示例](mdn-json/SOURCE.md)（CC0）。苹果说明、MDN 教程正文、编码章节及 VS Code 操作说明使用原站链接。
