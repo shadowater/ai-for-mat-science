@@ -16,6 +16,8 @@ A **file** is a saved item, such as a note, picture, or PDF. Its **name** helps 
 
 A **folder** holds files and other folders. A **path** tells you where an item is. The path `materials/figure.svg` starts from this guide's folder, so it is a **relative path**. A path starting from a computer's root or drive, such as `C:\Users\...` or `/Users/...`, is an **absolute path**. Relative paths make a folder easier to move as a whole.
 
+For a fuller explanation with pictures, the authors Hans Wan and Windy Deng discuss file names, types, folders, paths, and opening files in [*The Computer Class You Missed*: “Files and File Management”](https://www.criwits.top/missing/file-and-file-management.html) (Chinese). If you read Chinese, focus on the sections about **file names and types** and **folders and paths**; the rest is optional. The [SI100+ 2024 computer basics slides](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md) from class 1 also give a short recap of file extensions. Choose the explanation that fills your gap, then use the exercise below to check the idea on your own files.
+
 Open the whole `预习课二` folder in VS Code (File → Open Folder), as in preparation class 1. In its file list, find [`figure.svg`](materials/figure.svg), [`sample.csv`](materials/sample.csv), and [`sample.json`](materials/sample.json). **CSV** is text arranged into rows and columns; **JSON** is text arranged as named pieces of information. You only need to recognize these as file types here. Their scientific use comes later.
 
 **Try it:** Copy the whole `预习课二` folder to a new location and open the copy. Click the [`figure.svg` link](materials/figure.svg) from this guide in the copy. It should still find the figure. If a link fails, check that `materials` moved with `README.md` and `README.zh.md`. Keep the original folder as your reference.
@@ -24,9 +26,13 @@ Open the whole `预习课二` folder in VS Code (File → Open Folder), as in pr
 
 **Markdown** is plain text with small marks that a viewer can turn into headings, lists, links, and images. You saw a heading and a link in class 1. A **source file** is the text you edit; a **preview** shows how a viewer displays it. Both refer to the same saved note.
 
+Use the [Markdown Guide's basic syntax page](https://www.markdownguide.org/basic-syntax/) as a reference when you forget a heading, list, link, or image mark. You only need the marks used in your note.
+
 Open [`materials/note.en.md`](materials/note.en.md) in your copied folder. Save another copy as `my-note.md` **inside `materials`**. Change its sample name, add one list item, and make sure its link to `figure.svg` works. To show an image inside a note, use `![short description](figure.svg)`. The description tells a reader what the picture shows if the picture is unavailable. To point to a file without embedding it, use `[figure](figure.svg)`.
 
 LaTeX is a way to describe the structure and equations of a document using text commands. Some Markdown viewers can also display formulas written with LaTeX-style symbols. In the note, change the inline formula `$A=\pi r^2$` to `$d=2r$`. The dollar signs mark a formula in this viewer; `\pi` means π, and `^2` means “squared.” Keep the `$` signs. You can put a longer formula on its own lines between `$$` marks. In VS Code, use the Markdown preview (Windows/Linux: **Ctrl+Shift+V**; macOS: **Shift+Command+V**) to compare the source and display. If another viewer shows the dollar signs as plain text, check its math support; your source file is still valid Markdown text. The [VS Code Markdown guide](https://code.visualstudio.com/docs/languages/markdown) describes its preview and math display.
+
+The local [formula quick reference](materials/math-in-markdown.en.md) shows inline and separate-line formulas, powers, subscripts, Greek letters, fractions, roots, and units. Try its two short actions in your copied note; keep the table for later lookup. [GitHub's math guide](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions) describes how the same style is displayed in this repository.
 
 In a LaTeX paper source, commands such as `\section{Methods}`, `\includegraphics{figure.png}`, and `\cite{paper-key}` have different jobs: a heading, an image, and a reference. The backslash starts a command; braces hold its input. You only need to recognize this pattern. You do not need to create or compile a LaTeX paper now.
 
@@ -45,11 +51,11 @@ Read the local [paper record](materials/paper-record.en.md), then open its link 
 ## Check yourself
 
 - Can you still open the figure link after moving the **whole folder**?
-- Does your edited note show a heading, a list, a local image, and `$d=2r$` in the VS Code preview?
+- Does your edited note show a heading, a list, a local image, `$d=2r$`, and your separate-line formula in the VS Code preview?
 - Can you explain the difference between the two PDFs, and can you find the paper's DOI and publisher page?
 
 If a step fails, keep the file name and the exact error or behavior. You can use the search and help method from preparation class 1. These checks are for your own learning; there is no required hand-in.
 
 ## Sources and credit
 
-The notes, figure, small data files, and two PDFs in `materials/` were made for this class; the PDF pages contain fictional sample text. External explanations and the real paper are linked to their original pages: [VS Code Markdown](https://code.visualstudio.com/docs/languages/markdown), [Adobe on OCR](https://helpx.adobe.com/ae_en/acrobat/desktop/create-documents/scan-documents-to-pdfs/recognize-text.html), [DOI Foundation](https://www.doi.org/the-identifier/what-is-a-doi/), [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/), and the publisher page in the [paper record](materials/paper-record.en.md). No third-party article text or images are included in this folder.
+The notes, formula sheet, figure, small data files, and two PDFs in `materials/` were made for this class; the PDF pages contain fictional sample text. External explanations and the real paper are linked to their original pages: [*The Computer Class You Missed* by Hans Wan and Windy Deng](https://www.criwits.top/missing/file-and-file-management.html), [SI100+ 2024 slides](https://github.com/teafrogsf/SI100Plus/blob/58ee452e61b462cc70127e8bcc851bb2e022a0b3/Lecture_i_Basic_Knowledge/Lecture_i_Basic_Knowledge.md), [Markdown Guide](https://www.markdownguide.org/basic-syntax/), [VS Code Markdown](https://code.visualstudio.com/docs/languages/markdown), [GitHub math](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions), [Adobe on OCR](https://helpx.adobe.com/ae_en/acrobat/desktop/create-documents/scan-documents-to-pdfs/recognize-text.html), [DOI Foundation](https://www.doi.org/the-identifier/what-is-a-doi/), [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/), and the publisher page in the [paper record](materials/paper-record.en.md). No third-party article text or images are included in this folder.
