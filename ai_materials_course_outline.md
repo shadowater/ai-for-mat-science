@@ -23,12 +23,12 @@ Agent 在本课程中指围绕目标使用模型与工具、根据执行结果�
 | 预习 | 内容 | 定位 |
 |---|---|---|
 | 一 | 搜索与求助、计算机基础、用 VS Code 阅读 Markdown | 已有双语学生材料 |
-| 二 | 文件与路径、文本与 Markdown、CSV/JSON、曲线数据、PDF/文献信息、LaTeX 初步 | 共同基础：理解概念并尝试简单动作 |
-| 三 | 图像与颜色、坐标与比例尺、软件与网络、API、环境概念；AI/机器学习/LLM 原理；Agent 与 harness；常见模型与工具 | 共同基础：按短单元学习，正式第一课回顾和答疑 |
-| 四 | Python 变量、类型、列表与字典、条件和循环、最少终端操作 | 选学：帮助读懂和修改短程序 |
-| 五 | Python 函数、模块、文件读写、简单绘图和结果检查 | 选学：体验完整的数据处理过程 |
+| 二 | 文件与路径、Markdown 与少量 LaTeX 语法、PDF 和文献来源；可选了解 Overleaf 与期刊模板 | 共同基础：辨认文件并修改简短说明 |
+| 三 | 图像与颜色、坐标与比例尺；AI/机器学习/LLM 原理；Agent 与 harness；常见模型与工具；图像识别任务可选了解 | 共同基础：按短单元学习，正式第一课回顾和答疑 |
+| 四 | 软件运行与本地环境、Python 变量、类型、列表与字典、条件和循环、最少终端操作 | 选学：帮助读懂和修改短程序 |
+| 五 | Python 函数、模块、文件读写、简单绘图和结果检查；网页、远程服务与 API 示例 | 选学：体验完整的数据处理过程 |
 
-详细内容见[预习课二至五规划](预习课/后续四次预习课规划.md)。预习三结束前收集课程通知中已有的科研任务构想，供教师选择案例。选学 Python 不设为参加正式课的前置考核；正式课提供可运行示例，允许学生在 Agent 协助下完成实践。
+详细内容见[预习课规划](预习课/预习课规划.md)。预习三结束前收集课程通知中已有的科研任务构想，供教师选择案例。选学 Python 不设为参加正式课的前置考核；正式课提供可运行示例，允许学生在 Agent 协助下完成实践。
 
 ## 四、正式课内容
 
@@ -57,7 +57,7 @@ Agent 在本课程中指围绕目标使用模型与工具、根据执行结果�
 - **Agent 与 harness**：模型提供生成和决策能力；harness 是组织模型调用、上下文、工具执行、权限、记录和任务循环的软件支撑；Agent 是这些部分协同工作形成的任务系统。各产品实现有所不同。
 - **常见模型与工具**：认识 GPT、Claude、Gemini、Qwen、DeepSeek 等模型系列；认识 Codex CLI、Claude Code、Gemini CLI、VS Code 中的 Copilot 等 Agent 入口或 harness。理解“换模型”和“换工具环境”分别改变什么，具体版本和课堂主工具在开课前确认。
 
-概念学习在预习三完成初步认识，正式第一课通过演示和提问巩固。模型与 harness 的详细示例及官方出处见[预习规划](预习课/后续四次预习课规划.md)。
+概念学习在预习三完成初步认识，正式第一课通过演示和提问巩固。模型与 harness 的详细示例及官方出处见[预习规划](预习课/预习课规划.md)。
 
 ## 六、统一运行环境的候选方案
 
@@ -72,7 +72,7 @@ Agent 在本课程中指围绕目标使用模型与工具、根据执行结果�
 
 Docker 能为本课程提供 Linux 工具环境，但容器本身不是完整的独立操作系统或传统虚拟机。模型调用的位置也要单独说明：Agent CLI 在本机容器中运行时，模型仍可能由云端服务提供。
 
-预习二、三了解环境概念；选学四、五的学生按提供的入口练习 Python；正式第一课统一完成或复核 Agent 的安装、登录和运行。没有完成 Python 选学的学生也应能按统一操作指南进入课堂环境。技术依据见 [Docker 容器说明](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/)、[文件夹映射](https://docs.docker.com/engine/storage/bind-mounts/)及 [JupyterHub](https://jupyterhub.readthedocs.io/en/stable/)。
+选学四、五结合 Python 操作认识本地环境与网络服务；正式第一课统一完成或复核 Agent 的安装、登录和运行。没有完成 Python 选学的学生也应能按统一操作指南进入课堂环境。技术依据见 [Docker 容器说明](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/)、[文件夹映射](https://docs.docker.com/engine/storage/bind-mounts/)及 [JupyterHub](https://jupyterhub.readthedocs.io/en/stable/)。
 
 ## 七、学习成果与待定事项
 
