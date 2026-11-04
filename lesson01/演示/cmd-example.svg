@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Windows CMD：新建文件夹并改名</title><desc id="desc">教学示意。mkdir lesson-demo 创建文件夹，ren lesson-demo lesson-data 改名。</desc>
+<rect width="1200" height="620" rx="24" fill="#102030"/>
+<g font-family="sans-serif" fill="#edf5ff"><text x="60" y="75" font-size="32">用两行命令完成一个文件夹操作</text><text x="60" y="115" font-size="21" fill="#a8bfd3">Windows CMD · 教学示意，非现场运行截图</text></g>
+<rect x="50" y="150" width="1100" height="225" rx="12" fill="#070e16"/>
+<g font-family="monospace" fill="#8ce4ba" font-size="30"><text x="80" y="225">C:\course&gt;mkdir lesson-demo</text><text x="80" y="310">C:\course&gt;ren lesson-demo lesson-data</text></g>
+<g font-family="sans-serif" fill="#edf5ff" font-size="26"><text x="65" y="435">① 创建 lesson-demo</text><text x="65" y="485">② 改名为 lesson-data</text><text x="65" y="555" font-size="23" fill="#a8bfd3">在文件浏览器中观察结果：操作相同，表达方式不同。</text></g></svg>

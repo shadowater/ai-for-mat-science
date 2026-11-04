@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+<title id="title">你是 0，我是 1，携手共创计算机</title><desc id="desc">以两个大号数字和中文文字呈现二进制课堂梗。</desc>
+<rect width="1000" height="460" rx="28" fill="#edf5ff"/>
+<text x="260" y="235" font-family="monospace" font-size="200" font-weight="bold" fill="#176b8f">0</text>
+<text x="610" y="235" font-family="monospace" font-size="200" font-weight="bold" fill="#9551b5">1</text>
+<path d="M410 170 H585" stroke="#f6b44e" stroke-width="12" stroke-linecap="round"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#17324b"><text x="500" y="315" font-size="36">你是 0，我是 1</text><text x="500" y="375" font-size="40" font-weight="bold">携手共创计算机</text><text x="500" y="425" font-size="19">0 和 1 是逻辑值，由电路中的可区分状态表示。</text></g></svg>
