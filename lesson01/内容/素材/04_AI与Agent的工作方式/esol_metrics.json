@@ -1,0 +1,13 @@
+{
+  "source_file": "ci034243x_si_001.txt",
+  "source_sha256": "c12da8daa5b6867794c925b7df64d4c883f3f9bc1799a5ae9113bc3f586b3899",
+  "source_doi": "10.1021/ci034243x",
+  "evaluation_scope": "Small training subset; original measured/predicted columns; no refitting",
+  "sample_count": 1144,
+  "aae_log10": 0.6944676573426574,
+  "rmse_log10": 0.9065054072214233,
+  "r2_definition": "1 - sum((predicted-measured)^2) / sum((measured-mean(measured))^2)",
+  "r2": 0.8128757557709796,
+  "within_one_log10_count": 874,
+  "within_one_log10_fraction": 0.763986013986014
+}

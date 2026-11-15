@@ -1,23 +1,93 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>真实化学测量数据中的三种机器学习方法</title>
-<style>
-:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#182e3e;background:#eef3f6}*{box-sizing:border-box}body{max-width:1100px;padding:24px;margin:auto}h1{font-size:28px;margin:0 0 10px}h2{font-size:19px}p{line-height:1.7}.muted{color:#526b7a}.grid{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}.card{padding:20px;background:white;border:1px solid #d6e1e7;border-radius:14px;margin-bottom:18px}svg{width:100%;height:auto;display:block}label{display:block;margin:16px 0}select,button{font:inherit;border:1px solid #a3bdca;padding:10px;border-radius:8px;background:white}select{max-width:100%}button{cursor:pointer;margin:4px 4px 4px 0}button.primary{background:#075f70;color:white}button:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid #e49123;outline-offset:3px}.metrics{display:flex;gap:24px;flex-wrap:wrap}.metrics strong{display:block;font-size:23px;color:#075f70}#status{min-height:3.6em}#history{font-variant-numeric:tabular-nums;max-height:165px;overflow:auto}@media(max-width:800px){.grid{grid-template-columns:1fr}body{padding:12px}h1{font-size:23px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>聚类、降维与分类 · Wine 数据演示</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>真实化学测量数据中的三种机器学习方法</h1>
-<p class="muted">使用 <a href="https://archive.ics.uci.edu/dataset/109/wine">UCI Wine 数据集</a>的 178 个样品。K-Means 展示无标签分组，PCA 展示二维投影，SVM 展示利用已知品种类别得到的分类边界。</p>
-<main class="grid">
-<section class="card"><h2>动画</h2><svg id="plot" viewBox="0 0 600 520" role="img" aria-label="酒类样品的散点图与机器学习方法的动画结果"></svg><p id="detail" class="muted"></p></section>
-<section>
-<div class="card"><h2>选择方法</h2><label for="method">演示内容 <select id="method"><option value="kmeans">K-Means：按相似程度分组</option><option value="pca">PCA：投影到两个主要方向</option><option value="svm">SVM：根据已知类别划分边界</option></select></label><p id="description"></p><div><button id="play" class="primary">播放动画</button><button id="pause" disabled>暂停</button><button id="reset">重置</button></div><p id="status" role="status" aria-live="polite"></p><div class="metrics"><div>数据<strong id="count"></strong></div><div>进度<strong id="step"></strong></div><div id="metricBox">分组目标<strong id="metric"></strong></div></div></div>
-<div class="card" id="historyBox"><h2>K-Means 更新记录</h2><div id="history"></div></div>
-<div class="card"><h2>数据说明</h2><p>动画取数据集中的酒精和苹果酸测量值；K-Means 对这两列做标准化后计算距离。PCA 对全部 13 项化学指标标准化后投影到二维。SVM 使用这个二维投影及数据集中已有的品种类别。</p><p class="muted">来源：Aeberhard 与 Forina，<a href="https://doi.org/10.24432/C5PC7J">Wine 数据集</a>，UCI Machine Learning Repository，CC BY 4.0。<a href="README.md">数据处理与演示说明</a></p></div>
-</section>
+<header>
+  <p class="eyebrow">材料科学中的人工智能 · 第一次课程</p>
+  <h1>聚类、降维与分类</h1>
+  <p class="muted">用 178 个葡萄酒样品，观察特征选择、数据分组与品种预测。</p>
+</header>
+<main class="workspace">
+  <aside class="card controls" aria-labelledby="settingsTitle">
+    <div class="section-heading"><h2 id="settingsTitle">设置演示</h2><span class="badge">3 个已知品种 · 13 项测量指标</span></div>
+    <label class="method-label" for="method">方法
+      <select id="method">
+        <option value="kmeans">K-Means · 按特征分组</option>
+        <option value="pca">PCA · 保留主要变化</option>
+        <option value="svm">PCA + SVM · 预测品种</option>
+      </select>
+    </label>
+    <div id="featureControls">
+      <fieldset><legend>参与聚类的属性</legend><div id="features"></div></fieldset>
+      <div class="selection-actions"><button id="allFeatures" class="subtle">选择全部 13 项</button><button id="defaultFeatures" class="subtle">恢复酒精与苹果酸</button><span id="featureHint" class="muted" role="status"></span></div>
+    </div>
+    <div id="componentControls" hidden>
+      <label for="components">保留的主成分数 <select id="components"></select></label>
+      <p class="muted">PCA 使用全部 13 项测量指标。此设置同时决定 SVM 的输入维度。</p>
+    </div>
+    <p id="description"></p>
+    <div id="animationControls" class="toolbar">
+      <button id="play" class="primary">播放</button><button id="pause" disabled>暂停</button><button id="singleStep">单步</button><button id="finish">直接查看结果</button><button id="reset">重新开始</button>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </aside>
+
+  <div class="results-column">
+
+  <section class="card" id="resultCard" aria-labelledby="resultTitle">
+    <div class="section-heading"><h2 id="resultTitle">分组过程</h2><span id="dimensionBadge" class="badge"></span></div>
+    <div class="metrics">
+      <div><span>样品数量</span><strong id="count"></strong></div>
+      <div><span id="stepLabel">中心更新</span><strong id="step"></strong></div>
+      <div id="metricBox"><span>组内距离平方和 J</span><strong id="metric"></strong></div>
+    </div>
+    <p id="highDimensional" class="notice" hidden></p>
+    <div id="plots" class="plots">
+      <figure id="mainView"><figcaption id="plotTitle"></figcaption><svg id="plot" viewBox="0 0 600 520" role="img"></svg><div id="plotLegend" class="legend"></div></figure>
+      <figure id="truthView"><figcaption>真实品种 · 相同样品与坐标</figcaption><svg id="truthPlot" viewBox="0 0 600 520" role="img" aria-label="按真实品种标记的样品散点图"></svg><div id="truthLegend" class="legend"></div></figure>
+    </div>
+    <p id="detail" class="muted"></p>
+
+    <section id="comparison">
+      <h3>聚类组别与真实品种对照</h3>
+      <p class="muted">格子记录样品数，底色深浅表示该品种在组内的占比；色条显示各组的品种组成。</p>
+      <div id="compositionLegend" class="legend"></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="聚类与品种对照表">
+        <table><thead><tr><th scope="col">聚类组别</th><th scope="col">品种 1</th><th scope="col">品种 2</th><th scope="col">品种 3</th><th scope="col">总数</th><th scope="col">品种组成</th></tr></thead><tbody id="comparisonBody"></tbody></table>
+      </div>
+      <p id="agreement" class="result-number"></p><p id="mapping"></p><p id="comparisonConclusion"></p>
+      <details><summary>对应比例的计算方式</summary><p>尝试三组与三个品种的全部六种一一配对，取对应样品总数最大的配对，再除以 178。聚类使用所选属性，真实品种用于结果对照。该比例描述本次分组与已有标签的一致程度。</p><p>J 衡量当前属性组合下样品到组中心的距离平方和，适合观察同一组合的迭代过程。更换属性会改变距离尺度。</p></details>
+    </section>
+
+    <section id="modelResults" hidden>
+      <h3>PCA 保留的数据变化</h3><p id="variance" class="result-number"></p>
+      <details><summary>各主成分的解释方差比例</summary><div class="table-scroll"><table><thead><tr><th scope="col">主成分</th><th scope="col">解释方差比例</th></tr></thead><tbody id="varianceRows"></tbody></table></div></details>
+      <div id="svmResults" hidden>
+        <h3>SVM 品种预测</h3><p id="accuracy" class="result-number"></p>
+        <p class="muted">行表示真实品种，列表示预测品种，对角线记录预测正确的样品数量。</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="SVM 品种预测结果表"><table><thead><tr><th scope="col">真实品种</th><th scope="col">预测品种 1</th><th scope="col">预测品种 2</th><th scope="col">预测品种 3</th></tr></thead><tbody id="confusionRows"></tbody></table></div>
+        <p class="notice">这里使用全部 178 个样品训练并展示训练集结果。新样品的预测能力需要通过独立测试数据评估。</p>
+      </div>
+    </section>
+    <div class="save-row"><button id="saveResult">保存当前结果作对比</button><span id="saveHint" class="muted" role="status"></span></div>
+    <details id="historyBox"><summary>K-Means 更新记录</summary><div id="history"></div></details>
+  </section>
+
+  <section class="card" id="savedResults" hidden>
+    <div class="section-heading"><h2>已保存的结果</h2><button id="clearSaved" class="subtle">清空记录</button></div>
+    <p class="muted">记录保留在当前页面，刷新后清空。比较同一种方法的不同设置；聚类对应比例和训练集分类正确率各有含义。</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="不同设置的结果记录"><table><thead><tr><th scope="col">方法</th><th scope="col">设置</th><th scope="col">评价指标</th><th scope="col">结果</th></tr></thead><tbody id="savedRows"></tbody></table></div>
+  </section>
+  </div>
 </main>
+<footer>
+  <details><summary>数据与处理说明</summary><p>K-Means 对所选属性分别标准化，在对应维度中计算距离，并固定分为三组。PCA 对全部 13 项指标标准化，保留所选数量的主成分。SVM 使用这些主成分及真实品种标签。二维时展示散点图，更高维时展示数值结果。</p><p>来源：Aeberhard 与 Forina，<a href="https://doi.org/10.24432/C5PC7J">UCI Wine 数据集</a>，CC BY 4.0。<a href="README.md">完整演示说明</a></p></details>
+</footer>
 <script src="wine-data.js"></script><script src="demo.js"></script>
 </body>
 </html>
