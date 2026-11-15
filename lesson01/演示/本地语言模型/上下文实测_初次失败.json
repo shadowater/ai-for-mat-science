@@ -1,0 +1,116 @@
+{
+  "notice": "真实本地请求与输出。数据为虚构教学记录；失败与猜测均原样保留。",
+  "model": "Qwen3-0.6B Q8_0",
+  "temperature": 0.7,
+  "seed": 42,
+  "cases": [
+    {
+      "case": "没有记录",
+      "messages": [
+        {
+          "role": "user",
+          "content": "教学记录中的样品编号是什么？只写编号，不知道请写不知道。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n教学记录中的样品编号是什么？只写编号，不知道请写不知道。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 28,
+      "answer": "不知道。",
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 28,
+        "total_tokens": 31,
+        "prompt_tokens_details": {
+          "cached_tokens": 1
+        }
+      }
+    },
+    {
+      "case": "带上历史记录",
+      "messages": [
+        {
+          "role": "user",
+          "content": "这是一条虚构的课堂记录，不对应真实实验。\n本次样品编号：Z-731。\n任务：演示模型能否依据本次提供的记录作答。"
+        },
+        {
+          "role": "assistant",
+          "content": "收到记录。"
+        },
+        {
+          "role": "user",
+          "content": "教学记录中的样品编号是什么？只写编号，不知道请写不知道。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n这是一条虚构的课堂记录，不对应真实实验。\n本次样品编号：Z-731。\n任务：演示模型能否依据本次提供的记录作答。<|im_end|>\n<|im_start|>assistant\n收到记录。<|im_end|>\n<|im_start|>user\n教学记录中的样品编号是什么？只写编号，不知道请写不知道。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 76,
+      "answer": "不知道",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 76,
+        "total_tokens": 78,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      }
+    },
+    {
+      "case": "丢掉历史只发末句",
+      "messages": [
+        {
+          "role": "user",
+          "content": "教学记录中的样品编号是什么？只写编号，不知道请写不知道。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n教学记录中的样品编号是什么？只写编号，不知道请写不知道。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 28,
+      "answer": "不知道。",
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 28,
+        "total_tokens": 31,
+        "prompt_tokens_details": {
+          "cached_tokens": 27
+        }
+      }
+    },
+    {
+      "case": "只提供文件名",
+      "messages": [
+        {
+          "role": "user",
+          "content": "请从教学样品记录.txt读取样品编号。只写编号，不知道请写不知道。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n请从教学样品记录.txt读取样品编号。只写编号，不知道请写不知道。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 32,
+      "answer": "不知道",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 32,
+        "total_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      }
+    },
+    {
+      "case": "脚本实际读取文件后提供正文",
+      "messages": [
+        {
+          "role": "user",
+          "content": "以下是程序读取的教学样品记录.txt正文：\n这是一条虚构的课堂记录，不对应真实实验。\n本次样品编号：Z-731。\n任务：演示模型能否依据本次提供的记录作答。\n\n教学记录中的样品编号是什么？只写编号，不知道请写不知道。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n以下是程序读取的教学样品记录.txt正文：\n这是一条虚构的课堂记录，不对应真实实验。\n本次样品编号：Z-731。\n任务：演示模型能否依据本次提供的记录作答。\n\n教学记录中的样品编号是什么？只写编号，不知道请写不知道。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 73,
+      "answer": "不知道",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 73,
+        "total_tokens": 75,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      }
+    }
+  ]
+}

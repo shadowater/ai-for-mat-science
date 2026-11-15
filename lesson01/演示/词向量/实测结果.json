@@ -1,0 +1,540 @@
+{
+  "model": "Qwen3-0.6B Q8_0",
+  "model_sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+  "tensor": "token_embd.weight",
+  "quantization": "Q8_0 dequantized to float32",
+  "shape": [
+    151936,
+    1024
+  ],
+  "token_ids": {
+    "男人": 102015,
+    "女人": 101989,
+    "叔叔": 109569,
+    "阿姨": 107643,
+    "父亲": 102037,
+    "母亲": 102079,
+    "哥哥": 105243,
+    "姐姐": 105341,
+    "弟弟": 106047,
+    "妹妹": 105901,
+    "国王": 107894,
+    "女王": 112086,
+    "男孩": 102760,
+    "女孩": 101339,
+    "他": 42411,
+    "她": 99517,
+    "男": 70108,
+    "女": 57750
+  },
+  "method": "Raw input embedding arithmetic; cosine retrieval over all vocabulary rows; exclude query input tokens. No centering, no PCA, no contextual forward pass.",
+  "relations": [
+    {
+      "pair": [
+        "男人",
+        "女人"
+      ],
+      "difference_cosine_with_man_minus_woman": 1.0,
+      "difference_norm": 0.8050456047058105,
+      "residual_relative_to_mean_difference_norm": 0.0
+    },
+    {
+      "pair": [
+        "叔叔",
+        "阿姨"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.21761108934879303,
+      "difference_norm": 0.935422956943512,
+      "residual_relative_to_mean_difference_norm": 1.2563610076904297
+    },
+    {
+      "pair": [
+        "父亲",
+        "母亲"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.3739045560359955,
+      "difference_norm": 0.7458601593971252,
+      "residual_relative_to_mean_difference_norm": 1.1208000183105469
+    },
+    {
+      "pair": [
+        "哥哥",
+        "姐姐"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.3427671194076538,
+      "difference_norm": 0.78262859582901,
+      "residual_relative_to_mean_difference_norm": 1.1467349529266357
+    },
+    {
+      "pair": [
+        "弟弟",
+        "妹妹"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.1528957337141037,
+      "difference_norm": 0.8060929775238037,
+      "residual_relative_to_mean_difference_norm": 1.301617980003357
+    },
+    {
+      "pair": [
+        "国王",
+        "女王"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.19480763375759125,
+      "difference_norm": 1.0135908126831055,
+      "residual_relative_to_mean_difference_norm": 1.2813302278518677
+    },
+    {
+      "pair": [
+        "男孩",
+        "女孩"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.4242151975631714,
+      "difference_norm": 0.7731492519378662,
+      "residual_relative_to_mean_difference_norm": 1.073654055595398
+    },
+    {
+      "pair": [
+        "他",
+        "她"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.13095514476299286,
+      "difference_norm": 1.131975769996643,
+      "residual_relative_to_mean_difference_norm": 1.342581033706665
+    },
+    {
+      "pair": [
+        "男",
+        "女"
+      ],
+      "difference_cosine_with_man_minus_woman": 0.5560154318809509,
+      "difference_norm": 0.8450759053230286,
+      "residual_relative_to_mean_difference_norm": 0.943292498588562
+    }
+  ],
+  "analogies": [
+    {
+      "query": "阿姨 + 男人 - 女人",
+      "expected": "叔叔",
+      "expected_rank": 1,
+      "expected_cosine": 0.523415207862854,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "阿姨"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 109569,
+          "text": "叔叔",
+          "cosine": 0.523415207862854
+        },
+        {
+          "id": 110136,
+          "text": "大爷",
+          "cosine": 0.43456557393074036
+        },
+        {
+          "id": 105243,
+          "text": "哥哥",
+          "cosine": 0.41529589891433716
+        },
+        {
+          "id": 108128,
+          "text": "男友",
+          "cosine": 0.4071390926837921
+        },
+        {
+          "id": 114783,
+          "text": "男士",
+          "cosine": 0.4048657715320587
+        },
+        {
+          "id": 112212,
+          "text": "大叔",
+          "cosine": 0.4030371606349945
+        },
+        {
+          "id": 102208,
+          "text": "爸爸",
+          "cosine": 0.37996867299079895
+        },
+        {
+          "id": 109114,
+          "text": "男朋友",
+          "cosine": 0.3728253245353699
+        }
+      ]
+    },
+    {
+      "query": "母亲 + 男人 - 女人",
+      "expected": "父亲",
+      "expected_rank": 1,
+      "expected_cosine": 0.6738482713699341,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "母亲"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 102037,
+          "text": "父亲",
+          "cosine": 0.6738482713699341
+        },
+        {
+          "id": 114962,
+          "text": "母親",
+          "cosine": 0.6161748170852661
+        },
+        {
+          "id": 115170,
+          "text": "父親",
+          "cosine": 0.5757128000259399
+        },
+        {
+          "id": 6554,
+          "text": " mother",
+          "cosine": 0.5492802858352661
+        },
+        {
+          "id": 6981,
+          "text": " father",
+          "cosine": 0.5396578311920166
+        },
+        {
+          "id": 103953,
+          "text": "父母",
+          "cosine": 0.5135357975959778
+        },
+        {
+          "id": 26600,
+          "text": " mothers",
+          "cosine": 0.5120229125022888
+        },
+        {
+          "id": 26412,
+          "text": "mother",
+          "cosine": 0.4926636517047882
+        }
+      ]
+    },
+    {
+      "query": "姐姐 + 男人 - 女人",
+      "expected": "哥哥",
+      "expected_rank": 1,
+      "expected_cosine": 0.668199896812439,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "姐姐"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 105243,
+          "text": "哥哥",
+          "cosine": 0.668199896812439
+        },
+        {
+          "id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5199400186538696
+        },
+        {
+          "id": 105901,
+          "text": "妹妹",
+          "cosine": 0.49653688073158264
+        },
+        {
+          "id": 100788,
+          "text": "兄",
+          "cosine": 0.45823559165000916
+        },
+        {
+          "id": 106420,
+          "text": "大哥",
+          "cosine": 0.45132967829704285
+        },
+        {
+          "id": 117999,
+          "text": "舅舅",
+          "cosine": 0.44375404715538025
+        },
+        {
+          "id": 109569,
+          "text": "叔叔",
+          "cosine": 0.4429819881916046
+        },
+        {
+          "id": 99972,
+          "text": "姐",
+          "cosine": 0.4312516748905182
+        }
+      ]
+    },
+    {
+      "query": "妹妹 + 男人 - 女人",
+      "expected": "弟弟",
+      "expected_rank": 2,
+      "expected_cosine": 0.5423744916915894,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "妹妹"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 105243,
+          "text": "哥哥",
+          "cosine": 0.6515622735023499
+        },
+        {
+          "id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5423744916915894
+        },
+        {
+          "id": 105341,
+          "text": "姐姐",
+          "cosine": 0.5031958222389221
+        },
+        {
+          "id": 100788,
+          "text": "兄",
+          "cosine": 0.4936825931072235
+        },
+        {
+          "id": 10641,
+          "text": " brother",
+          "cosine": 0.4400377571582794
+        },
+        {
+          "id": 106420,
+          "text": "大哥",
+          "cosine": 0.43981271982192993
+        },
+        {
+          "id": 108128,
+          "text": "男友",
+          "cosine": 0.4261781871318817
+        },
+        {
+          "id": 117999,
+          "text": "舅舅",
+          "cosine": 0.4172974228858948
+        }
+      ]
+    },
+    {
+      "query": "女王 + 男人 - 女人",
+      "expected": "国王",
+      "expected_rank": 1,
+      "expected_cosine": 0.38844457268714905,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "女王"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 107894,
+          "text": "国王",
+          "cosine": 0.38844457268714905
+        },
+        {
+          "id": 16259,
+          "text": " Queen",
+          "cosine": 0.37811288237571716
+        },
+        {
+          "id": 118156,
+          "text": "男神",
+          "cosine": 0.3705914318561554
+        },
+        {
+          "id": 105106,
+          "text": "男性",
+          "cosine": 0.35895460844039917
+        },
+        {
+          "id": 27906,
+          "text": " queen",
+          "cosine": 0.35840678215026855
+        },
+        {
+          "id": 114783,
+          "text": "男士",
+          "cosine": 0.3485988974571228
+        },
+        {
+          "id": 115591,
+          "text": "男主",
+          "cosine": 0.34612584114074707
+        },
+        {
+          "id": 52006,
+          "text": "Queen",
+          "cosine": 0.3441787362098694
+        }
+      ]
+    },
+    {
+      "query": "女孩 + 男人 - 女人",
+      "expected": "男孩",
+      "expected_rank": 1,
+      "expected_cosine": 0.7004998922348022,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "女孩"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 102760,
+          "text": "男孩",
+          "cosine": 0.7004998922348022
+        },
+        {
+          "id": 118842,
+          "text": "男孩子",
+          "cosine": 0.5622827410697937
+        },
+        {
+          "id": 105571,
+          "text": "男生",
+          "cosine": 0.5489978194236755
+        },
+        {
+          "id": 104253,
+          "text": "男子",
+          "cosine": 0.5202465653419495
+        },
+        {
+          "id": 105106,
+          "text": "男性",
+          "cosine": 0.5036093592643738
+        },
+        {
+          "id": 111374,
+          "text": "的女孩",
+          "cosine": 0.4999614655971527
+        },
+        {
+          "id": 13007,
+          "text": " boys",
+          "cosine": 0.4846048951148987
+        },
+        {
+          "id": 7571,
+          "text": " girls",
+          "cosine": 0.4807334542274475
+        }
+      ]
+    },
+    {
+      "query": "她 + 男人 - 女人",
+      "expected": "他",
+      "expected_rank": 34,
+      "expected_cosine": 0.3698984682559967,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "她"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 104007,
+          "text": "她的",
+          "cosine": 0.6432603597640991
+        },
+        {
+          "id": 1340,
+          "text": " she",
+          "cosine": 0.6291107535362244
+        },
+        {
+          "id": 1059,
+          "text": " her",
+          "cosine": 0.6149325370788574
+        },
+        {
+          "id": 108333,
+          "text": "她在",
+          "cosine": 0.6135059595108032
+        },
+        {
+          "id": 107852,
+          "text": "她是",
+          "cosine": 0.5482981204986572
+        },
+        {
+          "id": 2932,
+          "text": " She",
+          "cosine": 0.5392691493034363
+        },
+        {
+          "id": 7941,
+          "text": "She",
+          "cosine": 0.5327801704406738
+        },
+        {
+          "id": 110204,
+          "text": "但她",
+          "cosine": 0.5262261033058167
+        }
+      ]
+    },
+    {
+      "query": "女 + 男人 - 女人",
+      "expected": "男",
+      "expected_rank": 1,
+      "expected_cosine": 0.7160341739654541,
+      "excluded_input_words": [
+        "男人",
+        "女人",
+        "女"
+      ],
+      "nearest_tokens": [
+        {
+          "id": 70108,
+          "text": "男",
+          "cosine": 0.7160341739654541
+        },
+        {
+          "id": 8593,
+          "text": " male",
+          "cosine": 0.5848547220230103
+        },
+        {
+          "id": 105106,
+          "text": "男性",
+          "cosine": 0.5579366683959961
+        },
+        {
+          "id": 36421,
+          "text": "Male",
+          "cosine": 0.5198416113853455
+        },
+        {
+          "id": 19396,
+          "text": " Male",
+          "cosine": 0.5176489353179932
+        },
+        {
+          "id": 105571,
+          "text": "男生",
+          "cosine": 0.49075716733932495
+        },
+        {
+          "id": 36476,
+          "text": "male",
+          "cosine": 0.47561198472976685
+        },
+        {
+          "id": 104253,
+          "text": "男子",
+          "cosine": 0.4727398753166199
+        }
+      ]
+    }
+  ]
+}

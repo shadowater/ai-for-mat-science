@@ -1,0 +1,7039 @@
+{
+  "model": "Qwen3-0.6B Q8_0",
+  "tensor": "token_embd.weight",
+  "shape": [
+    151936,
+    1024
+  ],
+  "method": "Raw input embedding offsets; cosine retrieval over full vocabulary excluding three query tokens. No averaging split words, no contextual forward pass, no PCA.",
+  "source_categories": "https://github.com/tmikolov/word2vec/blob/master/questions-words.txt",
+  "notice": "Selected classroom probes, including Chinese adaptations and exploratory antonyms/languages; not the original full benchmark or a general model accuracy estimate. Leading spaces in English are part of token identity.",
+  "matrix_seconds": 0.4274047970538959,
+  "total_seconds": 8.379765963065438,
+  "tokenization": {
+    "中国": [
+      {
+        "id": 58695,
+        "piece": "中国"
+      }
+    ],
+    "北京": [
+      {
+        "id": 68990,
+        "piece": "北京"
+      }
+    ],
+    "日本": [
+      {
+        "id": 101059,
+        "piece": "日本"
+      }
+    ],
+    "东京": [
+      {
+        "id": 107513,
+        "piece": "东京"
+      }
+    ],
+    "法国": [
+      {
+        "id": 104328,
+        "piece": "法国"
+      }
+    ],
+    "巴黎": [
+      {
+        "id": 106004,
+        "piece": "巴黎"
+      }
+    ],
+    "德国": [
+      {
+        "id": 104114,
+        "piece": "德国"
+      }
+    ],
+    "柏林": [
+      {
+        "id": 114121,
+        "piece": "柏林"
+      }
+    ],
+    "英国": [
+      {
+        "id": 104025,
+        "piece": "英国"
+      }
+    ],
+    "伦敦": [
+      {
+        "id": 107074,
+        "piece": "伦敦"
+      }
+    ],
+    "意大利": [
+      {
+        "id": 105101,
+        "piece": "意大利"
+      }
+    ],
+    "罗马": [
+      {
+        "id": 107070,
+        "piece": "罗马"
+      }
+    ],
+    "俄罗斯": [
+      {
+        "id": 104084,
+        "piece": "俄罗斯"
+      }
+    ],
+    "莫斯科": [
+      {
+        "id": 112969,
+        "piece": "莫斯科"
+      }
+    ],
+    "西班牙": [
+      {
+        "id": 105576,
+        "piece": "西班牙"
+      }
+    ],
+    "马德里": [
+      {
+        "id": 99313,
+        "piece": "马"
+      },
+      {
+        "id": 99462,
+        "piece": "德"
+      },
+      {
+        "id": 69249,
+        "piece": "里"
+      }
+    ],
+    "China": [
+      {
+        "id": 22282,
+        "piece": "China"
+      }
+    ],
+    "Beijing": [
+      {
+        "id": 3430,
+        "piece": "Be"
+      },
+      {
+        "id": 23649,
+        "piece": "ijing"
+      }
+    ],
+    "Japan": [
+      {
+        "id": 48752,
+        "piece": "Japan"
+      }
+    ],
+    "Tokyo": [
+      {
+        "id": 52854,
+        "piece": "Tok"
+      },
+      {
+        "id": 16032,
+        "piece": "yo"
+      }
+    ],
+    "France": [
+      {
+        "id": 49000,
+        "piece": "France"
+      }
+    ],
+    "Paris": [
+      {
+        "id": 59604,
+        "piece": "Paris"
+      }
+    ],
+    "Germany": [
+      {
+        "id": 50170,
+        "piece": "Germany"
+      }
+    ],
+    "Berlin": [
+      {
+        "id": 94409,
+        "piece": "Berlin"
+      }
+    ],
+    "cat": [
+      {
+        "id": 4616,
+        "piece": "cat"
+      }
+    ],
+    "cats": [
+      {
+        "id": 37452,
+        "piece": "cats"
+      }
+    ],
+    "dog": [
+      {
+        "id": 18457,
+        "piece": "dog"
+      }
+    ],
+    "dogs": [
+      {
+        "id": 80034,
+        "piece": "dogs"
+      }
+    ],
+    "car": [
+      {
+        "id": 6918,
+        "piece": "car"
+      }
+    ],
+    "cars": [
+      {
+        "id": 50708,
+        "piece": "cars"
+      }
+    ],
+    " walk": [
+      {
+        "id": 4227,
+        "piece": " walk"
+      }
+    ],
+    " walking": [
+      {
+        "id": 11435,
+        "piece": " walking"
+      }
+    ],
+    " run": [
+      {
+        "id": 1598,
+        "piece": " run"
+      }
+    ],
+    " running": [
+      {
+        "id": 4303,
+        "piece": " running"
+      }
+    ],
+    " swim": [
+      {
+        "id": 16191,
+        "piece": " swim"
+      }
+    ],
+    " swimming": [
+      {
+        "id": 23380,
+        "piece": " swimming"
+      }
+    ],
+    " big": [
+      {
+        "id": 2409,
+        "piece": " big"
+      }
+    ],
+    " bigger": [
+      {
+        "id": 11243,
+        "piece": " bigger"
+      }
+    ],
+    " small": [
+      {
+        "id": 2613,
+        "piece": " small"
+      }
+    ],
+    " smaller": [
+      {
+        "id": 9155,
+        "piece": " smaller"
+      }
+    ],
+    " cold": [
+      {
+        "id": 9255,
+        "piece": " cold"
+      }
+    ],
+    " colder": [
+      {
+        "id": 75114,
+        "piece": " colder"
+      }
+    ],
+    " happy": [
+      {
+        "id": 6247,
+        "piece": " happy"
+      }
+    ],
+    " happier": [
+      {
+        "id": 43367,
+        "piece": " happier"
+      }
+    ],
+    " good": [
+      {
+        "id": 1661,
+        "piece": " good"
+      }
+    ],
+    " better": [
+      {
+        "id": 2664,
+        "piece": " better"
+      }
+    ],
+    " bad": [
+      {
+        "id": 3873,
+        "piece": " bad"
+      }
+    ],
+    " worse": [
+      {
+        "id": 10960,
+        "piece": " worse"
+      }
+    ],
+    " quick": [
+      {
+        "id": 3974,
+        "piece": " quick"
+      }
+    ],
+    " quickly": [
+      {
+        "id": 6157,
+        "piece": " quickly"
+      }
+    ],
+    " slow": [
+      {
+        "id": 6301,
+        "piece": " slow"
+      }
+    ],
+    " slowly": [
+      {
+        "id": 13970,
+        "piece": " slowly"
+      }
+    ],
+    "女人": [
+      {
+        "id": 101989,
+        "piece": "女人"
+      }
+    ],
+    "男人": [
+      {
+        "id": 102015,
+        "piece": "男人"
+      }
+    ],
+    "母亲": [
+      {
+        "id": 102079,
+        "piece": "母亲"
+      }
+    ],
+    "父亲": [
+      {
+        "id": 102037,
+        "piece": "父亲"
+      }
+    ],
+    "姐姐": [
+      {
+        "id": 105341,
+        "piece": "姐姐"
+      }
+    ],
+    "哥哥": [
+      {
+        "id": 105243,
+        "piece": "哥哥"
+      }
+    ],
+    "妹妹": [
+      {
+        "id": 105901,
+        "piece": "妹妹"
+      }
+    ],
+    "弟弟": [
+      {
+        "id": 106047,
+        "piece": "弟弟"
+      }
+    ],
+    "女王": [
+      {
+        "id": 112086,
+        "piece": "女王"
+      }
+    ],
+    "国王": [
+      {
+        "id": 107894,
+        "piece": "国王"
+      }
+    ],
+    "公主": [
+      {
+        "id": 105454,
+        "piece": "公主"
+      }
+    ],
+    "王子": [
+      {
+        "id": 107311,
+        "piece": "王子"
+      }
+    ],
+    "妻子": [
+      {
+        "id": 102375,
+        "piece": "妻子"
+      }
+    ],
+    "丈夫": [
+      {
+        "id": 104683,
+        "piece": "丈夫"
+      }
+    ],
+    "妈妈": [
+      {
+        "id": 101935,
+        "piece": "妈妈"
+      }
+    ],
+    "爸爸": [
+      {
+        "id": 102208,
+        "piece": "爸爸"
+      }
+    ],
+    "女儿": [
+      {
+        "id": 102126,
+        "piece": "女儿"
+      }
+    ],
+    "儿子": [
+      {
+        "id": 102067,
+        "piece": "儿子"
+      }
+    ],
+    "大": [
+      {
+        "id": 26288,
+        "piece": "大"
+      }
+    ],
+    "小": [
+      {
+        "id": 30709,
+        "piece": "小"
+      }
+    ],
+    "长": [
+      {
+        "id": 45861,
+        "piece": "长"
+      }
+    ],
+    "短": [
+      {
+        "id": 99534,
+        "piece": "短"
+      }
+    ],
+    "高": [
+      {
+        "id": 44636,
+        "piece": "高"
+      }
+    ],
+    "低": [
+      {
+        "id": 99285,
+        "piece": "低"
+      }
+    ],
+    "热": [
+      {
+        "id": 99259,
+        "piece": "热"
+      }
+    ],
+    "冷": [
+      {
+        "id": 99476,
+        "piece": "冷"
+      }
+    ],
+    "快": [
+      {
+        "id": 99234,
+        "piece": "快"
+      }
+    ],
+    "慢": [
+      {
+        "id": 99843,
+        "piece": "慢"
+      }
+    ],
+    "法语": [
+      {
+        "id": 24339,
+        "piece": "法"
+      },
+      {
+        "id": 72881,
+        "piece": "语"
+      }
+    ],
+    "德语": [
+      {
+        "id": 99462,
+        "piece": "德"
+      },
+      {
+        "id": 72881,
+        "piece": "语"
+      }
+    ],
+    "日语": [
+      {
+        "id": 8903,
+        "piece": "日"
+      },
+      {
+        "id": 72881,
+        "piece": "语"
+      }
+    ],
+    "韩国": [
+      {
+        "id": 102083,
+        "piece": "韩国"
+      }
+    ],
+    "韩语": [
+      {
+        "id": 101129,
+        "piece": "韩"
+      },
+      {
+        "id": 72881,
+        "piece": "语"
+      }
+    ]
+  },
+  "results": [
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "日本",
+      "expected": "东京",
+      "query": "北京 - 中国 + 日本",
+      "expected_rank": 4,
+      "difference_cosine": 0.2790786623954773,
+      "nearest": [
+        {
+          "token_id": 6323,
+          "text": " Japan",
+          "cosine": 0.47565433382987976
+        },
+        {
+          "token_id": 26194,
+          "text": " Tokyo",
+          "cosine": 0.4690612554550171
+        },
+        {
+          "token_id": 48752,
+          "text": "Japan",
+          "cosine": 0.45875102281570435
+        },
+        {
+          "token_id": 107513,
+          "text": "东京",
+          "cosine": 0.43635010719299316
+        },
+        {
+          "token_id": 104554,
+          "text": "北京市",
+          "cosine": 0.41327378153800964
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "法国",
+      "expected": "巴黎",
+      "query": "北京 - 中国 + 法国",
+      "expected_rank": 1,
+      "difference_cosine": 0.2916167378425598,
+      "nearest": [
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.516787588596344
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.49002203345298767
+        },
+        {
+          "token_id": 49000,
+          "text": "France",
+          "cosine": 0.4823611378669739
+        },
+        {
+          "token_id": 140932,
+          "text": "フランス",
+          "cosine": 0.44489413499832153
+        },
+        {
+          "token_id": 59604,
+          "text": "Paris",
+          "cosine": 0.4241001009941101
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "德国",
+      "expected": "柏林",
+      "query": "北京 - 中国 + 德国",
+      "expected_rank": 5,
+      "difference_cosine": 0.26985761523246765,
+      "nearest": [
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.5127152800559998
+        },
+        {
+          "token_id": 50170,
+          "text": "Germany",
+          "cosine": 0.5059689879417419
+        },
+        {
+          "token_id": 142765,
+          "text": "ドイツ",
+          "cosine": 0.4979555904865265
+        },
+        {
+          "token_id": 19846,
+          "text": " Berlin",
+          "cosine": 0.49487897753715515
+        },
+        {
+          "token_id": 114121,
+          "text": "柏林",
+          "cosine": 0.4683687388896942
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "英国",
+      "expected": "伦敦",
+      "query": "北京 - 中国 + 英国",
+      "expected_rank": 3,
+      "difference_cosine": 0.281369149684906,
+      "nearest": [
+        {
+          "token_id": 117741,
+          "text": "英國",
+          "cosine": 0.5265366435050964
+        },
+        {
+          "token_id": 7148,
+          "text": " London",
+          "cosine": 0.5224279761314392
+        },
+        {
+          "token_id": 107074,
+          "text": "伦敦",
+          "cosine": 0.5222151875495911
+        },
+        {
+          "token_id": 39572,
+          "text": "London",
+          "cosine": 0.4934581518173218
+        },
+        {
+          "token_id": 13224,
+          "text": " Britain",
+          "cosine": 0.4850694537162781
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "意大利",
+      "expected": "罗马",
+      "query": "北京 - 中国 + 意大利",
+      "expected_rank": 90,
+      "difference_cosine": 0.08347733318805695,
+      "nearest": [
+        {
+          "token_id": 15344,
+          "text": " Italy",
+          "cosine": 0.46549561619758606
+        },
+        {
+          "token_id": 70503,
+          "text": "Italy",
+          "cosine": 0.46547931432724
+        },
+        {
+          "token_id": 100633,
+          "text": "上海",
+          "cosine": 0.3982798457145691
+        },
+        {
+          "token_id": 96233,
+          "text": " Italians",
+          "cosine": 0.39215052127838135
+        },
+        {
+          "token_id": 69111,
+          "text": "Italian",
+          "cosine": 0.39035409688949585
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "query": "北京 - 中国 + 俄罗斯",
+      "expected_rank": 2,
+      "difference_cosine": 0.25077199935913086,
+      "nearest": [
+        {
+          "token_id": 8359,
+          "text": " Russia",
+          "cosine": 0.500593900680542
+        },
+        {
+          "token_id": 112969,
+          "text": "莫斯科",
+          "cosine": 0.4944091737270355
+        },
+        {
+          "token_id": 44506,
+          "text": "Russia",
+          "cosine": 0.49130889773368835
+        },
+        {
+          "token_id": 22415,
+          "text": " Moscow",
+          "cosine": 0.45030471682548523
+        },
+        {
+          "token_id": 104554,
+          "text": "北京市",
+          "cosine": 0.4251821041107178
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "中国",
+      "expected": "北京",
+      "query": "东京 - 日本 + 中国",
+      "expected_rank": 14,
+      "difference_cosine": 0.2790786623954773,
+      "nearest": [
+        {
+          "token_id": 104900,
+          "text": "中國",
+          "cosine": 0.48989811539649963
+        },
+        {
+          "token_id": 105538,
+          "text": "中国的",
+          "cosine": 0.42178216576576233
+        },
+        {
+          "token_id": 5616,
+          "text": " China",
+          "cosine": 0.3978615403175354
+        },
+        {
+          "token_id": 109299,
+          "text": "中国市场",
+          "cosine": 0.3696970045566559
+        },
+        {
+          "token_id": 26549,
+          "text": " Beijing",
+          "cosine": 0.365560919046402
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "法国",
+      "expected": "巴黎",
+      "query": "东京 - 日本 + 法国",
+      "expected_rank": 1,
+      "difference_cosine": 0.39614513516426086,
+      "nearest": [
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.5649204254150391
+        },
+        {
+          "token_id": 140932,
+          "text": "フランス",
+          "cosine": 0.4741116762161255
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.4657725393772125
+        },
+        {
+          "token_id": 107074,
+          "text": "伦敦",
+          "cosine": 0.4592096507549286
+        },
+        {
+          "token_id": 59604,
+          "text": "Paris",
+          "cosine": 0.45745691657066345
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "德国",
+      "expected": "柏林",
+      "query": "东京 - 日本 + 德国",
+      "expected_rank": 1,
+      "difference_cosine": 0.34792444109916687,
+      "nearest": [
+        {
+          "token_id": 114121,
+          "text": "柏林",
+          "cosine": 0.4923909902572632
+        },
+        {
+          "token_id": 142765,
+          "text": "ドイツ",
+          "cosine": 0.4817138910293579
+        },
+        {
+          "token_id": 50170,
+          "text": "Germany",
+          "cosine": 0.476105660200119
+        },
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.46862632036209106
+        },
+        {
+          "token_id": 19846,
+          "text": " Berlin",
+          "cosine": 0.45149919390678406
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "英国",
+      "expected": "伦敦",
+      "query": "东京 - 日本 + 英国",
+      "expected_rank": 1,
+      "difference_cosine": 0.46985968947410583,
+      "nearest": [
+        {
+          "token_id": 107074,
+          "text": "伦敦",
+          "cosine": 0.6249262690544128
+        },
+        {
+          "token_id": 117741,
+          "text": "英國",
+          "cosine": 0.5585078001022339
+        },
+        {
+          "token_id": 7148,
+          "text": " London",
+          "cosine": 0.5174006819725037
+        },
+        {
+          "token_id": 39572,
+          "text": "London",
+          "cosine": 0.5171875357627869
+        },
+        {
+          "token_id": 62046,
+          "text": " london",
+          "cosine": 0.47119611501693726
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "意大利",
+      "expected": "罗马",
+      "query": "东京 - 日本 + 意大利",
+      "expected_rank": 3235,
+      "difference_cosine": 0.09701956063508987,
+      "nearest": [
+        {
+          "token_id": 15344,
+          "text": " Italy",
+          "cosine": 0.4924069941043854
+        },
+        {
+          "token_id": 70503,
+          "text": "Italy",
+          "cosine": 0.4696006178855896
+        },
+        {
+          "token_id": 14811,
+          "text": " Italian",
+          "cosine": 0.44383639097213745
+        },
+        {
+          "token_id": 69111,
+          "text": "Italian",
+          "cosine": 0.4335015118122101
+        },
+        {
+          "token_id": 27948,
+          "text": " italian",
+          "cosine": 0.43314123153686523
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "query": "东京 - 日本 + 俄罗斯",
+      "expected_rank": 1,
+      "difference_cosine": 0.2899360954761505,
+      "nearest": [
+        {
+          "token_id": 112969,
+          "text": "莫斯科",
+          "cosine": 0.5235390067100525
+        },
+        {
+          "token_id": 8359,
+          "text": " Russia",
+          "cosine": 0.4922851324081421
+        },
+        {
+          "token_id": 44506,
+          "text": "Russia",
+          "cosine": 0.477719247341156
+        },
+        {
+          "token_id": 22415,
+          "text": " Moscow",
+          "cosine": 0.4660610258579254
+        },
+        {
+          "token_id": 47707,
+          "text": "Russian",
+          "cosine": 0.42965167760849
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "中国",
+      "expected": "北京",
+      "query": "巴黎 - 法国 + 中国",
+      "expected_rank": 5,
+      "difference_cosine": 0.2916167378425598,
+      "nearest": [
+        {
+          "token_id": 104900,
+          "text": "中國",
+          "cosine": 0.46239128708839417
+        },
+        {
+          "token_id": 5616,
+          "text": " China",
+          "cosine": 0.44658592343330383
+        },
+        {
+          "token_id": 105538,
+          "text": "中国的",
+          "cosine": 0.39661791920661926
+        },
+        {
+          "token_id": 22282,
+          "text": "China",
+          "cosine": 0.39042752981185913
+        },
+        {
+          "token_id": 68990,
+          "text": "北京",
+          "cosine": 0.3754591941833496
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "日本",
+      "expected": "东京",
+      "query": "巴黎 - 法国 + 日本",
+      "expected_rank": 2,
+      "difference_cosine": 0.39614513516426086,
+      "nearest": [
+        {
+          "token_id": 26194,
+          "text": " Tokyo",
+          "cosine": 0.5357726812362671
+        },
+        {
+          "token_id": 107513,
+          "text": "东京",
+          "cosine": 0.5203194618225098
+        },
+        {
+          "token_id": 6323,
+          "text": " Japan",
+          "cosine": 0.49827349185943604
+        },
+        {
+          "token_id": 48752,
+          "text": "Japan",
+          "cosine": 0.47170451283454895
+        },
+        {
+          "token_id": 118983,
+          "text": "大阪",
+          "cosine": 0.4144551455974579
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "德国",
+      "expected": "柏林",
+      "query": "巴黎 - 法国 + 德国",
+      "expected_rank": 3,
+      "difference_cosine": 0.3772006928920746,
+      "nearest": [
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.5267792344093323
+        },
+        {
+          "token_id": 50170,
+          "text": "Germany",
+          "cosine": 0.5132542848587036
+        },
+        {
+          "token_id": 114121,
+          "text": "柏林",
+          "cosine": 0.4972516894340515
+        },
+        {
+          "token_id": 19846,
+          "text": " Berlin",
+          "cosine": 0.48476481437683105
+        },
+        {
+          "token_id": 142765,
+          "text": "ドイツ",
+          "cosine": 0.4697147011756897
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "英国",
+      "expected": "伦敦",
+      "query": "巴黎 - 法国 + 英国",
+      "expected_rank": 1,
+      "difference_cosine": 0.4756261706352234,
+      "nearest": [
+        {
+          "token_id": 107074,
+          "text": "伦敦",
+          "cosine": 0.6022739410400391
+        },
+        {
+          "token_id": 7148,
+          "text": " London",
+          "cosine": 0.519851803779602
+        },
+        {
+          "token_id": 117741,
+          "text": "英國",
+          "cosine": 0.5146567225456238
+        },
+        {
+          "token_id": 39572,
+          "text": "London",
+          "cosine": 0.5006809830665588
+        },
+        {
+          "token_id": 13224,
+          "text": " Britain",
+          "cosine": 0.4821151793003082
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "意大利",
+      "expected": "罗马",
+      "query": "巴黎 - 法国 + 意大利",
+      "expected_rank": 38,
+      "difference_cosine": 0.17151843011379242,
+      "nearest": [
+        {
+          "token_id": 15344,
+          "text": " Italy",
+          "cosine": 0.507107138633728
+        },
+        {
+          "token_id": 70503,
+          "text": "Italy",
+          "cosine": 0.4814726710319519
+        },
+        {
+          "token_id": 14811,
+          "text": " Italian",
+          "cosine": 0.44931161403656006
+        },
+        {
+          "token_id": 69111,
+          "text": "Italian",
+          "cosine": 0.4398925006389618
+        },
+        {
+          "token_id": 27948,
+          "text": " italian",
+          "cosine": 0.4238273501396179
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "query": "巴黎 - 法国 + 俄罗斯",
+      "expected_rank": 2,
+      "difference_cosine": 0.3263242244720459,
+      "nearest": [
+        {
+          "token_id": 8359,
+          "text": " Russia",
+          "cosine": 0.5277186632156372
+        },
+        {
+          "token_id": 112969,
+          "text": "莫斯科",
+          "cosine": 0.5229665637016296
+        },
+        {
+          "token_id": 44506,
+          "text": "Russia",
+          "cosine": 0.4910978674888611
+        },
+        {
+          "token_id": 22415,
+          "text": " Moscow",
+          "cosine": 0.46658065915107727
+        },
+        {
+          "token_id": 8522,
+          "text": " Russian",
+          "cosine": 0.45227184891700745
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "中国",
+      "expected": "北京",
+      "query": "柏林 - 德国 + 中国",
+      "expected_rank": 8,
+      "difference_cosine": 0.26985761523246765,
+      "nearest": [
+        {
+          "token_id": 104900,
+          "text": "中國",
+          "cosine": 0.4132463037967682
+        },
+        {
+          "token_id": 105538,
+          "text": "中国的",
+          "cosine": 0.37401512265205383
+        },
+        {
+          "token_id": 113076,
+          "text": "中国文化",
+          "cosine": 0.36179986596107483
+        },
+        {
+          "token_id": 5616,
+          "text": " China",
+          "cosine": 0.3539091646671295
+        },
+        {
+          "token_id": 109908,
+          "text": "年中国",
+          "cosine": 0.3353201746940613
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "日本",
+      "expected": "东京",
+      "query": "柏林 - 德国 + 日本",
+      "expected_rank": 2,
+      "difference_cosine": 0.34792444109916687,
+      "nearest": [
+        {
+          "token_id": 26194,
+          "text": " Tokyo",
+          "cosine": 0.4327782094478607
+        },
+        {
+          "token_id": 107513,
+          "text": "东京",
+          "cosine": 0.42312538623809814
+        },
+        {
+          "token_id": 6323,
+          "text": " Japan",
+          "cosine": 0.4067099094390869
+        },
+        {
+          "token_id": 48752,
+          "text": "Japan",
+          "cosine": 0.399444043636322
+        },
+        {
+          "token_id": 10769,
+          "text": " Japanese",
+          "cosine": 0.36981216073036194
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "法国",
+      "expected": "巴黎",
+      "query": "柏林 - 德国 + 法国",
+      "expected_rank": 1,
+      "difference_cosine": 0.3772006928920746,
+      "nearest": [
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.49018821120262146
+        },
+        {
+          "token_id": 140932,
+          "text": "フランス",
+          "cosine": 0.47155988216400146
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.4346928298473358
+        },
+        {
+          "token_id": 49000,
+          "text": "France",
+          "cosine": 0.4100918769836426
+        },
+        {
+          "token_id": 59604,
+          "text": "Paris",
+          "cosine": 0.40953540802001953
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "英国",
+      "expected": "伦敦",
+      "query": "柏林 - 德国 + 英国",
+      "expected_rank": 1,
+      "difference_cosine": 0.35655736923217773,
+      "nearest": [
+        {
+          "token_id": 107074,
+          "text": "伦敦",
+          "cosine": 0.4914172291755676
+        },
+        {
+          "token_id": 117741,
+          "text": "英國",
+          "cosine": 0.48699215054512024
+        },
+        {
+          "token_id": 7148,
+          "text": " London",
+          "cosine": 0.4541020691394806
+        },
+        {
+          "token_id": 39572,
+          "text": "London",
+          "cosine": 0.44223636388778687
+        },
+        {
+          "token_id": 51861,
+          "text": "British",
+          "cosine": 0.42663729190826416
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "意大利",
+      "expected": "罗马",
+      "query": "柏林 - 德国 + 意大利",
+      "expected_rank": 2499,
+      "difference_cosine": 0.20087188482284546,
+      "nearest": [
+        {
+          "token_id": 15344,
+          "text": " Italy",
+          "cosine": 0.42033228278160095
+        },
+        {
+          "token_id": 70503,
+          "text": "Italy",
+          "cosine": 0.40026530623435974
+        },
+        {
+          "token_id": 96233,
+          "text": " Italians",
+          "cosine": 0.3946402370929718
+        },
+        {
+          "token_id": 14811,
+          "text": " Italian",
+          "cosine": 0.3927563726902008
+        },
+        {
+          "token_id": 53368,
+          "text": " Istanbul",
+          "cosine": 0.39127683639526367
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "query": "柏林 - 德国 + 俄罗斯",
+      "expected_rank": 1,
+      "difference_cosine": 0.2950931787490845,
+      "nearest": [
+        {
+          "token_id": 112969,
+          "text": "莫斯科",
+          "cosine": 0.48317936062812805
+        },
+        {
+          "token_id": 8359,
+          "text": " Russia",
+          "cosine": 0.45581313967704773
+        },
+        {
+          "token_id": 22415,
+          "text": " Moscow",
+          "cosine": 0.4322945773601532
+        },
+        {
+          "token_id": 44506,
+          "text": "Russia",
+          "cosine": 0.41486674547195435
+        },
+        {
+          "token_id": 8522,
+          "text": " Russian",
+          "cosine": 0.41399338841438293
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "中国",
+      "expected": "北京",
+      "query": "伦敦 - 英国 + 中国",
+      "expected_rank": 10,
+      "difference_cosine": 0.281369149684906,
+      "nearest": [
+        {
+          "token_id": 104900,
+          "text": "中國",
+          "cosine": 0.4733918309211731
+        },
+        {
+          "token_id": 105538,
+          "text": "中国的",
+          "cosine": 0.43215125799179077
+        },
+        {
+          "token_id": 5616,
+          "text": " China",
+          "cosine": 0.42012903094291687
+        },
+        {
+          "token_id": 109299,
+          "text": "中国市场",
+          "cosine": 0.3887205123901367
+        },
+        {
+          "token_id": 22282,
+          "text": "China",
+          "cosine": 0.36184394359588623
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "日本",
+      "expected": "东京",
+      "query": "伦敦 - 英国 + 日本",
+      "expected_rank": 1,
+      "difference_cosine": 0.46985968947410583,
+      "nearest": [
+        {
+          "token_id": 107513,
+          "text": "东京",
+          "cosine": 0.5712903738021851
+        },
+        {
+          "token_id": 26194,
+          "text": " Tokyo",
+          "cosine": 0.5543056130409241
+        },
+        {
+          "token_id": 6323,
+          "text": " Japan",
+          "cosine": 0.527286171913147
+        },
+        {
+          "token_id": 48752,
+          "text": "Japan",
+          "cosine": 0.48291870951652527
+        },
+        {
+          "token_id": 10769,
+          "text": " Japanese",
+          "cosine": 0.4296412467956543
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "法国",
+      "expected": "巴黎",
+      "query": "伦敦 - 英国 + 法国",
+      "expected_rank": 1,
+      "difference_cosine": 0.4756261706352234,
+      "nearest": [
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.62101811170578
+        },
+        {
+          "token_id": 12095,
+          "text": " Paris",
+          "cosine": 0.49837830662727356
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.47722718119621277
+        },
+        {
+          "token_id": 140932,
+          "text": "フランス",
+          "cosine": 0.47517168521881104
+        },
+        {
+          "token_id": 59604,
+          "text": "Paris",
+          "cosine": 0.47454380989074707
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "德国",
+      "expected": "柏林",
+      "query": "伦敦 - 英国 + 德国",
+      "expected_rank": 4,
+      "difference_cosine": 0.35655736923217773,
+      "nearest": [
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.5301183462142944
+        },
+        {
+          "token_id": 142765,
+          "text": "ドイツ",
+          "cosine": 0.5148376226425171
+        },
+        {
+          "token_id": 50170,
+          "text": "Germany",
+          "cosine": 0.49881303310394287
+        },
+        {
+          "token_id": 114121,
+          "text": "柏林",
+          "cosine": 0.4862816631793976
+        },
+        {
+          "token_id": 82824,
+          "text": " germany",
+          "cosine": 0.4624370038509369
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "意大利",
+      "expected": "罗马",
+      "query": "伦敦 - 英国 + 意大利",
+      "expected_rank": 2487,
+      "difference_cosine": 0.1110001727938652,
+      "nearest": [
+        {
+          "token_id": 15344,
+          "text": " Italy",
+          "cosine": 0.5093678832054138
+        },
+        {
+          "token_id": 70503,
+          "text": "Italy",
+          "cosine": 0.4788922965526581
+        },
+        {
+          "token_id": 14811,
+          "text": " Italian",
+          "cosine": 0.45221880078315735
+        },
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.4402512013912201
+        },
+        {
+          "token_id": 69111,
+          "text": "Italian",
+          "cosine": 0.43980956077575684
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "query": "伦敦 - 英国 + 俄罗斯",
+      "expected_rank": 1,
+      "difference_cosine": 0.3218289315700531,
+      "nearest": [
+        {
+          "token_id": 112969,
+          "text": "莫斯科",
+          "cosine": 0.5529280304908752
+        },
+        {
+          "token_id": 8359,
+          "text": " Russia",
+          "cosine": 0.5289701819419861
+        },
+        {
+          "token_id": 44506,
+          "text": "Russia",
+          "cosine": 0.4914356470108032
+        },
+        {
+          "token_id": 22415,
+          "text": " Moscow",
+          "cosine": 0.48243024945259094
+        },
+        {
+          "token_id": 8522,
+          "text": " Russian",
+          "cosine": 0.4494681656360626
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "中国",
+      "expected": "北京",
+      "query": "罗马 - 意大利 + 中国",
+      "expected_rank": 41,
+      "difference_cosine": 0.08347733318805695,
+      "nearest": [
+        {
+          "token_id": 104900,
+          "text": "中國",
+          "cosine": 0.4198122024536133
+        },
+        {
+          "token_id": 12751,
+          "text": " Roman",
+          "cosine": 0.40433046221733093
+        },
+        {
+          "token_id": 5616,
+          "text": " China",
+          "cosine": 0.369217187166214
+        },
+        {
+          "token_id": 8453,
+          "text": " Chinese",
+          "cosine": 0.3668299913406372
+        },
+        {
+          "token_id": 105538,
+          "text": "中国的",
+          "cosine": 0.35042279958724976
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "日本",
+      "expected": "东京",
+      "query": "罗马 - 意大利 + 日本",
+      "expected_rank": 19,
+      "difference_cosine": 0.09701956063508987,
+      "nearest": [
+        {
+          "token_id": 12751,
+          "text": " Roman",
+          "cosine": 0.4372451603412628
+        },
+        {
+          "token_id": 10769,
+          "text": " Japanese",
+          "cosine": 0.4264218807220459
+        },
+        {
+          "token_id": 6323,
+          "text": " Japan",
+          "cosine": 0.41163772344589233
+        },
+        {
+          "token_id": 51466,
+          "text": "Japanese",
+          "cosine": 0.3745119869709015
+        },
+        {
+          "token_id": 48752,
+          "text": "Japan",
+          "cosine": 0.37383314967155457
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "法国",
+      "expected": "巴黎",
+      "query": "罗马 - 意大利 + 法国",
+      "expected_rank": 8,
+      "difference_cosine": 0.17151843011379242,
+      "nearest": [
+        {
+          "token_id": 12751,
+          "text": " Roman",
+          "cosine": 0.48862424492836
+        },
+        {
+          "token_id": 60980,
+          "text": "Roman",
+          "cosine": 0.4626922011375427
+        },
+        {
+          "token_id": 8585,
+          "text": " French",
+          "cosine": 0.4483623504638672
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.4437371492385864
+        },
+        {
+          "token_id": 49000,
+          "text": "France",
+          "cosine": 0.4196968674659729
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "德国",
+      "expected": "柏林",
+      "query": "罗马 - 意大利 + 德国",
+      "expected_rank": 11,
+      "difference_cosine": 0.20087188482284546,
+      "nearest": [
+        {
+          "token_id": 12751,
+          "text": " Roman",
+          "cosine": 0.4640097916126251
+        },
+        {
+          "token_id": 5938,
+          "text": " German",
+          "cosine": 0.45041048526763916
+        },
+        {
+          "token_id": 60980,
+          "text": "Roman",
+          "cosine": 0.4374052882194519
+        },
+        {
+          "token_id": 32079,
+          "text": "German",
+          "cosine": 0.43354955315589905
+        },
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.4084688723087311
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "英国",
+      "expected": "伦敦",
+      "query": "罗马 - 意大利 + 英国",
+      "expected_rank": 10,
+      "difference_cosine": 0.1110001727938652,
+      "nearest": [
+        {
+          "token_id": 7855,
+          "text": " British",
+          "cosine": 0.4524170458316803
+        },
+        {
+          "token_id": 12751,
+          "text": " Roman",
+          "cosine": 0.4435502588748932
+        },
+        {
+          "token_id": 117741,
+          "text": "英國",
+          "cosine": 0.44165748357772827
+        },
+        {
+          "token_id": 51861,
+          "text": "British",
+          "cosine": 0.41896340250968933
+        },
+        {
+          "token_id": 13224,
+          "text": " Britain",
+          "cosine": 0.41648343205451965
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "query": "罗马 - 意大利 + 俄罗斯",
+      "expected_rank": 11,
+      "difference_cosine": 0.0835626870393753,
+      "nearest": [
+        {
+          "token_id": 12751,
+          "text": " Roman",
+          "cosine": 0.47130200266838074
+        },
+        {
+          "token_id": 8522,
+          "text": " Russian",
+          "cosine": 0.4710071086883545
+        },
+        {
+          "token_id": 8359,
+          "text": " Russia",
+          "cosine": 0.4551733732223511
+        },
+        {
+          "token_id": 47707,
+          "text": "Russian",
+          "cosine": 0.420993834733963
+        },
+        {
+          "token_id": 44506,
+          "text": "Russia",
+          "cosine": 0.4169605076313019
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "中国",
+      "expected": "北京",
+      "query": "莫斯科 - 俄罗斯 + 中国",
+      "expected_rank": 18,
+      "difference_cosine": 0.25077199935913086,
+      "nearest": [
+        {
+          "token_id": 104900,
+          "text": "中國",
+          "cosine": 0.451443076133728
+        },
+        {
+          "token_id": 105538,
+          "text": "中国的",
+          "cosine": 0.4178248643875122
+        },
+        {
+          "token_id": 5616,
+          "text": " China",
+          "cosine": 0.3955778479576111
+        },
+        {
+          "token_id": 113076,
+          "text": "中国文化",
+          "cosine": 0.3830748200416565
+        },
+        {
+          "token_id": 109299,
+          "text": "中国市场",
+          "cosine": 0.3721800148487091
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "日本",
+      "expected": "东京",
+      "query": "莫斯科 - 俄罗斯 + 日本",
+      "expected_rank": 4,
+      "difference_cosine": 0.2899360954761505,
+      "nearest": [
+        {
+          "token_id": 6323,
+          "text": " Japan",
+          "cosine": 0.47854065895080566
+        },
+        {
+          "token_id": 48752,
+          "text": "Japan",
+          "cosine": 0.4657585322856903
+        },
+        {
+          "token_id": 26194,
+          "text": " Tokyo",
+          "cosine": 0.4595959782600403
+        },
+        {
+          "token_id": 107513,
+          "text": "东京",
+          "cosine": 0.44229838252067566
+        },
+        {
+          "token_id": 10769,
+          "text": " Japanese",
+          "cosine": 0.4412686824798584
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "法国",
+      "expected": "巴黎",
+      "query": "莫斯科 - 俄罗斯 + 法国",
+      "expected_rank": 1,
+      "difference_cosine": 0.3263242244720459,
+      "nearest": [
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.531661868095398
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.46539196372032166
+        },
+        {
+          "token_id": 140932,
+          "text": "フランス",
+          "cosine": 0.45801010727882385
+        },
+        {
+          "token_id": 49000,
+          "text": "France",
+          "cosine": 0.44549795985221863
+        },
+        {
+          "token_id": 12095,
+          "text": " Paris",
+          "cosine": 0.43949660658836365
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "德国",
+      "expected": "柏林",
+      "query": "莫斯科 - 俄罗斯 + 德国",
+      "expected_rank": 4,
+      "difference_cosine": 0.2950931787490845,
+      "nearest": [
+        {
+          "token_id": 50170,
+          "text": "Germany",
+          "cosine": 0.47416454553604126
+        },
+        {
+          "token_id": 142765,
+          "text": "ドイツ",
+          "cosine": 0.47269079089164734
+        },
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.46563801169395447
+        },
+        {
+          "token_id": 114121,
+          "text": "柏林",
+          "cosine": 0.44475847482681274
+        },
+        {
+          "token_id": 32079,
+          "text": "German",
+          "cosine": 0.42958396673202515
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "英国",
+      "expected": "伦敦",
+      "query": "莫斯科 - 俄罗斯 + 英国",
+      "expected_rank": 2,
+      "difference_cosine": 0.3218289315700531,
+      "nearest": [
+        {
+          "token_id": 117741,
+          "text": "英國",
+          "cosine": 0.5290031433105469
+        },
+        {
+          "token_id": 107074,
+          "text": "伦敦",
+          "cosine": 0.5212721824645996
+        },
+        {
+          "token_id": 7148,
+          "text": " London",
+          "cosine": 0.47890332341194153
+        },
+        {
+          "token_id": 39572,
+          "text": "London",
+          "cosine": 0.4603233337402344
+        },
+        {
+          "token_id": 13224,
+          "text": " Britain",
+          "cosine": 0.441490113735199
+        }
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "意大利",
+      "expected": "罗马",
+      "query": "莫斯科 - 俄罗斯 + 意大利",
+      "expected_rank": 2712,
+      "difference_cosine": 0.0835626870393753,
+      "nearest": [
+        {
+          "token_id": 15344,
+          "text": " Italy",
+          "cosine": 0.47109299898147583
+        },
+        {
+          "token_id": 14811,
+          "text": " Italian",
+          "cosine": 0.45725569128990173
+        },
+        {
+          "token_id": 70503,
+          "text": "Italy",
+          "cosine": 0.4531177878379822
+        },
+        {
+          "token_id": 69111,
+          "text": "Italian",
+          "cosine": 0.44535118341445923
+        },
+        {
+          "token_id": 96233,
+          "text": " Italians",
+          "cosine": 0.4236918091773987
+        }
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "France",
+      "b": "Paris",
+      "c": "Germany",
+      "expected": "Berlin",
+      "query": "Paris - France + Germany",
+      "expected_rank": 3,
+      "difference_cosine": 0.39125627279281616,
+      "nearest": [
+        {
+          "token_id": 12095,
+          "text": " Paris",
+          "cosine": 0.5503970384597778
+        },
+        {
+          "token_id": 9856,
+          "text": " Germany",
+          "cosine": 0.49871861934661865
+        },
+        {
+          "token_id": 94409,
+          "text": "Berlin",
+          "cosine": 0.47198590636253357
+        },
+        {
+          "token_id": 32079,
+          "text": "German",
+          "cosine": 0.4658930003643036
+        },
+        {
+          "token_id": 106004,
+          "text": "巴黎",
+          "cosine": 0.46155232191085815
+        }
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "Germany",
+      "b": "Berlin",
+      "c": "France",
+      "expected": "Paris",
+      "query": "Berlin - Germany + France",
+      "expected_rank": 2,
+      "difference_cosine": 0.39125627279281616,
+      "nearest": [
+        {
+          "token_id": 19846,
+          "text": " Berlin",
+          "cosine": 0.5086447596549988
+        },
+        {
+          "token_id": 59604,
+          "text": "Paris",
+          "cosine": 0.4605405628681183
+        },
+        {
+          "token_id": 9625,
+          "text": " France",
+          "cosine": 0.45951157808303833
+        },
+        {
+          "token_id": 12095,
+          "text": " Paris",
+          "cosine": 0.43284764885902405
+        },
+        {
+          "token_id": 47587,
+          "text": " france",
+          "cosine": 0.399115651845932
+        }
+      ]
+    },
+    {
+      "category": "英文复数",
+      "a": "cat",
+      "b": "cats",
+      "c": "dog",
+      "expected": "dogs",
+      "query": "cats - cat + dog",
+      "expected_rank": 1,
+      "difference_cosine": 0.3673785626888275,
+      "nearest": [
+        {
+          "token_id": 80034,
+          "text": "dogs",
+          "cosine": 0.6994725465774536
+        },
+        {
+          "token_id": 12590,
+          "text": " dogs",
+          "cosine": 0.5402610898017883
+        },
+        {
+          "token_id": 48940,
+          "text": "Dog",
+          "cosine": 0.5382657647132874
+        },
+        {
+          "token_id": 38425,
+          "text": " Dogs",
+          "cosine": 0.5114786624908447
+        },
+        {
+          "token_id": 14254,
+          "text": " Dog",
+          "cosine": 0.5039377808570862
+        }
+      ]
+    },
+    {
+      "category": "英文复数",
+      "a": "cat",
+      "b": "cats",
+      "c": "car",
+      "expected": "cars",
+      "query": "cats - cat + car",
+      "expected_rank": 1,
+      "difference_cosine": 0.32994145154953003,
+      "nearest": [
+        {
+          "token_id": 50708,
+          "text": "cars",
+          "cosine": 0.6243146061897278
+        },
+        {
+          "token_id": 8852,
+          "text": "Car",
+          "cosine": 0.5579153299331665
+        },
+        {
+          "token_id": 9331,
+          "text": " cars",
+          "cosine": 0.5576297044754028
+        },
+        {
+          "token_id": 42078,
+          "text": "(car",
+          "cosine": 0.556107223033905
+        },
+        {
+          "token_id": 3261,
+          "text": " Car",
+          "cosine": 0.5390859842300415
+        }
+      ]
+    },
+    {
+      "category": "英文复数",
+      "a": "dog",
+      "b": "dogs",
+      "c": "cat",
+      "expected": "cats",
+      "query": "dogs - dog + cat",
+      "expected_rank": 1,
+      "difference_cosine": 0.3673785626888275,
+      "nearest": [
+        {
+          "token_id": 37452,
+          "text": "cats",
+          "cosine": 0.6280522346496582
+        },
+        {
+          "token_id": 19423,
+          "text": " cats",
+          "cosine": 0.5753335356712341
+        },
+        {
+          "token_id": 53600,
+          "text": "(cat",
+          "cosine": 0.5627094507217407
+        },
+        {
+          "token_id": 8251,
+          "text": " cat",
+          "cosine": 0.5599875450134277
+        },
+        {
+          "token_id": 26801,
+          "text": "Cat",
+          "cosine": 0.5561476945877075
+        }
+      ]
+    },
+    {
+      "category": "英文复数",
+      "a": "dog",
+      "b": "dogs",
+      "c": "car",
+      "expected": "cars",
+      "query": "dogs - dog + car",
+      "expected_rank": 1,
+      "difference_cosine": 0.3012904226779938,
+      "nearest": [
+        {
+          "token_id": 50708,
+          "text": "cars",
+          "cosine": 0.6234443783760071
+        },
+        {
+          "token_id": 8852,
+          "text": "Car",
+          "cosine": 0.6023663878440857
+        },
+        {
+          "token_id": 3261,
+          "text": " Car",
+          "cosine": 0.5790943503379822
+        },
+        {
+          "token_id": 9331,
+          "text": " cars",
+          "cosine": 0.5753018260002136
+        },
+        {
+          "token_id": 42078,
+          "text": "(car",
+          "cosine": 0.5720780491828918
+        }
+      ]
+    },
+    {
+      "category": "英文复数",
+      "a": "car",
+      "b": "cars",
+      "c": "cat",
+      "expected": "cats",
+      "query": "cars - car + cat",
+      "expected_rank": 1,
+      "difference_cosine": 0.32994145154953003,
+      "nearest": [
+        {
+          "token_id": 37452,
+          "text": "cats",
+          "cosine": 0.6193788647651672
+        },
+        {
+          "token_id": 19423,
+          "text": " cats",
+          "cosine": 0.5671495199203491
+        },
+        {
+          "token_id": 92791,
+          "text": "\tcat",
+          "cosine": 0.5522456169128418
+        },
+        {
+          "token_id": 53600,
+          "text": "(cat",
+          "cosine": 0.5459089279174805
+        },
+        {
+          "token_id": 8251,
+          "text": " cat",
+          "cosine": 0.5456739068031311
+        }
+      ]
+    },
+    {
+      "category": "英文复数",
+      "a": "car",
+      "b": "cars",
+      "c": "dog",
+      "expected": "dogs",
+      "query": "cars - car + dog",
+      "expected_rank": 1,
+      "difference_cosine": 0.3012904226779938,
+      "nearest": [
+        {
+          "token_id": 80034,
+          "text": "dogs",
+          "cosine": 0.6799522042274475
+        },
+        {
+          "token_id": 48940,
+          "text": "Dog",
+          "cosine": 0.5716335773468018
+        },
+        {
+          "token_id": 12590,
+          "text": " dogs",
+          "cosine": 0.5533350110054016
+        },
+        {
+          "token_id": 14254,
+          "text": " Dog",
+          "cosine": 0.5185942649841309
+        },
+        {
+          "token_id": 38425,
+          "text": " Dogs",
+          "cosine": 0.5116228461265564
+        }
+      ]
+    },
+    {
+      "category": "英文进行式_含前导空格",
+      "a": " walk",
+      "b": " walking",
+      "c": " run",
+      "expected": " running",
+      "query": " walking -  walk +  run",
+      "expected_rank": 1,
+      "difference_cosine": 0.4861326813697815,
+      "nearest": [
+        {
+          "token_id": 4303,
+          "text": " running",
+          "cosine": 0.7110785245895386
+        },
+        {
+          "token_id": 6108,
+          "text": "run",
+          "cosine": 0.649990975856781
+        },
+        {
+          "token_id": 8473,
+          "text": " runs",
+          "cosine": 0.6473625302314758
+        },
+        {
+          "token_id": 6452,
+          "text": " Run",
+          "cosine": 0.6442474126815796
+        },
+        {
+          "token_id": 6727,
+          "text": "Run",
+          "cosine": 0.6402483582496643
+        }
+      ]
+    },
+    {
+      "category": "英文进行式_含前导空格",
+      "a": " walk",
+      "b": " walking",
+      "c": " swim",
+      "expected": " swimming",
+      "query": " walking -  walk +  swim",
+      "expected_rank": 1,
+      "difference_cosine": 0.3660253882408142,
+      "nearest": [
+        {
+          "token_id": 23380,
+          "text": " swimming",
+          "cosine": 0.6452901363372803
+        },
+        {
+          "token_id": 68233,
+          "text": " Swim",
+          "cosine": 0.5969156622886658
+        },
+        {
+          "token_id": 74700,
+          "text": " Swimming",
+          "cosine": 0.5593438148498535
+        },
+        {
+          "token_id": 107140,
+          "text": "游泳",
+          "cosine": 0.5437521934509277
+        },
+        {
+          "token_id": 80636,
+          "text": " swims",
+          "cosine": 0.504565954208374
+        }
+      ]
+    },
+    {
+      "category": "英文进行式_含前导空格",
+      "a": " run",
+      "b": " running",
+      "c": " walk",
+      "expected": " walking",
+      "query": " running -  run +  walk",
+      "expected_rank": 1,
+      "difference_cosine": 0.4861326813697815,
+      "nearest": [
+        {
+          "token_id": 11435,
+          "text": " walking",
+          "cosine": 0.7378085255622864
+        },
+        {
+          "token_id": 12554,
+          "text": " Walk",
+          "cosine": 0.5929725766181946
+        },
+        {
+          "token_id": 39055,
+          "text": " Walking",
+          "cosine": 0.5905778408050537
+        },
+        {
+          "token_id": 22479,
+          "text": " walks",
+          "cosine": 0.584975004196167
+        },
+        {
+          "token_id": 78516,
+          "text": "Walking",
+          "cosine": 0.5472986698150635
+        }
+      ]
+    },
+    {
+      "category": "英文进行式_含前导空格",
+      "a": " run",
+      "b": " running",
+      "c": " swim",
+      "expected": " swimming",
+      "query": " running -  run +  swim",
+      "expected_rank": 1,
+      "difference_cosine": 0.29104912281036377,
+      "nearest": [
+        {
+          "token_id": 23380,
+          "text": " swimming",
+          "cosine": 0.6040131449699402
+        },
+        {
+          "token_id": 68233,
+          "text": " Swim",
+          "cosine": 0.571790337562561
+        },
+        {
+          "token_id": 74700,
+          "text": " Swimming",
+          "cosine": 0.5221594572067261
+        },
+        {
+          "token_id": 80636,
+          "text": " swims",
+          "cosine": 0.4904380738735199
+        },
+        {
+          "token_id": 107140,
+          "text": "游泳",
+          "cosine": 0.4832378923892975
+        }
+      ]
+    },
+    {
+      "category": "英文进行式_含前导空格",
+      "a": " swim",
+      "b": " swimming",
+      "c": " walk",
+      "expected": " walking",
+      "query": " swimming -  swim +  walk",
+      "expected_rank": 1,
+      "difference_cosine": 0.3660253882408142,
+      "nearest": [
+        {
+          "token_id": 11435,
+          "text": " walking",
+          "cosine": 0.6490020751953125
+        },
+        {
+          "token_id": 22479,
+          "text": " walks",
+          "cosine": 0.5903570055961609
+        },
+        {
+          "token_id": 12554,
+          "text": " Walk",
+          "cosine": 0.5900397300720215
+        },
+        {
+          "token_id": 48849,
+          "text": "Walk",
+          "cosine": 0.5485780239105225
+        },
+        {
+          "token_id": 14858,
+          "text": " walked",
+          "cosine": 0.5351364612579346
+        }
+      ]
+    },
+    {
+      "category": "英文进行式_含前导空格",
+      "a": " swim",
+      "b": " swimming",
+      "c": " run",
+      "expected": " running",
+      "query": " swimming -  swim +  run",
+      "expected_rank": 4,
+      "difference_cosine": 0.29104912281036377,
+      "nearest": [
+        {
+          "token_id": 6108,
+          "text": "run",
+          "cosine": 0.6378145217895508
+        },
+        {
+          "token_id": 6452,
+          "text": " Run",
+          "cosine": 0.6366430521011353
+        },
+        {
+          "token_id": 6727,
+          "text": "Run",
+          "cosine": 0.6188033223152161
+        },
+        {
+          "token_id": 4303,
+          "text": " running",
+          "cosine": 0.6088405251502991
+        },
+        {
+          "token_id": 8473,
+          "text": " runs",
+          "cosine": 0.6027294397354126
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " big",
+      "b": " bigger",
+      "c": " small",
+      "expected": " smaller",
+      "query": " bigger -  big +  small",
+      "expected_rank": 1,
+      "difference_cosine": 0.5671534538269043,
+      "nearest": [
+        {
+          "token_id": 9155,
+          "text": " smaller",
+          "cosine": 0.7557492256164551
+        },
+        {
+          "token_id": 9004,
+          "text": "small",
+          "cosine": 0.6627424359321594
+        },
+        {
+          "token_id": 8131,
+          "text": " larger",
+          "cosine": 0.6173198819160461
+        },
+        {
+          "token_id": 14994,
+          "text": " Small",
+          "cosine": 0.5901753306388855
+        },
+        {
+          "token_id": 25307,
+          "text": "Small",
+          "cosine": 0.5806194543838501
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " big",
+      "b": " bigger",
+      "c": " cold",
+      "expected": " colder",
+      "query": " bigger -  big +  cold",
+      "expected_rank": 1,
+      "difference_cosine": 0.5080876350402832,
+      "nearest": [
+        {
+          "token_id": 75114,
+          "text": " colder",
+          "cosine": 0.718344509601593
+        },
+        {
+          "token_id": 76418,
+          "text": "Cold",
+          "cosine": 0.5966425538063049
+        },
+        {
+          "token_id": 87072,
+          "text": "cold",
+          "cosine": 0.588391900062561
+        },
+        {
+          "token_id": 23185,
+          "text": " Cold",
+          "cosine": 0.5708534121513367
+        },
+        {
+          "token_id": 44939,
+          "text": " warmer",
+          "cosine": 0.536375105381012
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " big",
+      "b": " bigger",
+      "c": " happy",
+      "expected": " happier",
+      "query": " bigger -  big +  happy",
+      "expected_rank": 1,
+      "difference_cosine": 0.43993833661079407,
+      "nearest": [
+        {
+          "token_id": 43367,
+          "text": " happier",
+          "cosine": 0.6727725267410278
+        },
+        {
+          "token_id": 56521,
+          "text": "happy",
+          "cosine": 0.5345803499221802
+        },
+        {
+          "token_id": 23355,
+          "text": " Happy",
+          "cosine": 0.48709267377853394
+        },
+        {
+          "token_id": 32847,
+          "text": "Happy",
+          "cosine": 0.4581213593482971
+        },
+        {
+          "token_id": 98852,
+          "text": " happiest",
+          "cosine": 0.4509986639022827
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " small",
+      "b": " smaller",
+      "c": " big",
+      "expected": " bigger",
+      "query": " smaller -  small +  big",
+      "expected_rank": 1,
+      "difference_cosine": 0.5671534538269043,
+      "nearest": [
+        {
+          "token_id": 11243,
+          "text": " bigger",
+          "cosine": 0.731683075428009
+        },
+        {
+          "token_id": 8131,
+          "text": " larger",
+          "cosine": 0.5933066010475159
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.5715849995613098
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.5293315052986145
+        },
+        {
+          "token_id": 36854,
+          "text": " BIG",
+          "cosine": 0.5207847356796265
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " small",
+      "b": " smaller",
+      "c": " cold",
+      "expected": " colder",
+      "query": " smaller -  small +  cold",
+      "expected_rank": 1,
+      "difference_cosine": 0.4840599000453949,
+      "nearest": [
+        {
+          "token_id": 75114,
+          "text": " colder",
+          "cosine": 0.7169206738471985
+        },
+        {
+          "token_id": 87072,
+          "text": "cold",
+          "cosine": 0.6131346225738525
+        },
+        {
+          "token_id": 76418,
+          "text": "Cold",
+          "cosine": 0.607202410697937
+        },
+        {
+          "token_id": 23185,
+          "text": " Cold",
+          "cosine": 0.5926283001899719
+        },
+        {
+          "token_id": 99476,
+          "text": "冷",
+          "cosine": 0.5337883234024048
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " small",
+      "b": " smaller",
+      "c": " happy",
+      "expected": " happier",
+      "query": " smaller -  small +  happy",
+      "expected_rank": 1,
+      "difference_cosine": 0.4047577977180481,
+      "nearest": [
+        {
+          "token_id": 43367,
+          "text": " happier",
+          "cosine": 0.6455658674240112
+        },
+        {
+          "token_id": 56521,
+          "text": "happy",
+          "cosine": 0.5219425559043884
+        },
+        {
+          "token_id": 23355,
+          "text": " Happy",
+          "cosine": 0.47254738211631775
+        },
+        {
+          "token_id": 42151,
+          "text": " unhappy",
+          "cosine": 0.45621857047080994
+        },
+        {
+          "token_id": 32847,
+          "text": "Happy",
+          "cosine": 0.442466676235199
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " cold",
+      "b": " colder",
+      "c": " big",
+      "expected": " bigger",
+      "query": " colder -  cold +  big",
+      "expected_rank": 1,
+      "difference_cosine": 0.5080876350402832,
+      "nearest": [
+        {
+          "token_id": 11243,
+          "text": " bigger",
+          "cosine": 0.7107878923416138
+        },
+        {
+          "token_id": 36386,
+          "text": "_big",
+          "cosine": 0.5733689069747925
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.5673930048942566
+        },
+        {
+          "token_id": 36854,
+          "text": " BIG",
+          "cosine": 0.55357426404953
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.5530287027359009
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " cold",
+      "b": " colder",
+      "c": " small",
+      "expected": " smaller",
+      "query": " colder -  cold +  small",
+      "expected_rank": 1,
+      "difference_cosine": 0.4840599000453949,
+      "nearest": [
+        {
+          "token_id": 9155,
+          "text": " smaller",
+          "cosine": 0.7180094122886658
+        },
+        {
+          "token_id": 9004,
+          "text": "small",
+          "cosine": 0.6917234659194946
+        },
+        {
+          "token_id": 14994,
+          "text": " Small",
+          "cosine": 0.6346575617790222
+        },
+        {
+          "token_id": 25307,
+          "text": "Small",
+          "cosine": 0.6263012290000916
+        },
+        {
+          "token_id": 49197,
+          "text": " SMALL",
+          "cosine": 0.5950329899787903
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " cold",
+      "b": " colder",
+      "c": " happy",
+      "expected": " happier",
+      "query": " colder -  cold +  happy",
+      "expected_rank": 1,
+      "difference_cosine": 0.4669220447540283,
+      "nearest": [
+        {
+          "token_id": 43367,
+          "text": " happier",
+          "cosine": 0.6935166120529175
+        },
+        {
+          "token_id": 56521,
+          "text": "happy",
+          "cosine": 0.5494357347488403
+        },
+        {
+          "token_id": 42151,
+          "text": " unhappy",
+          "cosine": 0.5086768865585327
+        },
+        {
+          "token_id": 23355,
+          "text": " Happy",
+          "cosine": 0.5012158751487732
+        },
+        {
+          "token_id": 98852,
+          "text": " happiest",
+          "cosine": 0.48939740657806396
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " happy",
+      "b": " happier",
+      "c": " big",
+      "expected": " bigger",
+      "query": " happier -  happy +  big",
+      "expected_rank": 1,
+      "difference_cosine": 0.43993833661079407,
+      "nearest": [
+        {
+          "token_id": 11243,
+          "text": " bigger",
+          "cosine": 0.6557102799415588
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.5663965344429016
+        },
+        {
+          "token_id": 36386,
+          "text": "_big",
+          "cosine": 0.547248125076294
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.5405840873718262
+        },
+        {
+          "token_id": 36854,
+          "text": " BIG",
+          "cosine": 0.5383230447769165
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " happy",
+      "b": " happier",
+      "c": " small",
+      "expected": " smaller",
+      "query": " happier -  happy +  small",
+      "expected_rank": 1,
+      "difference_cosine": 0.4047577977180481,
+      "nearest": [
+        {
+          "token_id": 9155,
+          "text": " smaller",
+          "cosine": 0.6597777009010315
+        },
+        {
+          "token_id": 9004,
+          "text": "small",
+          "cosine": 0.6442736983299255
+        },
+        {
+          "token_id": 14994,
+          "text": " Small",
+          "cosine": 0.623563826084137
+        },
+        {
+          "token_id": 25307,
+          "text": "Small",
+          "cosine": 0.6111419200897217
+        },
+        {
+          "token_id": 49197,
+          "text": " SMALL",
+          "cosine": 0.5811278820037842
+        }
+      ]
+    },
+    {
+      "category": "英文比较级_含前导空格",
+      "a": " happy",
+      "b": " happier",
+      "c": " cold",
+      "expected": " colder",
+      "query": " happier -  happy +  cold",
+      "expected_rank": 1,
+      "difference_cosine": 0.4669220447540283,
+      "nearest": [
+        {
+          "token_id": 75114,
+          "text": " colder",
+          "cosine": 0.7041254639625549
+        },
+        {
+          "token_id": 87072,
+          "text": "cold",
+          "cosine": 0.6336393356323242
+        },
+        {
+          "token_id": 76418,
+          "text": "Cold",
+          "cosine": 0.6242755055427551
+        },
+        {
+          "token_id": 23185,
+          "text": " Cold",
+          "cosine": 0.5889285802841187
+        },
+        {
+          "token_id": 99476,
+          "text": "冷",
+          "cosine": 0.5139007568359375
+        }
+      ]
+    },
+    {
+      "category": "英文不规则比较级_含前导空格",
+      "a": " good",
+      "b": " better",
+      "c": " bad",
+      "expected": " worse",
+      "query": " better -  good +  bad",
+      "expected_rank": 4,
+      "difference_cosine": 0.4529949724674225,
+      "nearest": [
+        {
+          "token_id": 57134,
+          "text": "better",
+          "cosine": 0.5857210159301758
+        },
+        {
+          "token_id": 23434,
+          "text": " Better",
+          "cosine": 0.5821566581726074
+        },
+        {
+          "token_id": 55251,
+          "text": "Better",
+          "cosine": 0.5149174332618713
+        },
+        {
+          "token_id": 10960,
+          "text": " worse",
+          "cosine": 0.49154871702194214
+        },
+        {
+          "token_id": 102287,
+          "text": "更好的",
+          "cosine": 0.48981109261512756
+        }
+      ]
+    },
+    {
+      "category": "英文不规则比较级_含前导空格",
+      "a": " bad",
+      "b": " worse",
+      "c": " good",
+      "expected": " better",
+      "query": " worse -  bad +  good",
+      "expected_rank": 1,
+      "difference_cosine": 0.4529949724674225,
+      "nearest": [
+        {
+          "token_id": 2664,
+          "text": " better",
+          "cosine": 0.5026350617408752
+        },
+        {
+          "token_id": 86804,
+          "text": " Worse",
+          "cosine": 0.4991793930530548
+        },
+        {
+          "token_id": 18536,
+          "text": "good",
+          "cosine": 0.4447613060474396
+        },
+        {
+          "token_id": 57134,
+          "text": "better",
+          "cosine": 0.4342413544654846
+        },
+        {
+          "token_id": 15216,
+          "text": "Good",
+          "cosine": 0.41965875029563904
+        }
+      ]
+    },
+    {
+      "category": "英文副词_含前导空格",
+      "a": " quick",
+      "b": " quickly",
+      "c": " slow",
+      "expected": " slowly",
+      "query": " quickly -  quick +  slow",
+      "expected_rank": 2,
+      "difference_cosine": 0.4036003649234772,
+      "nearest": [
+        {
+          "token_id": 38147,
+          "text": " Slow",
+          "cosine": 0.6181957125663757
+        },
+        {
+          "token_id": 13970,
+          "text": " slowly",
+          "cosine": 0.6143468022346497
+        },
+        {
+          "token_id": 35211,
+          "text": "slow",
+          "cosine": 0.6087728142738342
+        },
+        {
+          "token_id": 58289,
+          "text": "Slow",
+          "cosine": 0.603314995765686
+        },
+        {
+          "token_id": 107335,
+          "text": "缓慢",
+          "cosine": 0.541663408279419
+        }
+      ]
+    },
+    {
+      "category": "英文副词_含前导空格",
+      "a": " slow",
+      "b": " slowly",
+      "c": " quick",
+      "expected": " quickly",
+      "query": " slowly -  slow +  quick",
+      "expected_rank": 1,
+      "difference_cosine": 0.4036003649234772,
+      "nearest": [
+        {
+          "token_id": 6157,
+          "text": " quickly",
+          "cosine": 0.6475132703781128
+        },
+        {
+          "token_id": 27763,
+          "text": "quick",
+          "cosine": 0.5562774538993835
+        },
+        {
+          "token_id": 17251,
+          "text": " Quick",
+          "cosine": 0.5525922775268555
+        },
+        {
+          "token_id": 24318,
+          "text": "Quick",
+          "cosine": 0.5275265574455261
+        },
+        {
+          "token_id": 96817,
+          "text": " Quickly",
+          "cosine": 0.5047717094421387
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "男人 - 女人 + 母亲",
+      "expected_rank": 1,
+      "difference_cosine": 0.3739045560359955,
+      "nearest": [
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.6738483309745789
+        },
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.6161749362945557
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.5757128000259399
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.5492802262306213
+        },
+        {
+          "token_id": 6981,
+          "text": " father",
+          "cosine": 0.539657711982727
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "男人 - 女人 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.3427671194076538,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.6681999564170837
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5199399590492249
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.4965367615222931
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.4582354724407196
+        },
+        {
+          "token_id": 106420,
+          "text": "大哥",
+          "cosine": 0.45132964849472046
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "男人 - 女人 + 妹妹",
+      "expected_rank": 2,
+      "difference_cosine": 0.1528957337141037,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.6515623331069946
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5423746109008789
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.5031960010528564
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.4936825931072235
+        },
+        {
+          "token_id": 10641,
+          "text": " brother",
+          "cosine": 0.4400378167629242
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "女王",
+      "expected": "国王",
+      "query": "男人 - 女人 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.19480763375759125,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.3884446918964386
+        },
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.37811291217803955
+        },
+        {
+          "token_id": 118156,
+          "text": "男神",
+          "cosine": 0.37059158086776733
+        },
+        {
+          "token_id": 105106,
+          "text": "男性",
+          "cosine": 0.35895466804504395
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.3584069013595581
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "公主",
+      "expected": "王子",
+      "query": "男人 - 女人 + 公主",
+      "expected_rank": 2,
+      "difference_cosine": 0.22193489968776703,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.39869070053100586
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.39764875173568726
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.37741944193840027
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.37613075971603394
+        },
+        {
+          "token_id": 117827,
+          "text": "皇子",
+          "cosine": 0.35683879256248474
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "男人 - 女人 + 妻子",
+      "expected_rank": 1,
+      "difference_cosine": 0.4264545440673828,
+      "nearest": [
+        {
+          "token_id": 104683,
+          "text": "丈夫",
+          "cosine": 0.5630679130554199
+        },
+        {
+          "token_id": 104858,
+          "text": "老公",
+          "cosine": 0.4721457362174988
+        },
+        {
+          "token_id": 60854,
+          "text": " husbands",
+          "cosine": 0.47183191776275635
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.4583173990249634
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.4519893527030945
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "男人 - 女人 + 妈妈",
+      "expected_rank": 1,
+      "difference_cosine": 0.32529157400131226,
+      "nearest": [
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.6548588871955872
+        },
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.574440598487854
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.5173485279083252
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.5061201453208923
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.4839431941509247
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女人",
+      "b": "男人",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "男人 - 女人 + 女儿",
+      "expected_rank": 1,
+      "difference_cosine": 0.27947425842285156,
+      "nearest": [
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.6073930263519287
+        },
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.5940536856651306
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5348318219184875
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.46603843569755554
+        },
+        {
+          "token_id": 29868,
+          "text": " daughters",
+          "cosine": 0.4572579264640808
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "女人",
+      "expected": "男人",
+      "query": "父亲 - 母亲 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.3739045560359955,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.6686002016067505
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.5209644436836243
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.5045100450515747
+        },
+        {
+          "token_id": 104253,
+          "text": "男子",
+          "cosine": 0.43985867500305176
+        },
+        {
+          "token_id": 47610,
+          "text": " Frauen",
+          "cosine": 0.4344002306461334
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "父亲 - 母亲 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.18320590257644653,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.6062518954277039
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5468634366989136
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.5321943759918213
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.5135391354560852
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.5114529132843018
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "父亲 - 母亲 + 妹妹",
+      "expected_rank": 2,
+      "difference_cosine": 0.14783048629760742,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5875015258789062
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5683755278587341
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.534598708152771
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.5031498074531555
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.4743327498435974
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "女王",
+      "expected": "国王",
+      "query": "父亲 - 母亲 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.19163328409194946,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.42067062854766846
+        },
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.3696049451828003
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.3584555387496948
+        },
+        {
+          "token_id": 52006,
+          "text": "Queen",
+          "cosine": 0.3506266474723816
+        },
+        {
+          "token_id": 73811,
+          "text": " KING",
+          "cosine": 0.350517600774765
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "公主",
+      "expected": "王子",
+      "query": "父亲 - 母亲 + 公主",
+      "expected_rank": 3,
+      "difference_cosine": 0.2020844668149948,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.4599120020866394
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.4101523160934448
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.40181657671928406
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.38053980469703674
+        },
+        {
+          "token_id": 67932,
+          "text": "Prince",
+          "cosine": 0.34515607357025146
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "父亲 - 母亲 + 妻子",
+      "expected_rank": 5,
+      "difference_cosine": 0.12353496998548508,
+      "nearest": [
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.5165824294090271
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.5080587267875671
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.4962766170501709
+        },
+        {
+          "token_id": 105367,
+          "text": "老婆",
+          "cosine": 0.4619612693786621
+        },
+        {
+          "token_id": 104683,
+          "text": "丈夫",
+          "cosine": 0.44569969177246094
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "父亲 - 母亲 + 妈妈",
+      "expected_rank": 1,
+      "difference_cosine": 0.6780442595481873,
+      "nearest": [
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.8268929123878479
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.6256080865859985
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.5820073485374451
+        },
+        {
+          "token_id": 6981,
+          "text": " father",
+          "cosine": 0.5819336175918579
+        },
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.5683020353317261
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "母亲",
+      "b": "父亲",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "父亲 - 母亲 + 女儿",
+      "expected_rank": 2,
+      "difference_cosine": 0.17158138751983643,
+      "nearest": [
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.6544675230979919
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.605830192565918
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.538728654384613
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.5362979769706726
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.5245776176452637
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "女人",
+      "expected": "男人",
+      "query": "哥哥 - 姐姐 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.3427671194076538,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.6332085132598877
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.5014635324478149
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.48288440704345703
+        },
+        {
+          "token_id": 104253,
+          "text": "男子",
+          "cosine": 0.410395085811615
+        },
+        {
+          "token_id": 64662,
+          "text": "women",
+          "cosine": 0.4061051607131958
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "哥哥 - 姐姐 + 母亲",
+      "expected_rank": 2,
+      "difference_cosine": 0.18320590257644653,
+      "nearest": [
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.6175590753555298
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.5981807708740234
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.5575332045555115
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.5171077847480774
+        },
+        {
+          "token_id": 110411,
+          "text": "的母亲",
+          "cosine": 0.507061243057251
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "哥哥 - 姐姐 + 妹妹",
+      "expected_rank": 1,
+      "difference_cosine": 0.1760638803243637,
+      "nearest": [
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5604323148727417
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.48700159788131714
+        },
+        {
+          "token_id": 10641,
+          "text": " brother",
+          "cosine": 0.4495457410812378
+        },
+        {
+          "token_id": 106420,
+          "text": "大哥",
+          "cosine": 0.4258192479610443
+        },
+        {
+          "token_id": 104212,
+          "text": "兄弟",
+          "cosine": 0.4060453772544861
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "女王",
+      "expected": "国王",
+      "query": "哥哥 - 姐姐 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.2203613519668579,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.4159964621067047
+        },
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.36118391156196594
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.34165525436401367
+        },
+        {
+          "token_id": 52006,
+          "text": "Queen",
+          "cosine": 0.34007397294044495
+        },
+        {
+          "token_id": 73811,
+          "text": " KING",
+          "cosine": 0.3285844624042511
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "公主",
+      "expected": "王子",
+      "query": "哥哥 - 姐姐 + 公主",
+      "expected_rank": 2,
+      "difference_cosine": 0.2159639596939087,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.39107468724250793
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.39007312059402466
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.34301942586898804
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.34231045842170715
+        },
+        {
+          "token_id": 19351,
+          "text": " Prince",
+          "cosine": 0.319977343082428
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "哥哥 - 姐姐 + 妻子",
+      "expected_rank": 6,
+      "difference_cosine": 0.1292138248682022,
+      "nearest": [
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.4864499270915985
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.4739898145198822
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.45290279388427734
+        },
+        {
+          "token_id": 100866,
+          "text": "妻",
+          "cosine": 0.45116645097732544
+        },
+        {
+          "token_id": 105367,
+          "text": "老婆",
+          "cosine": 0.44333359599113464
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "哥哥 - 姐姐 + 妈妈",
+      "expected_rank": 2,
+      "difference_cosine": 0.14710350334644318,
+      "nearest": [
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.6026582717895508
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.5744248628616333
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.5058286786079407
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.49990007281303406
+        },
+        {
+          "token_id": 3368,
+          "text": " mom",
+          "cosine": 0.4645930528640747
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "姐姐",
+      "b": "哥哥",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "哥哥 - 姐姐 + 女儿",
+      "expected_rank": 1,
+      "difference_cosine": 0.35490477085113525,
+      "nearest": [
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.6528638005256653
+        },
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.6009003520011902
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5610555410385132
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.48111391067504883
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.4752539098262787
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "女人",
+      "expected": "男人",
+      "query": "弟弟 - 妹妹 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.1528957337141037,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.5669923424720764
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.5271578431129456
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.4351588487625122
+        },
+        {
+          "token_id": 5220,
+          "text": " woman",
+          "cosine": 0.4184671938419342
+        },
+        {
+          "token_id": 131162,
+          "text": " женщин",
+          "cosine": 0.4131346046924591
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "弟弟 - 妹妹 + 母亲",
+      "expected_rank": 2,
+      "difference_cosine": 0.14783048629760742,
+      "nearest": [
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.6069468855857849
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.585316002368927
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.5440350770950317
+        },
+        {
+          "token_id": 110411,
+          "text": "的母亲",
+          "cosine": 0.5044957995414734
+        },
+        {
+          "token_id": 101935,
+          "text": "妈妈",
+          "cosine": 0.4885997772216797
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "弟弟 - 妹妹 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.1760638803243637,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5614075064659119
+        },
+        {
+          "token_id": 10641,
+          "text": " brother",
+          "cosine": 0.44811898469924927
+        },
+        {
+          "token_id": 99972,
+          "text": "姐",
+          "cosine": 0.4444771111011505
+        },
+        {
+          "token_id": 99952,
+          "text": "弟",
+          "cosine": 0.4300600588321686
+        },
+        {
+          "token_id": 109569,
+          "text": "叔叔",
+          "cosine": 0.4283967614173889
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "女王",
+      "expected": "国王",
+      "query": "弟弟 - 妹妹 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.1380028873682022,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.3608650267124176
+        },
+        {
+          "token_id": 108595,
+          "text": "皇后",
+          "cosine": 0.3265168368816376
+        },
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.3257228136062622
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.32442721724510193
+        },
+        {
+          "token_id": 104937,
+          "text": "皇帝",
+          "cosine": 0.31989699602127075
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "公主",
+      "expected": "王子",
+      "query": "弟弟 - 妹妹 + 公主",
+      "expected_rank": 2,
+      "difference_cosine": 0.19088156521320343,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.41777679324150085
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.3908727169036865
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.3682486414909363
+        },
+        {
+          "token_id": 117827,
+          "text": "皇子",
+          "cosine": 0.30835995078086853
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.29739925265312195
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "弟弟 - 妹妹 + 妻子",
+      "expected_rank": 6,
+      "difference_cosine": 0.1270943284034729,
+      "nearest": [
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.4985845685005188
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.4882364869117737
+        },
+        {
+          "token_id": 105367,
+          "text": "老婆",
+          "cosine": 0.4327710270881653
+        },
+        {
+          "token_id": 42408,
+          "text": " Wife",
+          "cosine": 0.43189674615859985
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.4278319180011749
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "弟弟 - 妹妹 + 妈妈",
+      "expected_rank": 2,
+      "difference_cosine": 0.11837146431207657,
+      "nearest": [
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.5901615619659424
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.565422534942627
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.5086019039154053
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.500407338142395
+        },
+        {
+          "token_id": 102079,
+          "text": "母亲",
+          "cosine": 0.4652746915817261
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妹妹",
+      "b": "弟弟",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "弟弟 - 妹妹 + 女儿",
+      "expected_rank": 1,
+      "difference_cosine": 0.2668690085411072,
+      "nearest": [
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.6154239177703857
+        },
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.6096323132514954
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5504310131072998
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.5220167636871338
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.5066667795181274
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "女人",
+      "expected": "男人",
+      "query": "国王 - 女王 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.19480763375759125,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.5123107433319092
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.42828187346458435
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.38018378615379333
+        },
+        {
+          "token_id": 52093,
+          "text": " mujer",
+          "cosine": 0.3317595422267914
+        },
+        {
+          "token_id": 64662,
+          "text": "women",
+          "cosine": 0.3286505937576294
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "国王 - 女王 + 母亲",
+      "expected_rank": 1,
+      "difference_cosine": 0.19163328409194946,
+      "nearest": [
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.5471784472465515
+        },
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.5332695245742798
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.4730015695095062
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.45854318141937256
+        },
+        {
+          "token_id": 103953,
+          "text": "父母",
+          "cosine": 0.4556427001953125
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "国王 - 女王 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.2203613519668579,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5436151027679443
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.45917654037475586
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.42716309428215027
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.37328290939331055
+        },
+        {
+          "token_id": 99972,
+          "text": "姐",
+          "cosine": 0.3575326204299927
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "国王 - 女王 + 妹妹",
+      "expected_rank": 2,
+      "difference_cosine": 0.1380028873682022,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5244299173355103
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.4763512909412384
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.423111230134964
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.36188480257987976
+        },
+        {
+          "token_id": 62804,
+          "text": " nephew",
+          "cosine": 0.34932830929756165
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "公主",
+      "expected": "王子",
+      "query": "国王 - 女王 + 公主",
+      "expected_rank": 2,
+      "difference_cosine": 0.18441356718540192,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.3778150677680969
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.365945428609848
+        },
+        {
+          "token_id": 11477,
+          "text": " king",
+          "cosine": 0.3272523581981659
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.32479867339134216
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.30508890748023987
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "国王 - 女王 + 妻子",
+      "expected_rank": 13,
+      "difference_cosine": 0.011685837991535664,
+      "nearest": [
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.436260461807251
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.43081963062286377
+        },
+        {
+          "token_id": 100866,
+          "text": "妻",
+          "cosine": 0.3797464370727539
+        },
+        {
+          "token_id": 84890,
+          "text": " esposa",
+          "cosine": 0.37506434321403503
+        },
+        {
+          "token_id": 38620,
+          "text": " wives",
+          "cosine": 0.37283194065093994
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "国王 - 女王 + 妈妈",
+      "expected_rank": 2,
+      "difference_cosine": 0.1724928319454193,
+      "nearest": [
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.5559332370758057
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.5513003468513489
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.4877420961856842
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.44463372230529785
+        },
+        {
+          "token_id": 3368,
+          "text": " mom",
+          "cosine": 0.3837301433086395
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女王",
+      "b": "国王",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "国王 - 女王 + 女儿",
+      "expected_rank": 2,
+      "difference_cosine": 0.21891577541828156,
+      "nearest": [
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.5364712476730347
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.5242069959640503
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.4650352895259857
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.42539888620376587
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.42315977811813354
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "女人",
+      "expected": "男人",
+      "query": "王子 - 公主 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.22193489968776703,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.5544477701187134
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.45594099164009094
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.42499491572380066
+        },
+        {
+          "token_id": 140546,
+          "text": " 여성",
+          "cosine": 0.37348321080207825
+        },
+        {
+          "token_id": 64662,
+          "text": "women",
+          "cosine": 0.36935868859291077
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "王子 - 公主 + 母亲",
+      "expected_rank": 2,
+      "difference_cosine": 0.2020844668149948,
+      "nearest": [
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.5687665343284607
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.56056809425354
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.48511314392089844
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.4723375737667084
+        },
+        {
+          "token_id": 110411,
+          "text": "的母亲",
+          "cosine": 0.4515775144100189
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "王子 - 公主 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.2159639596939087,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5398325324058533
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.510589063167572
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.44336262345314026
+        },
+        {
+          "token_id": 99972,
+          "text": "姐",
+          "cosine": 0.39757969975471497
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.39171102643013
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "王子 - 公主 + 妹妹",
+      "expected_rank": 1,
+      "difference_cosine": 0.19088156521320343,
+      "nearest": [
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5212966799736023
+        },
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5142843723297119
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.41655823588371277
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.41575729846954346
+        },
+        {
+          "token_id": 10641,
+          "text": " brother",
+          "cosine": 0.3787476420402527
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "女王",
+      "expected": "国王",
+      "query": "王子 - 公主 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.18441356718540192,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.3899182081222534
+        },
+        {
+          "token_id": 109289,
+          "text": "王国",
+          "cosine": 0.3432179093360901
+        },
+        {
+          "token_id": 73811,
+          "text": " KING",
+          "cosine": 0.3309319317340851
+        },
+        {
+          "token_id": 114075,
+          "text": "王府",
+          "cosine": 0.3064207434654236
+        },
+        {
+          "token_id": 99445,
+          "text": "王",
+          "cosine": 0.303481787443161
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "王子 - 公主 + 妻子",
+      "expected_rank": 8,
+      "difference_cosine": 0.09268046915531158,
+      "nearest": [
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.4696366488933563
+        },
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.43276864290237427
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.4178940951824188
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.4108463525772095
+        },
+        {
+          "token_id": 105367,
+          "text": "老婆",
+          "cosine": 0.3947983682155609
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "王子 - 公主 + 妈妈",
+      "expected_rank": 2,
+      "difference_cosine": 0.18494009971618652,
+      "nearest": [
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.5362048149108887
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.5305712819099426
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.4398720860481262
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.4354272782802582
+        },
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.4174425005912781
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "公主",
+      "b": "王子",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "王子 - 公主 + 女儿",
+      "expected_rank": 1,
+      "difference_cosine": 0.30474478006362915,
+      "nearest": [
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.5917453169822693
+        },
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.5462536215782166
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5391562581062317
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.44666245579719543
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.44419488310813904
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "女人",
+      "expected": "男人",
+      "query": "丈夫 - 妻子 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.4264545440673828,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.6510229110717773
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.4885776937007904
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.4506780207157135
+        },
+        {
+          "token_id": 104253,
+          "text": "男子",
+          "cosine": 0.4451487958431244
+        },
+        {
+          "token_id": 105106,
+          "text": "男性",
+          "cosine": 0.4441255033016205
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "丈夫 - 妻子 + 母亲",
+      "expected_rank": 3,
+      "difference_cosine": 0.12353496998548508,
+      "nearest": [
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.5606269240379333
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.5181708931922913
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.5040592551231384
+        },
+        {
+          "token_id": 26600,
+          "text": " mothers",
+          "cosine": 0.4735915958881378
+        },
+        {
+          "token_id": 26412,
+          "text": "mother",
+          "cosine": 0.4625166654586792
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "丈夫 - 妻子 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.1292138248682022,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5231456756591797
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.42435893416404724
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.4006761312484741
+        },
+        {
+          "token_id": 103856,
+          "text": "姊",
+          "cosine": 0.39577174186706543
+        },
+        {
+          "token_id": 99972,
+          "text": "姐",
+          "cosine": 0.38147643208503723
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "丈夫 - 妻子 + 妹妹",
+      "expected_rank": 3,
+      "difference_cosine": 0.1270943284034729,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5292497873306274
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.485031396150589
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.46231546998023987
+        },
+        {
+          "token_id": 109114,
+          "text": "男朋友",
+          "cosine": 0.39491787552833557
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.3907747268676758
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "女王",
+      "expected": "国王",
+      "query": "丈夫 - 妻子 + 女王",
+      "expected_rank": 6,
+      "difference_cosine": 0.011685837991535664,
+      "nearest": [
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.35249099135398865
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.35198867321014404
+        },
+        {
+          "token_id": 52006,
+          "text": "Queen",
+          "cosine": 0.3332314193248749
+        },
+        {
+          "token_id": 93114,
+          "text": "queen",
+          "cosine": 0.3073141574859619
+        },
+        {
+          "token_id": 60854,
+          "text": " husbands",
+          "cosine": 0.29663461446762085
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "公主",
+      "expected": "王子",
+      "query": "丈夫 - 妻子 + 公主",
+      "expected_rank": 3,
+      "difference_cosine": 0.09268046915531158,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.3868865370750427
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.34088602662086487
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.31841033697128296
+        },
+        {
+          "token_id": 120004,
+          "text": "驸",
+          "cosine": 0.29708990454673767
+        },
+        {
+          "token_id": 112703,
+          "text": "嫁给",
+          "cosine": 0.295941025018692
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "丈夫 - 妻子 + 妈妈",
+      "expected_rank": 2,
+      "difference_cosine": 0.12276944518089294,
+      "nearest": [
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.5246655344963074
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.512029230594635
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.43534308671951294
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.3967854976654053
+        },
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.3936080038547516
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妻子",
+      "b": "丈夫",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "丈夫 - 妻子 + 女儿",
+      "expected_rank": 4,
+      "difference_cosine": 0.01193956658244133,
+      "nearest": [
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.5628320574760437
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.46448320150375366
+        },
+        {
+          "token_id": 29868,
+          "text": " daughters",
+          "cosine": 0.4332936108112335
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.42989596724510193
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.4268949031829834
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "女人",
+      "expected": "男人",
+      "query": "爸爸 - 妈妈 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.32529157400131226,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.6562248468399048
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.5475676655769348
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.4997192919254303
+        },
+        {
+          "token_id": 104253,
+          "text": "男子",
+          "cosine": 0.4353923499584198
+        },
+        {
+          "token_id": 104340,
+          "text": "女子",
+          "cosine": 0.43344706296920776
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "爸爸 - 妈妈 + 母亲",
+      "expected_rank": 1,
+      "difference_cosine": 0.6780442595481873,
+      "nearest": [
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.8211749792098999
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.7009965181350708
+        },
+        {
+          "token_id": 6981,
+          "text": " father",
+          "cosine": 0.6567448377609253
+        },
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.6139929294586182
+        },
+        {
+          "token_id": 103953,
+          "text": "父母",
+          "cosine": 0.5825852751731873
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "爸爸 - 妈妈 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.14710350334644318,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5945016145706177
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.5439920425415039
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5406086444854736
+        },
+        {
+          "token_id": 99972,
+          "text": "姐",
+          "cosine": 0.4646832048892975
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.4568990170955658
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "爸爸 - 妈妈 + 妹妹",
+      "expected_rank": 2,
+      "difference_cosine": 0.11837146431207657,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.5741856098175049
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5611097812652588
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.5424524545669556
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.4515877664089203
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.44296780228614807
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "女王",
+      "expected": "国王",
+      "query": "爸爸 - 妈妈 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.1724928319454193,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.4118582606315613
+        },
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.3994384706020355
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.38360971212387085
+        },
+        {
+          "token_id": 52006,
+          "text": "Queen",
+          "cosine": 0.37840959429740906
+        },
+        {
+          "token_id": 73811,
+          "text": " KING",
+          "cosine": 0.3580922484397888
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "公主",
+      "expected": "王子",
+      "query": "爸爸 - 妈妈 + 公主",
+      "expected_rank": 3,
+      "difference_cosine": 0.18494009971618652,
+      "nearest": [
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.49475353956222534
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.4348554313182831
+        },
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.4087499976158142
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.40222880244255066
+        },
+        {
+          "token_id": 67932,
+          "text": "Prince",
+          "cosine": 0.3648121654987335
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "爸爸 - 妈妈 + 妻子",
+      "expected_rank": 8,
+      "difference_cosine": 0.12276944518089294,
+      "nearest": [
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.5288811326026917
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.5177885293960571
+        },
+        {
+          "token_id": 105367,
+          "text": "老婆",
+          "cosine": 0.4927122890949249
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.4565316438674927
+        },
+        {
+          "token_id": 42408,
+          "text": " Wife",
+          "cosine": 0.4561103582382202
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "妈妈",
+      "b": "爸爸",
+      "c": "女儿",
+      "expected": "儿子",
+      "query": "爸爸 - 妈妈 + 女儿",
+      "expected_rank": 2,
+      "difference_cosine": 0.1251990646123886,
+      "nearest": [
+        {
+          "token_id": 117079,
+          "text": "女兒",
+          "cosine": 0.6680236458778381
+        },
+        {
+          "token_id": 102067,
+          "text": "儿子",
+          "cosine": 0.593970537185669
+        },
+        {
+          "token_id": 110111,
+          "text": "的女儿",
+          "cosine": 0.5495631098747253
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5309715867042542
+        },
+        {
+          "token_id": 9803,
+          "text": " daughter",
+          "cosine": 0.5261876583099365
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "女人",
+      "expected": "男人",
+      "query": "儿子 - 女儿 + 女人",
+      "expected_rank": 1,
+      "difference_cosine": 0.27947425842285156,
+      "nearest": [
+        {
+          "token_id": 102015,
+          "text": "男人",
+          "cosine": 0.606341540813446
+        },
+        {
+          "token_id": 106354,
+          "text": "的女人",
+          "cosine": 0.5107787251472473
+        },
+        {
+          "token_id": 107040,
+          "text": "的男人",
+          "cosine": 0.46218931674957275
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.435675710439682
+        },
+        {
+          "token_id": 131162,
+          "text": " женщин",
+          "cosine": 0.41733884811401367
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "母亲",
+      "expected": "父亲",
+      "query": "儿子 - 女儿 + 母亲",
+      "expected_rank": 2,
+      "difference_cosine": 0.17158138751983643,
+      "nearest": [
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.6542306542396545
+        },
+        {
+          "token_id": 102037,
+          "text": "父亲",
+          "cosine": 0.6043152213096619
+        },
+        {
+          "token_id": 6554,
+          "text": " mother",
+          "cosine": 0.5517131090164185
+        },
+        {
+          "token_id": 115170,
+          "text": "父親",
+          "cosine": 0.5227361917495728
+        },
+        {
+          "token_id": 110411,
+          "text": "的母亲",
+          "cosine": 0.5120449066162109
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "姐姐",
+      "expected": "哥哥",
+      "query": "儿子 - 女儿 + 姐姐",
+      "expected_rank": 1,
+      "difference_cosine": 0.35490477085113525,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.6620901226997375
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5697030425071716
+        },
+        {
+          "token_id": 105901,
+          "text": "妹妹",
+          "cosine": 0.47976353764533997
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.46452170610427856
+        },
+        {
+          "token_id": 109569,
+          "text": "叔叔",
+          "cosine": 0.4412359297275543
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "妹妹",
+      "expected": "弟弟",
+      "query": "儿子 - 女儿 + 妹妹",
+      "expected_rank": 2,
+      "difference_cosine": 0.2668690085411072,
+      "nearest": [
+        {
+          "token_id": 105243,
+          "text": "哥哥",
+          "cosine": 0.6453113555908203
+        },
+        {
+          "token_id": 106047,
+          "text": "弟弟",
+          "cosine": 0.5933607816696167
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5214377045631409
+        },
+        {
+          "token_id": 105341,
+          "text": "姐姐",
+          "cosine": 0.4871702492237091
+        },
+        {
+          "token_id": 100788,
+          "text": "兄",
+          "cosine": 0.46468833088874817
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "女王",
+      "expected": "国王",
+      "query": "儿子 - 女儿 + 女王",
+      "expected_rank": 1,
+      "difference_cosine": 0.21891577541828156,
+      "nearest": [
+        {
+          "token_id": 107894,
+          "text": "国王",
+          "cosine": 0.41180649399757385
+        },
+        {
+          "token_id": 16259,
+          "text": " Queen",
+          "cosine": 0.36092570424079895
+        },
+        {
+          "token_id": 27906,
+          "text": " queen",
+          "cosine": 0.35748350620269775
+        },
+        {
+          "token_id": 108595,
+          "text": "皇后",
+          "cosine": 0.34552353620529175
+        },
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.3370388150215149
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "公主",
+      "expected": "王子",
+      "query": "儿子 - 女儿 + 公主",
+      "expected_rank": 1,
+      "difference_cosine": 0.30474478006362915,
+      "nearest": [
+        {
+          "token_id": 107311,
+          "text": "王子",
+          "cosine": 0.4478246867656708
+        },
+        {
+          "token_id": 39588,
+          "text": " princess",
+          "cosine": 0.3974873125553131
+        },
+        {
+          "token_id": 29289,
+          "text": " Princess",
+          "cosine": 0.37435418367385864
+        },
+        {
+          "token_id": 117827,
+          "text": "皇子",
+          "cosine": 0.3596459627151489
+        },
+        {
+          "token_id": 41726,
+          "text": " prince",
+          "cosine": 0.3572925329208374
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "妻子",
+      "expected": "丈夫",
+      "query": "儿子 - 女儿 + 妻子",
+      "expected_rank": 12,
+      "difference_cosine": 0.01193956658244133,
+      "nearest": [
+        {
+          "token_id": 116251,
+          "text": "兒子",
+          "cosine": 0.5393669605255127
+        },
+        {
+          "token_id": 7403,
+          "text": " wife",
+          "cosine": 0.5066563487052917
+        },
+        {
+          "token_id": 111252,
+          "text": "的妻子",
+          "cosine": 0.4910089075565338
+        },
+        {
+          "token_id": 100866,
+          "text": "妻",
+          "cosine": 0.46612900495529175
+        },
+        {
+          "token_id": 105367,
+          "text": "老婆",
+          "cosine": 0.4390069544315338
+        }
+      ]
+    },
+    {
+      "category": "亲属性别关系",
+      "a": "女儿",
+      "b": "儿子",
+      "c": "妈妈",
+      "expected": "爸爸",
+      "query": "儿子 - 女儿 + 妈妈",
+      "expected_rank": 2,
+      "difference_cosine": 0.1251990646123886,
+      "nearest": [
+        {
+          "token_id": 111160,
+          "text": "媽媽",
+          "cosine": 0.6136710047721863
+        },
+        {
+          "token_id": 102208,
+          "text": "爸爸",
+          "cosine": 0.5771047472953796
+        },
+        {
+          "token_id": 110533,
+          "text": "爸妈",
+          "cosine": 0.4853266775608063
+        },
+        {
+          "token_id": 114962,
+          "text": "母親",
+          "cosine": 0.482746958732605
+        },
+        {
+          "token_id": 110961,
+          "text": "爸爸妈妈",
+          "cosine": 0.48269394040107727
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "大",
+      "b": "小",
+      "c": "长",
+      "expected": "短",
+      "query": "小 - 大 + 长",
+      "expected_rank": 2,
+      "difference_cosine": 0.2153203934431076,
+      "nearest": [
+        {
+          "token_id": 100435,
+          "text": "長",
+          "cosine": 0.567043125629425
+        },
+        {
+          "token_id": 99534,
+          "text": "短",
+          "cosine": 0.44466158747673035
+        },
+        {
+          "token_id": 1293,
+          "text": " long",
+          "cosine": 0.4081798493862152
+        },
+        {
+          "token_id": 8676,
+          "text": "short",
+          "cosine": 0.39697667956352234
+        },
+        {
+          "token_id": 3084,
+          "text": " length",
+          "cosine": 0.3924664556980133
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "大",
+      "b": "小",
+      "c": "高",
+      "expected": "低",
+      "query": "小 - 大 + 高",
+      "expected_rank": 8,
+      "difference_cosine": 0.18080353736877441,
+      "nearest": [
+        {
+          "token_id": 1550,
+          "text": " high",
+          "cosine": 0.510681688785553
+        },
+        {
+          "token_id": 11892,
+          "text": "high",
+          "cosine": 0.468113511800766
+        },
+        {
+          "token_id": 5124,
+          "text": " High",
+          "cosine": 0.44924813508987427
+        },
+        {
+          "token_id": 11976,
+          "text": "High",
+          "cosine": 0.44420918822288513
+        },
+        {
+          "token_id": 40419,
+          "text": "��",
+          "cosine": 0.4332196116447449
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "大",
+      "b": "小",
+      "c": "热",
+      "expected": "冷",
+      "query": "小 - 大 + 热",
+      "expected_rank": 51,
+      "difference_cosine": 0.022756917402148247,
+      "nearest": [
+        {
+          "token_id": 105104,
+          "text": "熱",
+          "cosine": 0.5596930384635925
+        },
+        {
+          "token_id": 8628,
+          "text": " heat",
+          "cosine": 0.48288416862487793
+        },
+        {
+          "token_id": 26070,
+          "text": " Heat",
+          "cosine": 0.4483007788658142
+        },
+        {
+          "token_id": 61306,
+          "text": "Heat",
+          "cosine": 0.4208950102329254
+        },
+        {
+          "token_id": 19963,
+          "text": "heat",
+          "cosine": 0.3914231061935425
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "大",
+      "b": "小",
+      "c": "快",
+      "expected": "慢",
+      "query": "小 - 大 + 快",
+      "expected_rank": 5,
+      "difference_cosine": 0.10854074358940125,
+      "nearest": [
+        {
+          "token_id": 4937,
+          "text": " fast",
+          "cosine": 0.4289471209049225
+        },
+        {
+          "token_id": 17288,
+          "text": " Fast",
+          "cosine": 0.3840605318546295
+        },
+        {
+          "token_id": 32174,
+          "text": "Fast",
+          "cosine": 0.3638875484466553
+        },
+        {
+          "token_id": 9349,
+          "text": "fast",
+          "cosine": 0.36134976148605347
+        },
+        {
+          "token_id": 99843,
+          "text": "慢",
+          "cosine": 0.3594980239868164
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "长",
+      "b": "短",
+      "c": "大",
+      "expected": "小",
+      "query": "短 - 长 + 大",
+      "expected_rank": 2,
+      "difference_cosine": 0.2153203934431076,
+      "nearest": [
+        {
+          "token_id": 2409,
+          "text": " big",
+          "cosine": 0.3881201148033142
+        },
+        {
+          "token_id": 30709,
+          "text": "小",
+          "cosine": 0.3703646957874298
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.3625853955745697
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.3568679690361023
+        },
+        {
+          "token_id": 2805,
+          "text": " short",
+          "cosine": 0.34814050793647766
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "长",
+      "b": "短",
+      "c": "高",
+      "expected": "低",
+      "query": "短 - 长 + 高",
+      "expected_rank": 13,
+      "difference_cosine": 0.12779855728149414,
+      "nearest": [
+        {
+          "token_id": 1550,
+          "text": " high",
+          "cosine": 0.5377936959266663
+        },
+        {
+          "token_id": 5124,
+          "text": " High",
+          "cosine": 0.48886895179748535
+        },
+        {
+          "token_id": 11892,
+          "text": "high",
+          "cosine": 0.4788780212402344
+        },
+        {
+          "token_id": 11976,
+          "text": "High",
+          "cosine": 0.4765007793903351
+        },
+        {
+          "token_id": 22680,
+          "text": "_high",
+          "cosine": 0.4568208158016205
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "长",
+      "b": "短",
+      "c": "热",
+      "expected": "冷",
+      "query": "短 - 长 + 热",
+      "expected_rank": 37,
+      "difference_cosine": 0.04411871358752251,
+      "nearest": [
+        {
+          "token_id": 105104,
+          "text": "熱",
+          "cosine": 0.5580288767814636
+        },
+        {
+          "token_id": 8628,
+          "text": " heat",
+          "cosine": 0.481842964887619
+        },
+        {
+          "token_id": 26070,
+          "text": " Heat",
+          "cosine": 0.4516044557094574
+        },
+        {
+          "token_id": 61306,
+          "text": "Heat",
+          "cosine": 0.43578237295150757
+        },
+        {
+          "token_id": 4017,
+          "text": " hot",
+          "cosine": 0.430981308221817
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "长",
+      "b": "短",
+      "c": "快",
+      "expected": "慢",
+      "query": "短 - 长 + 快",
+      "expected_rank": 33,
+      "difference_cosine": -0.004208469297736883,
+      "nearest": [
+        {
+          "token_id": 4937,
+          "text": " fast",
+          "cosine": 0.4568473994731903
+        },
+        {
+          "token_id": 101098,
+          "text": "快速",
+          "cosine": 0.4265940189361572
+        },
+        {
+          "token_id": 17288,
+          "text": " Fast",
+          "cosine": 0.4148045480251312
+        },
+        {
+          "token_id": 3974,
+          "text": " quick",
+          "cosine": 0.3965968191623688
+        },
+        {
+          "token_id": 35743,
+          "text": "_fast",
+          "cosine": 0.38650789856910706
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "高",
+      "b": "低",
+      "c": "大",
+      "expected": "小",
+      "query": "低 - 高 + 大",
+      "expected_rank": 7,
+      "difference_cosine": 0.18080353736877441,
+      "nearest": [
+        {
+          "token_id": 2409,
+          "text": " big",
+          "cosine": 0.4121658504009247
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.3907088041305542
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.38177424669265747
+        },
+        {
+          "token_id": 15636,
+          "text": "Big",
+          "cosine": 0.37163323163986206
+        },
+        {
+          "token_id": 3460,
+          "text": " large",
+          "cosine": 0.37014102935791016
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "高",
+      "b": "低",
+      "c": "长",
+      "expected": "短",
+      "query": "低 - 高 + 长",
+      "expected_rank": 19,
+      "difference_cosine": 0.12779855728149414,
+      "nearest": [
+        {
+          "token_id": 100435,
+          "text": "長",
+          "cosine": 0.5981318354606628
+        },
+        {
+          "token_id": 1293,
+          "text": " long",
+          "cosine": 0.5067577958106995
+        },
+        {
+          "token_id": 17514,
+          "text": "\tlong",
+          "cosine": 0.48258867859840393
+        },
+        {
+          "token_id": 4825,
+          "text": "long",
+          "cosine": 0.47737401723861694
+        },
+        {
+          "token_id": 5724,
+          "text": " Long",
+          "cosine": 0.46265777945518494
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "高",
+      "b": "低",
+      "c": "热",
+      "expected": "冷",
+      "query": "低 - 高 + 热",
+      "expected_rank": 20,
+      "difference_cosine": 0.1307343989610672,
+      "nearest": [
+        {
+          "token_id": 105104,
+          "text": "熱",
+          "cosine": 0.5846356153488159
+        },
+        {
+          "token_id": 8628,
+          "text": " heat",
+          "cosine": 0.5150259137153625
+        },
+        {
+          "token_id": 26070,
+          "text": " Heat",
+          "cosine": 0.4789105951786041
+        },
+        {
+          "token_id": 61306,
+          "text": "Heat",
+          "cosine": 0.46575358510017395
+        },
+        {
+          "token_id": 28387,
+          "text": " thermal",
+          "cosine": 0.4283871054649353
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "高",
+      "b": "低",
+      "c": "快",
+      "expected": "慢",
+      "query": "低 - 高 + 快",
+      "expected_rank": 3,
+      "difference_cosine": 0.14522694051265717,
+      "nearest": [
+        {
+          "token_id": 4937,
+          "text": " fast",
+          "cosine": 0.46076709032058716
+        },
+        {
+          "token_id": 17288,
+          "text": " Fast",
+          "cosine": 0.4219171404838562
+        },
+        {
+          "token_id": 99843,
+          "text": "慢",
+          "cosine": 0.42177027463912964
+        },
+        {
+          "token_id": 32174,
+          "text": "Fast",
+          "cosine": 0.41385024785995483
+        },
+        {
+          "token_id": 9349,
+          "text": "fast",
+          "cosine": 0.4073657691478729
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "热",
+      "b": "冷",
+      "c": "大",
+      "expected": "小",
+      "query": "冷 - 热 + 大",
+      "expected_rank": 17,
+      "difference_cosine": 0.022756917402148247,
+      "nearest": [
+        {
+          "token_id": 2409,
+          "text": " big",
+          "cosine": 0.4079841375350952
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.38426023721694946
+        },
+        {
+          "token_id": 104197,
+          "text": "的大",
+          "cosine": 0.36319705843925476
+        },
+        {
+          "token_id": 3460,
+          "text": " large",
+          "cosine": 0.34715399146080017
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.3451167643070221
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "热",
+      "b": "冷",
+      "c": "长",
+      "expected": "短",
+      "query": "冷 - 热 + 长",
+      "expected_rank": 24,
+      "difference_cosine": 0.04411871358752251,
+      "nearest": [
+        {
+          "token_id": 100435,
+          "text": "長",
+          "cosine": 0.5737240314483643
+        },
+        {
+          "token_id": 1293,
+          "text": " long",
+          "cosine": 0.5052081346511841
+        },
+        {
+          "token_id": 4825,
+          "text": "long",
+          "cosine": 0.45946478843688965
+        },
+        {
+          "token_id": 17514,
+          "text": "\tlong",
+          "cosine": 0.447792649269104
+        },
+        {
+          "token_id": 6583,
+          "text": "Long",
+          "cosine": 0.4477144777774811
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "热",
+      "b": "冷",
+      "c": "高",
+      "expected": "低",
+      "query": "冷 - 热 + 高",
+      "expected_rank": 7,
+      "difference_cosine": 0.1307343989610672,
+      "nearest": [
+        {
+          "token_id": 1550,
+          "text": " high",
+          "cosine": 0.5198076367378235
+        },
+        {
+          "token_id": 11976,
+          "text": "High",
+          "cosine": 0.458676278591156
+        },
+        {
+          "token_id": 5124,
+          "text": " High",
+          "cosine": 0.45700374245643616
+        },
+        {
+          "token_id": 11892,
+          "text": "high",
+          "cosine": 0.44608592987060547
+        },
+        {
+          "token_id": 40419,
+          "text": "��",
+          "cosine": 0.43206748366355896
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "热",
+      "b": "冷",
+      "c": "快",
+      "expected": "慢",
+      "query": "冷 - 热 + 快",
+      "expected_rank": 14,
+      "difference_cosine": 0.0020190340001136065,
+      "nearest": [
+        {
+          "token_id": 4937,
+          "text": " fast",
+          "cosine": 0.43746939301490784
+        },
+        {
+          "token_id": 17288,
+          "text": " Fast",
+          "cosine": 0.3737814724445343
+        },
+        {
+          "token_id": 9349,
+          "text": "fast",
+          "cosine": 0.364363431930542
+        },
+        {
+          "token_id": 32174,
+          "text": "Fast",
+          "cosine": 0.3539980351924896
+        },
+        {
+          "token_id": 35743,
+          "text": "_fast",
+          "cosine": 0.35155534744262695
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "快",
+      "b": "慢",
+      "c": "大",
+      "expected": "小",
+      "query": "慢 - 快 + 大",
+      "expected_rank": 11,
+      "difference_cosine": 0.10854074358940125,
+      "nearest": [
+        {
+          "token_id": 2409,
+          "text": " big",
+          "cosine": 0.3934476375579834
+        },
+        {
+          "token_id": 3460,
+          "text": " large",
+          "cosine": 0.37852588295936584
+        },
+        {
+          "token_id": 6164,
+          "text": " Big",
+          "cosine": 0.3642566502094269
+        },
+        {
+          "token_id": 16154,
+          "text": "big",
+          "cosine": 0.3638053834438324
+        },
+        {
+          "token_id": 20286,
+          "text": " Large",
+          "cosine": 0.35577157139778137
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "快",
+      "b": "慢",
+      "c": "长",
+      "expected": "短",
+      "query": "慢 - 快 + 长",
+      "expected_rank": 50,
+      "difference_cosine": -0.004208469297736883,
+      "nearest": [
+        {
+          "token_id": 100435,
+          "text": "長",
+          "cosine": 0.6103206872940063
+        },
+        {
+          "token_id": 1293,
+          "text": " long",
+          "cosine": 0.5210157632827759
+        },
+        {
+          "token_id": 6583,
+          "text": "Long",
+          "cosine": 0.49845996499061584
+        },
+        {
+          "token_id": 5724,
+          "text": " Long",
+          "cosine": 0.49652379751205444
+        },
+        {
+          "token_id": 17514,
+          "text": "\tlong",
+          "cosine": 0.49409762024879456
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "快",
+      "b": "慢",
+      "c": "高",
+      "expected": "低",
+      "query": "慢 - 快 + 高",
+      "expected_rank": 8,
+      "difference_cosine": 0.14522694051265717,
+      "nearest": [
+        {
+          "token_id": 1550,
+          "text": " high",
+          "cosine": 0.5169313549995422
+        },
+        {
+          "token_id": 5124,
+          "text": " High",
+          "cosine": 0.48066475987434387
+        },
+        {
+          "token_id": 11976,
+          "text": "High",
+          "cosine": 0.475785493850708
+        },
+        {
+          "token_id": 40419,
+          "text": "��",
+          "cosine": 0.4637468159198761
+        },
+        {
+          "token_id": 11892,
+          "text": "high",
+          "cosine": 0.4606969952583313
+        }
+      ]
+    },
+    {
+      "category": "中文反义关系_探索",
+      "a": "快",
+      "b": "慢",
+      "c": "热",
+      "expected": "冷",
+      "query": "慢 - 快 + 热",
+      "expected_rank": 51,
+      "difference_cosine": 0.0020190340001136065,
+      "nearest": [
+        {
+          "token_id": 105104,
+          "text": "熱",
+          "cosine": 0.5853689312934875
+        },
+        {
+          "token_id": 8628,
+          "text": " heat",
+          "cosine": 0.4840022623538971
+        },
+        {
+          "token_id": 26070,
+          "text": " Heat",
+          "cosine": 0.4480723738670349
+        },
+        {
+          "token_id": 61306,
+          "text": "Heat",
+          "cosine": 0.4351441562175751
+        },
+        {
+          "token_id": 19963,
+          "text": "heat",
+          "cosine": 0.40144357085227966
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "category": "中文国家到首都",
+      "a": "中国",
+      "b": "北京",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "日本",
+      "b": "东京",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "法国",
+      "b": "巴黎",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "德国",
+      "b": "柏林",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "英国",
+      "b": "伦敦",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "意大利",
+      "b": "罗马",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "俄罗斯",
+      "b": "莫斯科",
+      "c": "西班牙",
+      "expected": "马德里",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "中国",
+      "expected": "北京",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "日本",
+      "expected": "东京",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "法国",
+      "expected": "巴黎",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "德国",
+      "expected": "柏林",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "英国",
+      "expected": "伦敦",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "意大利",
+      "expected": "罗马",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "中文国家到首都",
+      "a": "西班牙",
+      "b": "马德里",
+      "c": "俄罗斯",
+      "expected": "莫斯科",
+      "reason": "not_single_token",
+      "split_words": [
+        "马德里"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "China",
+      "b": "Beijing",
+      "c": "Japan",
+      "expected": "Tokyo",
+      "reason": "not_single_token",
+      "split_words": [
+        "Beijing",
+        "Tokyo"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "China",
+      "b": "Beijing",
+      "c": "France",
+      "expected": "Paris",
+      "reason": "not_single_token",
+      "split_words": [
+        "Beijing"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "China",
+      "b": "Beijing",
+      "c": "Germany",
+      "expected": "Berlin",
+      "reason": "not_single_token",
+      "split_words": [
+        "Beijing"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "Japan",
+      "b": "Tokyo",
+      "c": "China",
+      "expected": "Beijing",
+      "reason": "not_single_token",
+      "split_words": [
+        "Tokyo",
+        "Beijing"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "Japan",
+      "b": "Tokyo",
+      "c": "France",
+      "expected": "Paris",
+      "reason": "not_single_token",
+      "split_words": [
+        "Tokyo"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "Japan",
+      "b": "Tokyo",
+      "c": "Germany",
+      "expected": "Berlin",
+      "reason": "not_single_token",
+      "split_words": [
+        "Tokyo"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "France",
+      "b": "Paris",
+      "c": "China",
+      "expected": "Beijing",
+      "reason": "not_single_token",
+      "split_words": [
+        "Beijing"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "France",
+      "b": "Paris",
+      "c": "Japan",
+      "expected": "Tokyo",
+      "reason": "not_single_token",
+      "split_words": [
+        "Tokyo"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "Germany",
+      "b": "Berlin",
+      "c": "China",
+      "expected": "Beijing",
+      "reason": "not_single_token",
+      "split_words": [
+        "Beijing"
+      ]
+    },
+    {
+      "category": "英文国家到首都",
+      "a": "Germany",
+      "b": "Berlin",
+      "c": "Japan",
+      "expected": "Tokyo",
+      "reason": "not_single_token",
+      "split_words": [
+        "Tokyo"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "法国",
+      "b": "法语",
+      "c": "德国",
+      "expected": "德语",
+      "reason": "not_single_token",
+      "split_words": [
+        "法语",
+        "德语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "法国",
+      "b": "法语",
+      "c": "日本",
+      "expected": "日语",
+      "reason": "not_single_token",
+      "split_words": [
+        "法语",
+        "日语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "法国",
+      "b": "法语",
+      "c": "韩国",
+      "expected": "韩语",
+      "reason": "not_single_token",
+      "split_words": [
+        "法语",
+        "韩语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "德国",
+      "b": "德语",
+      "c": "法国",
+      "expected": "法语",
+      "reason": "not_single_token",
+      "split_words": [
+        "德语",
+        "法语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "德国",
+      "b": "德语",
+      "c": "日本",
+      "expected": "日语",
+      "reason": "not_single_token",
+      "split_words": [
+        "德语",
+        "日语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "德国",
+      "b": "德语",
+      "c": "韩国",
+      "expected": "韩语",
+      "reason": "not_single_token",
+      "split_words": [
+        "德语",
+        "韩语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "日本",
+      "b": "日语",
+      "c": "法国",
+      "expected": "法语",
+      "reason": "not_single_token",
+      "split_words": [
+        "日语",
+        "法语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "日本",
+      "b": "日语",
+      "c": "德国",
+      "expected": "德语",
+      "reason": "not_single_token",
+      "split_words": [
+        "日语",
+        "德语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "日本",
+      "b": "日语",
+      "c": "韩国",
+      "expected": "韩语",
+      "reason": "not_single_token",
+      "split_words": [
+        "日语",
+        "韩语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "韩国",
+      "b": "韩语",
+      "c": "法国",
+      "expected": "法语",
+      "reason": "not_single_token",
+      "split_words": [
+        "韩语",
+        "法语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "韩国",
+      "b": "韩语",
+      "c": "德国",
+      "expected": "德语",
+      "reason": "not_single_token",
+      "split_words": [
+        "韩语",
+        "德语"
+      ]
+    },
+    {
+      "category": "国家到语言_探索",
+      "a": "韩国",
+      "b": "韩语",
+      "c": "日本",
+      "expected": "日语",
+      "reason": "not_single_token",
+      "split_words": [
+        "韩语",
+        "日语"
+      ]
+    }
+  ]
+}

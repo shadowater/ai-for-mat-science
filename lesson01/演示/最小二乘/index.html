@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>从调整直线到机器学习 · 最小二乘演示</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#172d3b;background:#eef3f6}*{box-sizing:border-box}body{max-width:1220px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 10px}h2{font-size:18px;margin:0 0 12px}p{line-height:1.7}.muted{color:#536976}.layout{display:grid;grid-template-columns:1.6fr 1fr;gap:18px}.card{background:white;border:1px solid #d6e1e7;border-radius:14px;padding:20px;margin-bottom:18px}label{display:block;margin:14px 0}input[type=range]{width:100%;accent-color:#087e8b}button{font:inherit;padding:10px 13px;border-radius:8px;border:1px solid #a3bdca;background:#fff;cursor:pointer;margin:4px 4px 4px 0}button.primary{background:#075f70;color:white}button:disabled{opacity:.5;cursor:default}button:focus-visible,input:focus-visible{outline:3px solid #e49123;outline-offset:3px}.metrics{display:flex;gap:24px;flex-wrap:wrap}.metrics strong{display:block;font-size:24px;color:#075f70;font-variant-numeric:tabular-nums}svg{width:100%;height:auto;display:block}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{text-align:right;border-bottom:1px solid #e0e8ed;padding:8px 5px}th:first-child,td:first-child{text-align:left}.legend{font-size:14px}.blue{color:#087e8b}.orange{color:#a85b00}#status{min-height:3em;margin-bottom:0}details{line-height:1.8}summary{cursor:pointer;font-weight:600}@media(max-width:820px){body{padding:12px}.layout{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<header><h1>从调整直线到机器学习</h1><p class="muted">三个虚构测量点，一条直线。先自己调整，再让程序根据误差寻找参数。离线可用，无需安装软件或连接模型。</p></header>
+<main class="layout">
+<section>
+<div class="card"><h2>① 预测与测量相差多少？</h2><svg id="fitPlot" viewBox="0 0 680 430" role="img" aria-label="测量点、预测直线与竖直残差线"></svg><p class="legend"><span class="blue">● 训练点</span>　红色虚线：实测与预测的竖直差距　<span class="orange">◆ 检验点（不参与拟合）</span></p></div>
+<div class="card"><h2>② 程序运行时，训练误差怎样变化？</h2><svg id="lossPlot" viewBox="0 0 680 225" role="img" aria-label="自动拟合过程的训练平方误差和曲线"></svg><p class="muted">曲线只记录这次自动拟合；手动调整或直接求解会清空曲线。纵轴为线性刻度，末段变化可能较难看清。</p></div>
+</section>
+<section>
+<div class="card"><h2>调整两个参数</h2><div class="metrics"><div>当前直线<strong id="equation"></strong></div><div>训练平方误差和 SSE<strong id="sse"></strong></div></div>
+<label for="slope">斜率 a：<output id="aValue"></output><input id="slope" type="range" min="0" max="2.5" step="0.001" value="1"></label>
+<label for="intercept">截距 b：<output id="bValue"></output><input id="intercept" type="range" min="-1" max="2" step="0.001" value="0"></label>
+<div><button id="train" class="primary">播放自动拟合</button><button id="pause" disabled>暂停</button><button id="exact">直接求最小二乘解</button><button id="reset">重置</button></div>
+<label><input id="showTest" type="checkbox"> 显示两个新数据点，检查预测</label><p id="testMetric" class="muted" hidden></p><p id="status" role="status" aria-live="polite">先拖动滑块，试着让红色虚线变短。</p>
+</div>
+<div class="card"><h2>三个训练点的误差账本</h2><table><thead><tr><th>x</th><th>实测 y</th><th>预测 ŷ</th><th>残差 y−ŷ</th><th>残差²</th></tr></thead><tbody id="rows"></tbody></table><p class="muted">SSE 是最后一列相加；MSE 是 SSE ÷ 3。二者在本例中有相同的最优参数。</p></div>
+<div class="card"><details><summary>教师说明：这是真计算还是动画示意？</summary><p>每一步都真实计算预测、误差与参数更新。自动拟合使用固定学习率 0.05，沿训练均方误差的负梯度更新 a、b；动画每帧执行 4 次更新。最多 800 次，或梯度足够小时停止。不是预先插值到答案。</p><p>“直接求解”使用含截距的一元最小二乘公式。同一目标可以有不同求解方法，不是所有机器学习都必须慢慢试参数。新数据点只用于显示与评价，不参与更新。</p><p>所有数据均为课程虚构，不是分子溶解度数据。这里演示训练机制；后续再用 ESOL 将输入扩展为多个分子描述符。检验点在训练范围之外，可讨论外推；两个点不足以证明泛化能力，也不用于宣称出现了过拟合。</p><a href="README.md">演示说明与来源</a></details></div>
+</section>
+</main>
+<script src="demo.js"></script>
+</body></html>

@@ -1,0 +1,14 @@
+{
+  "mode": "custom_json_not_native_tool_calls",
+  "messages_sent": [
+    {
+      "role": "user",
+      "content": "工具 circle_area 的参数 radius_mm 是数值，单位 mm。任务：请求计算半径为 2 mm 的圆面积。只返回包含 name 和 arguments 的 JSON，不要自行计算面积。参数必须保持题目给定值，负数也必须保留负号，工具会检查。"
+    }
+  ],
+  "expected_radius_mm": 2,
+  "executed": false,
+  "completed": false,
+  "model_request": "{\n  \"name\": \"circle_area\",\n  \"arguments\": {\n    \"radius_mm\": 2\n  }\n}",
+  "stop_reason": "只生成请求；没有执行工具，也没有请求最终回答。"
+}

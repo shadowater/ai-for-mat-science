@@ -1,0 +1,116 @@
+{
+  "notice": "真实本地请求与输出。数据为虚构教学记录；失败与猜测均原样保留。",
+  "model": "Qwen3-0.6B Q8_0",
+  "temperature": 0.7,
+  "seed": 42,
+  "cases": [
+    {
+      "case": "没有记录",
+      "messages": [
+        {
+          "role": "user",
+          "content": "样品编号是什么？请只回答编号。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n样品编号是什么？请只回答编号。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 21,
+      "answer": "编号",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 21,
+        "total_tokens": 23,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      }
+    },
+    {
+      "case": "带上历史记录",
+      "messages": [
+        {
+          "role": "user",
+          "content": "样品编号是 Z-731。"
+        },
+        {
+          "role": "assistant",
+          "content": "收到记录。"
+        },
+        {
+          "role": "user",
+          "content": "样品编号是什么？请只回答编号。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n样品编号是 Z-731。<|im_end|>\n<|im_start|>assistant\n收到记录。<|im_end|>\n<|im_start|>user\n样品编号是什么？请只回答编号。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 43,
+      "answer": "Z-731",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 43,
+        "total_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 5
+        }
+      }
+    },
+    {
+      "case": "丢掉历史只发末句",
+      "messages": [
+        {
+          "role": "user",
+          "content": "样品编号是什么？请只回答编号。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n样品编号是什么？请只回答编号。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 21,
+      "answer": "编号",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 21,
+        "total_tokens": 23,
+        "prompt_tokens_details": {
+          "cached_tokens": 20
+        }
+      }
+    },
+    {
+      "case": "只提供文件名",
+      "messages": [
+        {
+          "role": "user",
+          "content": "请从教学样品记录.txt读取样品编号。请只回答编号。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n请从教学样品记录.txt读取样品编号。请只回答编号。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 28,
+      "answer": "编号：2023-04-01",
+      "usage": {
+        "completion_tokens": 13,
+        "prompt_tokens": 28,
+        "total_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      }
+    },
+    {
+      "case": "脚本实际读取文件后提供正文",
+      "messages": [
+        {
+          "role": "user",
+          "content": "以下是程序读取的教学样品记录.txt正文：\n样品编号是 Z-731。\n\n样品编号是什么？请只回答编号。"
+        }
+      ],
+      "formatted_prompt": "<|im_start|>user\n以下是程序读取的教学样品记录.txt正文：\n样品编号是 Z-731。\n\n样品编号是什么？请只回答编号。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "formatted_prompt_tokens": 40,
+      "answer": "Z-731",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 40,
+        "total_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      }
+    }
+  ]
+}

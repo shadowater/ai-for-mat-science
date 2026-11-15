@@ -1,0 +1,104 @@
+{
+  "说明": "2026-11-08 WSL CPU 与 GPU 均已实测，以下原始续写概率保留 CPU 样例。单次样例不代表通用表现。",
+  "model": "Qwen/Qwen3-0.6B-GGUF Q8_0",
+  "model_sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+  "tokenizer": {
+    "tokens": [
+      {
+        "id": 111253,
+        "piece": "样品"
+      },
+      {
+        "id": 72640,
+        "piece": "编号"
+      },
+      {
+        "id": 20412,
+        "piece": "是"
+      },
+      {
+        "id": 386,
+        "piece": " M"
+      },
+      {
+        "id": 12,
+        "piece": "-"
+      },
+      {
+        "id": 15,
+        "piece": "0"
+      },
+      {
+        "id": 17,
+        "piece": "2"
+      },
+      {
+        "id": 1773,
+        "piece": "。"
+      }
+    ]
+  },
+  "raw_completion": {
+    "prompt": "样品编号是 M-",
+    "selected_text": "2",
+    "token_ids": [
+      17
+    ],
+    "temperature": 0.7,
+    "seed": 42,
+    "top_candidates_before_sampling": [
+      {
+        "token": "1",
+        "id": 16,
+        "logprob": -1.2666702270507812,
+        "probability": 0.2817682858898434
+      },
+      {
+        "token": "0",
+        "id": 15,
+        "logprob": -1.5316486358642578,
+        "probability": 0.21617897295932467
+      },
+      {
+        "token": "2",
+        "id": 17,
+        "logprob": -1.625509262084961,
+        "probability": 0.1968114210839043
+      },
+      {
+        "token": "3",
+        "id": 18,
+        "logprob": -2.36126708984375,
+        "probability": 0.09430066005506339
+      },
+      {
+        "token": "4",
+        "id": 19,
+        "logprob": -3.2739315032958984,
+        "probability": 0.03785729802462691
+      }
+    ]
+  },
+  "chat": {
+    "prompt": "记录：样品编号是 M-02。请只回答编号。",
+    "observed_output": "M-02"
+  },
+  "gpu_verification": {
+    "device": "ROCm0: AMD Radeon RX 9060 XT",
+    "device_memory_MiB": 16253,
+    "offloaded_layers": "29/29",
+    "model_buffer_MiB": 604.15,
+    "kv_buffer_MiB": 224.0,
+    "compute_buffer_MiB": 28.01,
+    "context_tokens": 2048,
+    "parallel_slots": 1,
+    "chat_observed_output": "M-02",
+    "tokenizer_matches_cpu": true,
+    "raw_completion": {
+      "selected_text": "2",
+      "tokens": [
+        17
+      ]
+    }
+  }
+}
