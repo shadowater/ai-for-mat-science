@@ -1,5 +1,7 @@
 # 第一课课前准备：VS Code 与截图工具
 
+> **VS Code（Visual Studio Code）**是本课使用的代码编辑器；**CSV（Comma-Separated Values，逗号分隔值）**保存表格数据；**JSON（JavaScript Object Notation，JavaScript 对象表示法）**保存结构化数据。
+
 课前安装 VS Code、指定扩展和 Snipaste，并用样例文件检查。课堂将使用 VS Code 阅读 CSV、JSON、Markdown 和 Notebook 文件。
 
 ## 1. 安装并打开 VS Code
@@ -37,7 +39,7 @@
 
 ## 4. 用课程样例检查准备结果
 
-本课的检查文件都放在[课前准备样例](样例/README.md)中。请下载并保留整个第一课文件夹，让样例文件及相邻图片保持原有的相对位置。
+下面测试的文件都放在样例文件夹中，可以直接使用。
 
 1. 用 Excel、WPS 表格或其他兼容的表格软件打开 [`sample.xlsx`](样例/sample.xlsx)，找到 `sample_id` 和 `file_name` 两列，以及样品 `M-02`。
 2. 在 VS Code 中打开同名的 [`sample.csv`](样例/sample.csv)，找到同一行数据。观察 Excel 工作表中的单元格与 CSV 文本中的逗号、换行如何对应；CSV 按列着色需要启用 Rainbow CSV。

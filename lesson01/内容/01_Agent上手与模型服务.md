@@ -4,21 +4,27 @@
 
 使用 Claude Code 的同学先完成[课前准备](../课前准备/README.md)，再选择 OpenCode Console Go 或 DeepSeek 配置模型服务。
 
+> **Agent（智能体）**是根据任务调用模型、工具和相关资料的程序。Claude Code 是本课使用的 Agent 工具。
+
 ## 一、配置Agent需要三项信息
+
+> **API（Application Programming Interface，应用程序编程接口）**：程序按约定的方式向另一项服务发送请求并获取结果。
+>
+> **URL（Uniform Resource Locator，统一资源定位符）**：资源或接口在网络上的地址。**base URL** 是请求所使用的基础地址。
+>
+> **API key（API 密钥）**：服务商签发的调用凭据，用于识别账号或工作区。**ID（Identifier，标识符）**用于指定模型等对象。
 
 配置连接需要服务地址、API key 和模型名称。
 
 | 配置项 | 作用 | 填写内容 |
 | --- | --- | --- |
 | 服务地址（base URL） | 指定模型请求的发送位置 | 所选服务提供的 Anthropic 兼容API地址 |
-| API key（密钥） | 简单来说就是密码 | 所选服务签发的 API key |
+| API key（密钥） | 标识调用服务的账号或工作区 | 所选服务签发的 API key |
 | 模型名称（model ID） | 指定调用的模型 | 所选服务支持的模型 ID |
 
-> 什么是API? 应用编程接口（application programming interface，API），定义了在计算机之间或在计算机程序之间的连接，它是一种类型的软件接口，用来向软件的其他部分提供服务。API的一个目的是隐藏系统工作的内部细节，仅暴露出程序员会觉得有用的那些部分，并即使内部细节稍后发生变化也保持它们的一致性。
+> **Anthropic**：开发 Claude Code 的公司。文中的 Anthropic 兼容接口指采用 Claude Code 可使用的请求格式。
 
-> Anthropic，即Claude Code的开发商
-
-服务地址、API key 和模型 ID 应来自同一家服务，不能混用，因为不同厂商的规范并不相同。
+服务地址、API key 和模型 ID 应来自同一家服务，各服务的接口规范和凭据分别对应。
 
 ## 二、选择模型服务
 
@@ -39,6 +45,10 @@
 ### 1. 打开配置文件
 
 Claude Code 的用户配置文件为 `.claude` 文件夹中的 `settings.json`。
+
+> **WSL（Windows Subsystem for Linux，适用于 Linux 的 Windows 子系统）**：在 Windows 中运行 Linux 环境的功能。
+>
+> **VS Code（Visual Studio Code，代码编辑器）**：本课用于打开工作文件夹和编辑配置文件的软件。**JSON（JavaScript Object Notation，JavaScript 对象表示法）**是 `settings.json` 使用的数据格式。
 
 | 操作系统 | 配置文件路径 |
 | --- | --- |

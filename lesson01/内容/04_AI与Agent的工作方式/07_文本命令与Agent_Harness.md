@@ -4,6 +4,8 @@
 
 本节使用本地模型和 Python 程序展示工具请求、执行与结果反馈。
 
+> **JSON（JavaScript Object Notation，JavaScript 对象表示法）**是结构化文本格式；**HTTP（Hypertext Transfer Protocol，超文本传输协议）**用于网络请求；**WSL（Windows Subsystem for Linux，适用于 Linux 的 Windows 子系统）**在 Windows 中提供 Linux 环境。
+
 ## 一、模型输出与程序执行
 
 模型可以生成 `mkdir lesson-demo`；命令解释程序执行后，文件夹才会出现。

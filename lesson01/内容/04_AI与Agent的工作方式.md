@@ -2,6 +2,8 @@
 
 [返回第一课入口](../README.md)
 
+> **AI（Artificial Intelligence，人工智能）**研究感知、推理、学习等任务。**DENDRAL** 是早期化学结构推断专家系统的项目名称。**ESOL（Estimated Solubility，估算溶解度）**是根据分子结构预测水溶解度的模型。**LLM（Large Language Model，大语言模型）**根据输入文本生成后续内容。**Harness（执行框架）**组织模型输入、工具调用与结果反馈。
+
 本页列出第 4 讲各节内容。详细讲义位于同名文件夹，图片位于 `素材/04_AI与Agent的工作方式/`。
 
 备课资料：[数学建模与 Agent 教学大纲](04_AI与Agent的工作方式/新版教学大纲_讨论稿.md)。
