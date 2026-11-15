@@ -1,45 +1,111 @@
 # Agent 上手与模型服务
 
-[返回第一课入口](../README.md) · [查看教学大纲](../01_第一次课教学大纲.md)
+[返回第一课入口](../README.md)
 
-中文讲义草稿 · 2026-11-04
+使用 Claude Code 的同学先完成[课前准备](../课前准备/README.md)，再选择 OpenCode Console Go 或 DeepSeek 配置模型服务。使用网页 Agent 的同学可以上传课程材料，结合材料进行交流。
 
-开场沿用原先计划的桌面入口，完成安装、该工具支持的登录或服务配置、选择课程文件夹和第一次提问。下面新增的 Claude Code 接入示例作为模型服务配置的候选路线；学生按课堂选定的一条路线完成即可。使用网页 Agent 的同学，提供相关材料后，也可以先参与概念问答。不能默认网页工具可以读取学生电脑上的文件。
+## 一、API 连接的三项信息
 
-## 一、 认识模型服务连接的三项核心信息
+Agent 通过 API 向模型服务发送请求并接收回复。配置连接需要服务地址、API key 和模型名称。
 
-**API** 是软件向另一个程序请求服务的接口。这里，Agent 工具通过 API 向模型服务发送请求，并接收回答。采用 API 接入时，先认识三项核心信息：
+| 配置项 | 作用 | 填写内容 |
+| --- | --- | --- |
+| 服务地址（base URL） | 指定模型请求的发送位置 | 所选服务提供的 Anthropic 兼容接口地址 |
+| API key（密钥） | 标识调用服务的账号或工作区 | 所选服务签发的 API key |
+| 模型名称（model ID） | 指定调用的模型 | 所选服务支持的模型 ID |
 
-| 配置项 | 怎样理解 | 学生需要认清什么 |
-| --------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------ |
-| 服务地址（URL / base URL） | 工具把模型请求发送到哪里 | 使用文档中与当前工具、接口格式对应的地址，不能直接填服务商的网站首页。 |
-| API key（密钥） | 允许程序以某个账号或工作区的身份调用服务的凭据 | 使用所选服务商签发的密钥。可以把它理解为“给程序用的密码”，但它不是账号的登录密码。 |
-| 模型名称（model name / model ID） | 告诉服务商这次要调用哪个模型的标识 | 从服务商文档中查找可用名称；网页上的展示名称不一定就是 API 接受的名称。 |
+浏览器直接打开 API 地址时，会发送普通的网页请求。Claude Code 调用模型时，会在请求中附上 API key、模型名称和消息内容。两种请求的方式和内容不同，因此浏览器可能显示 `404`、`405` 或 `401`。模型连接通过 Claude Code 中的实际回复确认。
 
-三项信息需要与选用的服务和工具配套。实际使用还可能涉及工具安装、账号权限、余额或套餐额度、接口兼容性，以及工具自身的其他设置。采用账号登录的入口，可能会替用户处理其中一部分信息。课堂示例统一用 `<YOUR_API_KEY>` 这样的占位符，不填写真实密钥。
+服务地址、API key 和模型 ID 应来自同一家服务。下方代码用占位符表示密钥。
 
-## 二、 接入候选与参考入口
+## 二、选择模型服务
 
-**路线 A：通过 Claude Code 使用 DeepSeek 模型服务。** Claude Code 提供 Agent 操作入口，DeepSeek 提供模型服务。这个例子正好可以说明：工具的名称不一定就是实际使用的模型名称。
+### 路线 A：OpenCode Console Go
+
+- [OpenCode Console](https://opencode.ai/console)：进入自己的工作区，获取 API key。
+- [Console 接入 Claude Code 指南](https://opencode.ai/docs/console/harnesses/claude-code/)：查看服务地址、认证方式和模型配置。
+- [OpenCode Go 套餐说明](https://opencode.ai/docs/console/go/)：查看订阅价格、可用模型和用量限制。
+
+### 路线 B：DeepSeek 官方 API
 
 - [DeepSeek API 文档](https://api-docs.deepseek.com/zh-cn/)：查找服务地址和模型标识。
 - [DeepSeek API key 页面](https://platform.deepseek.com/api_keys)：获取所用账号的调用凭据。
-- [DeepSeek 接入 Claude Code 指南](https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/claude_code/)：按自己的操作系统查看步骤，使用指南给出的兼容接口地址和环境变量设置。
+- [DeepSeek 接入 Claude Code 指南](https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code/)：查看兼容接口地址和模型名称。
 
-**路线 B：通过 Claude Code 使用 OpenCode Console 模型服务。** 这里要区分 OpenCode 这款 Agent 工具，以及提供模型访问的 Console 服务。
+## 三、在用户配置文件中接入模型服务
 
-- [OpenCode Console](https://opencode.ai/console)：进入自己的工作区，获取 API key。
-- [Console 接入 Claude Code 指南](https://opencode.ai/v2/docs/console/harnesses/claude-code/)：查看服务地址、认证方式和模型配置。
-- [OpenCode Go 套餐说明](https://opencode.ai/v2/docs/console/go/)：查看订阅价格、可用模型和用量限制。
+### 1. 打开配置文件
 
-截至 2026-11-03 核对，个人套餐包括 **Go：10 美元/月**和 **Go Plus：40 美元/月**。套餐有用量限制，是否比按量付费划算，要结合模型和实际使用量判断；确定课堂方案前再核对当时条款。官方文档还列有团队套餐。
+Claude Code 的用户配置文件为 `.claude` 文件夹中的 `settings.json`。
 
-教师备课书签：原先提供的[组织服务账号页面](https://opencode.ai/console/org_01M4D87KW3Y15KSD889B3GP88M/settings/service-accounts)指向一个特定工作区，不是所有学生通用的入口。Go 文档说明服务账号不在 Go Teams 的覆盖范围内，不能默认服务账号密钥会使用个人订阅额度。
+| 操作系统 | 配置文件路径 |
+| --- | --- |
+| Windows | `%USERPROFILE%\.claude\settings.json` |
+| macOS、Linux、WSL | `~/.claude/settings.json` |
 
-## 三、 确认助手已经可以使用
+在 WSL 中，`~` 指 WSL 用户的主目录。Claude Code 命令行和 VS Code 扩展使用这个配置文件。详见 [Claude Code 设置文件说明](https://code.claude.com/docs/en/settings)。
 
-第一次可以这样问：
+在 VS Code 中打开课程工作文件夹后，可以通过以下快捷键打开或新建配置文件：
 
-> 我没有计算机基础。请用这份课程材料中的例子，解释内存和硬盘有什么区别，再问我一个简单的问题，检查我是否理解。
+| 操作 | Windows、Linux、WSL | macOS |
+| --- | --- | --- |
+| 打开已有文件 | `Ctrl+O`，选择 `settings.json` | `Cmd+O`，选择 `settings.json` |
+| 首次配置时新建并另存为 | `Ctrl+N`，再按 `Ctrl+Shift+S` | `Cmd+N`，再按 `Cmd+Shift+S` |
+| 修改后保存 | `Ctrl+S` | `Cmd+S` |
 
-这个环节先建立课堂中随时提问的入口。随后通过一次实际文件操作，让大家看到 Agent 的执行过程。制作操作指南时，再核对安装界面和账号要求；[官方入门说明](https://learn.chatgpt.com/docs/quickstart)提供了安装、登录、选择工作位置和发出第一条消息的流程。
+首次配置时，先在用户目录创建 `.claude` 文件夹，再把新文件保存为 `settings.json`。将下方所选路线的 JSON 写入文件，并把密钥占位符替换为自己的 API key。已有配置文件时，把相应条目合并到顶层 `env` 对象。保存前检查 VS Code 的 JSON 语法提示。
+
+也可以按 `Ctrl+Shift+P`（macOS 为 `Cmd+Shift+P`），搜索 **Open File / 打开文件**，输入上表中的完整路径。API key 保存在用户目录的配置文件中。
+
+### 2A. OpenCode Console Go 配置示例
+
+在 [OpenCode Console](https://opencode.ai/console) 中取得 API key，并核对工作区的 Go 订阅和可用额度。将 `<YOUR_OPENCODE_API_KEY>` 替换为自己的密钥。示例使用 Go 套餐的 Anthropic 兼容地址和模型 ID，配置依据见 [Claude Code 接入说明](https://opencode.ai/docs/console/harnesses/claude-code/)和 [Go 模型表](https://opencode.ai/docs/console/go/)。
+
+```json
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://opencode.ai/inference/go/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "<YOUR_OPENCODE_API_KEY>",
+    "ANTHROPIC_MODEL": "deepseek-v4.1-flash-1017[1m]",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "deepseek-v4.1-flash-1017[1m]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4.1-flash-1017[1m]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4.1-flash-1017[1m]",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4.1-flash-1017[1m]",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-v4.1-flash-1017[1m]",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "786432"
+  }
+}
+```
+
+`ANTHROPIC_BASE_URL` 指定服务地址，Claude Code 会添加 `/v1/messages` 请求路径。`ANTHROPIC_AUTH_TOKEN` 保存 API key，`ANTHROPIC_MODEL` 指定主会话模型，`ANTHROPIC_DEFAULT_*_MODEL` 指定模型别名，`CLAUDE_CODE_SUBAGENT_MODEL` 指定子任务模型，`CLAUDE_CODE_AUTO_COMPACT_WINDOW` 指定长对话的自动压缩窗口。具体配置项见 [Claude Code 模型配置说明](https://code.claude.com/docs/en/model-config)。
+
+示例使用 `deepseek-v4.1-flash-1017[1m]`。请在自己的工作区查看可用模型 ID；[Go 模型表](https://opencode.ai/docs/console/go/)列出的名称为 `deepseek-v4.1-flash`。
+
+### 2B. DeepSeek 官方 API 配置示例
+
+从 [DeepSeek 平台](https://platform.deepseek.com/api_keys)获取 API key。将 `<YOUR_DEEPSEEK_API_KEY>` 替换为自己的密钥。示例地址和模型 ID 见 [DeepSeek 的 Claude Code 接入指南](https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code/)。
+
+```json
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "<YOUR_DEEPSEEK_API_KEY>",
+    "ANTHROPIC_MODEL": "deepseek-flash[1m]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-flash[1m]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-flash[1m]",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-flash",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-flash",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "786432"
+  }
+}
+```
+
+每个代码块展示一套完整配置。保存所选路线的配置后，重新打开 Claude Code。已经登录 Claude 账号、准备改用 OpenCode Console 的同学，先根据 [OpenCode 接入说明](https://opencode.ai/docs/console/harnesses/claude-code/)运行 `/logout`。
+
+下图展示 VS Code 中的 Claude Code 界面。左侧有 Claude Code 入口和 **New session** 按钮，右侧是对话区域，底部显示当前模型。
+
+![VS Code 中的 Claude Code：左侧为入口和新建会话按钮，右侧为一次成功的简短对话](素材/01_Agent上手与模型服务/claude-code-首次对话.png)
+
+## 四、检查连接
+
+在 VS Code 中打开课程材料所在的文件夹，再进入 Claude Code。运行 `/status` 查看服务地址和认证来源，然后发送一条简短消息。收到模型回复后，就可以使用 Agent 阅读和处理课程材料。分享 `/status` 截图时，请遮盖密钥和账号信息。
