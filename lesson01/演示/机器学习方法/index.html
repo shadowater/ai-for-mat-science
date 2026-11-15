@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>真实化学测量数据中的三种机器学习方法</title>
+<style>
+:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#182e3e;background:#eef3f6}*{box-sizing:border-box}body{max-width:1100px;padding:24px;margin:auto}h1{font-size:28px;margin:0 0 10px}h2{font-size:19px}p{line-height:1.7}.muted{color:#526b7a}.grid{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}.card{padding:20px;background:white;border:1px solid #d6e1e7;border-radius:14px;margin-bottom:18px}svg{width:100%;height:auto;display:block}label{display:block;margin:16px 0}select,button{font:inherit;border:1px solid #a3bdca;padding:10px;border-radius:8px;background:white}select{max-width:100%}button{cursor:pointer;margin:4px 4px 4px 0}button.primary{background:#075f70;color:white}button:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid #e49123;outline-offset:3px}.metrics{display:flex;gap:24px;flex-wrap:wrap}.metrics strong{display:block;font-size:23px;color:#075f70}#status{min-height:3.6em}#history{font-variant-numeric:tabular-nums;max-height:165px;overflow:auto}@media(max-width:800px){.grid{grid-template-columns:1fr}body{padding:12px}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<h1>真实化学测量数据中的三种机器学习方法</h1>
+<p class="muted">使用 <a href="https://archive.ics.uci.edu/dataset/109/wine">UCI Wine 数据集</a>的 178 个样品。K-Means 展示无标签分组，PCA 展示二维投影，SVM 展示利用已知品种类别得到的分类边界。</p>
+<main class="grid">
+<section class="card"><h2>动画</h2><svg id="plot" viewBox="0 0 600 520" role="img" aria-label="酒类样品的散点图与机器学习方法的动画结果"></svg><p id="detail" class="muted"></p></section>
+<section>
+<div class="card"><h2>选择方法</h2><label for="method">演示内容 <select id="method"><option value="kmeans">K-Means：按相似程度分组</option><option value="pca">PCA：投影到两个主要方向</option><option value="svm">SVM：根据已知类别划分边界</option></select></label><p id="description"></p><div><button id="play" class="primary">播放动画</button><button id="pause" disabled>暂停</button><button id="reset">重置</button></div><p id="status" role="status" aria-live="polite"></p><div class="metrics"><div>数据<strong id="count"></strong></div><div>进度<strong id="step"></strong></div><div id="metricBox">分组目标<strong id="metric"></strong></div></div></div>
+<div class="card" id="historyBox"><h2>K-Means 更新记录</h2><div id="history"></div></div>
+<div class="card"><h2>数据说明</h2><p>动画取数据集中的酒精和苹果酸测量值；K-Means 对这两列做标准化后计算距离。PCA 对全部 13 项化学指标标准化后投影到二维。SVM 使用这个二维投影及数据集中已有的品种类别。</p><p class="muted">来源：Aeberhard 与 Forina，<a href="https://doi.org/10.24432/C5PC7J">Wine 数据集</a>，UCI Machine Learning Repository，CC BY 4.0。<a href="README.md">数据处理与演示说明</a></p></div>
+</section>
+</main>
+<script src="wine-data.js"></script><script src="demo.js"></script>
+</body>
+</html>

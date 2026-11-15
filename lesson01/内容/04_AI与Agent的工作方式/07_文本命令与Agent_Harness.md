@@ -4,8 +4,6 @@
 
 本节使用本地模型和 Python 程序展示工具请求、执行与结果反馈。
 
-> **JSON（JavaScript Object Notation，JavaScript 对象表示法）**是结构化文本格式；**HTTP（Hypertext Transfer Protocol，超文本传输协议）**用于网络请求；**WSL（Windows Subsystem for Linux，适用于 Linux 的 Windows 子系统）**在 Windows 中提供 Linux 环境。
-
 ## 一、模型输出与程序执行
 
 模型可以生成 `mkdir lesson-demo`；命令解释程序执行后，文件夹才会出现。
@@ -23,6 +21,8 @@ Python 解释器负责执行 Python 代码。程序保存报告后，可以在�
 任务内容：
 
 > 读取教学样品记录，按圆形计算面积，保存一份 Markdown 报告，然后结束。
+
+> **JSON（JavaScript Object Notation，JavaScript 对象表示法）**是用名称和值组织数据的文本格式。
 
 [输入记录](../../演示/最小Harness/data/sample.json)包含虚构样品 DROP-07，半径为 2 mm。程序根据记录计算圆面积。
 
@@ -48,6 +48,8 @@ Python 解释器负责执行 Python 代码。程序保存报告后，可以在�
 **报告来自固定模板。**模型决定请求哪个动作；程序根据实际记录计算面积，并把编号和面积填入模板。
 
 ## 四、逐轮运行
+
+> **WSL（Windows Subsystem for Linux，适用于 Linux 的 Windows 子系统）**在 Windows 中提供 Linux 环境。
 
 先确认 [WSL 本地模型服务](../../演示/本地语言模型/README.md)已经运行。进入[最小 Harness 目录](../../演示/最小Harness/README.md)，执行：
 
@@ -186,6 +188,8 @@ Harness 组织模型输入，解析工具请求，管理执行状态，并根据
 更复杂的 Harness 可以增加历史摘要、长期记忆检索、权限管理或重试等功能，这些属于后续扩展；本例聚焦最小行动循环。
 
 ### 当前使用的程序结构
+
+> **HTTP（Hypertext Transfer Protocol，超文本传输协议）**用于网络请求。
 
 这里使用一个由 **Python 标准库**编写的小程序，通过 HTTP 调用本地模型服务。JSON 输出格式约束由推理服务支持，具体工具与循环由本课代码实现。
 
