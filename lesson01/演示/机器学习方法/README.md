@@ -1,6 +1,6 @@
 # 真实化学测量数据：三种机器学习方法动画
 
-配合[第 4 章第 3 节](../../内容/04_AI与Agent的工作方式/03_聚类降维与分类.md)。下载本目录后，在浏览器打开 `index.html`，选择 K-Means、PCA 或 SVM，设置属性或主成分数；二维模式及 K-Means 可点击“播放”，高维 PCA 和 SVM 直接显示结果。页面从同目录读取 `style.css`、`wine-data.js` 和 `demo.js`，支持离线使用。
+配合[1.4.3 第 3 节](../../内容/1.4_AI与Agent的工作方式/1.4.3_聚类降维与分类.md)。下载本目录后，在浏览器打开 `index.html`，选择 K-Means、PCA 或 SVM，设置属性或主成分数；二维模式及 K-Means 可点击“播放”，高维 PCA 和 SVM 直接显示结果。页面从同目录读取 `style.css`、`wine-data.js` 和 `demo.js`，支持离线使用。
 
 ## 课堂操作
 

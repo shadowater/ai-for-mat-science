@@ -1,6 +1,6 @@
 # Arrhenius 最小二乘拟合
 
-配合[第二节讲义](../../内容/04_AI与Agent的工作方式/02_机器学习与最小二乘法.md)。
+配合[1.4.2 第二节讲义](../../内容/1.4_AI与Agent的工作方式/1.4.2_机器学习与最小二乘法.md)。
 
 数据来自 Stephen Lower 的 [Chem1 Virtual Textbook：Activation energy, Arrhenius law](https://chem1.com/acad/webtext/dynamics/dynamics-3.html) 中环丙烷异构化为丙烯的教学例题。仅摘录四组温度与速率常数，未复制原文或图像。来源未在例题中列出原始实验论文，课程按教材示例数据使用。
 
