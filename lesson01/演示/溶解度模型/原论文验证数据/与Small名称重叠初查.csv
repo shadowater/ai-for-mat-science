@@ -1,0 +1,22 @@
+﻿name,exact_name_match_in_small,small_measured_logS,table4_measured_logS,our_split,small_SMILES_candidate,status
+antipyrine,False,,-0.56,,,未精确匹配，不能据此判定无重叠
+aspirin,False,,-1.72,,,未精确匹配，不能据此判定无重叠
+atrazine,True,-3.85,-3.85,train,CCNc1nc(Cl)nc(NC(C)C)n1,名称匹配，结构身份仍需核对
+benzocaine,True,-2.616,-2.32,test,CCOC(=O)c1ccc(N)cc1,名称匹配，结构身份仍需核对
+chlordane,True,-6.86,-6.86,test,ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,名称匹配，结构身份仍需核对
+chlorpyrifos,True,-5.67,-5.49,train,CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl,名称匹配，结构身份仍需核对
+DDT,True,-7.15,-8.08,train,Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl,名称匹配，结构身份仍需核对
+diazepam,True,-3.754,-3.76,train,CN2C(=O)CN=C(c1ccccc1)c3cc(Cl)ccc23,名称匹配，结构身份仍需核对
+diazinon,True,-3.64,-3.64,train,CCOP(=S)(OCC)Oc1cc(C)nc(n1)C(C)C,名称匹配，结构身份仍需核对
+diuron,True,-3.8,-3.8,validation,CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1,名称匹配，结构身份仍需核对
+lindane,True,-4.64,-4.64,train,ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl,名称匹配，结构身份仍需核对
+malathion,True,-3.37,-3.37,train,CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC,名称匹配，结构身份仍需核对
+nitrofurantoin,True,-3.38,-3.47,train,O=C2CN(N=Cc1ccc(o1)N(=O)=O)C(=O)N2,名称匹配，结构身份仍需核对
+parathion,True,-4.66,-4.66,train,CCOP(=S)(OCC)Oc1ccc(cc1)N(=O)=O,名称匹配，结构身份仍需核对
+"2,2',4,5,5'-PCB",False,,-7.89,,,未精确匹配，不能据此判定无重叠
+phenobarbital,True,-2.322,-2.34,train,CCC1(C(=O)NC(=O)NC1=O)c2ccccc2,名称匹配，结构身份仍需核对
+phenolphthalein,True,-2.9,-2.9,train,Oc1ccc(cc1)C2(OC(=O)c3ccccc23)c4ccc(O)cc4,名称匹配，结构身份仍需核对
+phenytoin,True,-4.097,-3.99,validation,O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3,名称匹配，结构身份仍需核对
+prostaglandin E2,False,,-2.47,,,未精确匹配，不能据此判定无重叠
+testosterone,True,-4.02,-4.09,train,CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1O,名称匹配，结构身份仍需核对
+theophylline,True,-1.39,-1.39,train,Cn1c(=O)n(C)c2nc[nH]c2c1=O,名称匹配，结构身份仍需核对

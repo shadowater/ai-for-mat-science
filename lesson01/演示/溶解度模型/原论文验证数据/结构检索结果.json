@@ -1,0 +1,233 @@
+[
+  {
+    "name_as_printed": "antipyrine",
+    "CAS_as_printed": "60-80-0",
+    "measured_logS": "-0.56",
+    "ESOL_logS": "-1.79",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 2206,
+    "SMILES": "CC1=CC(=O)N(N1C)C2=CC=CC=C2",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/60-80-0/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "aspirin",
+    "CAS_as_printed": "50-78-2",
+    "measured_logS": "-1.72",
+    "ESOL_logS": "-1.98",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 2244,
+    "SMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/50-78-2/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "atrazine",
+    "CAS_as_printed": "1912-24-9",
+    "measured_logS": "-3.85",
+    "ESOL_logS": "-2.95",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 2256,
+    "SMILES": "CCNC1=NC(=NC(=N1)Cl)NC(C)C",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1912-24-9/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "benzocaine",
+    "CAS_as_printed": "94-09-7",
+    "measured_logS": "-2.32",
+    "ESOL_logS": "-2.38",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 2337,
+    "SMILES": "CCOC(=O)C1=CC=C(C=C1)N",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/94-09-7/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "chlordane",
+    "CAS_as_printed": "57-74-9",
+    "measured_logS": "-6.86",
+    "ESOL_logS": "-5.88",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 11954021,
+    "SMILES": "C1C2C(C(C1Cl)Cl)[C@]3(C(=C([C@@]2(C3(Cl)Cl)Cl)Cl)Cl)Cl",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/57-74-9/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "chlorpyrifos",
+    "CAS_as_printed": "2921-88-2",
+    "measured_logS": "-5.49",
+    "ESOL_logS": "-4.89",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 2730,
+    "SMILES": "CCOP(=S)(OCC)OC1=NC(=C(C=C1Cl)Cl)Cl",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2921-88-2/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "DDT",
+    "CAS_as_printed": "50-29-3",
+    "measured_logS": "-8.08",
+    "ESOL_logS": "-6.47",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 3036,
+    "SMILES": "C1=CC(=CC=C1C(C2=CC=C(C=C2)Cl)C(Cl)(Cl)Cl)Cl",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/50-29-3/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "diazepam",
+    "CAS_as_printed": "439-14-5",
+    "measured_logS": "-3.76",
+    "ESOL_logS": "-4.03",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 3016,
+    "SMILES": "CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/439-14-5/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "diazinon",
+    "CAS_as_printed": "33-41-5",
+    "measured_logS": "-3.64",
+    "ESOL_logS": "-3.95",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "原表 CAS 33-41-5 校验位不通过，保留原文待核对",
+    "PubChem_CID": 3017,
+    "SMILES": "CCOP(=S)(OCC)OC1=NC(=NC(=C1)C)C(C)C",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/diazinon/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "diuron",
+    "CAS_as_printed": "330-54-1",
+    "measured_logS": "-3.8",
+    "ESOL_logS": "-3.3",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 3120,
+    "SMILES": "CN(C)C(=O)NC1=CC(=C(C=C1)Cl)Cl",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/330-54-1/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "lindane",
+    "CAS_as_printed": "58-89-9",
+    "measured_logS": "-4.64",
+    "ESOL_logS": "-3.97",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 727,
+    "SMILES": "C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/58-89-9/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "malathion",
+    "CAS_as_printed": "121-75-5",
+    "measured_logS": "-3.37",
+    "ESOL_logS": "-3.4",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 4004,
+    "SMILES": "CCOC(=O)CC(C(=O)OCC)SP(=S)(OC)OC",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/121-75-5/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "nitrofurantoin",
+    "CAS_as_printed": "67-20-9",
+    "measured_logS": "-3.47",
+    "ESOL_logS": "-1.36",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 6604200,
+    "SMILES": "C1C(=O)NC(=O)N1/N=C/C2=CC=C(O2)[N+](=O)[O-]",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/67-20-9/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "parathion",
+    "CAS_as_printed": "56-38-2",
+    "measured_logS": "-4.66",
+    "ESOL_logS": "-3.93",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 991,
+    "SMILES": "CCOP(=S)(OCC)OC1=CC=C(C=C1)[N+](=O)[O-]",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/56-38-2/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "2,2',4,5,5'-PCB",
+    "CAS_as_printed": "37680-73-2",
+    "measured_logS": "-7.89",
+    "ESOL_logS": "-6.61",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 37807,
+    "SMILES": "C1=CC(=C(C=C1Cl)C2=CC(=C(C=C2Cl)Cl)Cl)Cl",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/37680-73-2/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "phenobarbital",
+    "CAS_as_printed": "50-06-6",
+    "measured_logS": "-2.34",
+    "ESOL_logS": "-2.33",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 4763,
+    "SMILES": "CCC1(C(=O)NC(=O)NC1=O)C2=CC=CC=C2",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/50-06-6/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "phenolphthalein",
+    "CAS_as_printed": "77-09-8",
+    "measured_logS": "-2.9",
+    "ESOL_logS": "-3.91",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 4764,
+    "SMILES": "C1=CC=C2C(=C1)C(=O)OC2(C3=CC=C(C=C3)O)C4=CC=C(C=C4)O",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/77-09-8/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "phenytoin",
+    "CAS_as_printed": "57-41-0",
+    "measured_logS": "-3.99",
+    "ESOL_logS": "-3.09",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 1775,
+    "SMILES": "C1=CC=C(C=C1)C2(C(=O)NC(=O)N2)C3=CC=CC=C3",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/57-41-0/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "prostaglandin E2",
+    "CAS_as_printed": "363-24-6",
+    "measured_logS": "-2.47",
+    "ESOL_logS": "-2.87",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 5280360,
+    "SMILES": "CCCCC[C@@H](/C=C/[C@H]1[C@@H](CC(=O)[C@@H]1C/C=C\\CCCC(=O)O)O)O",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/363-24-6/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "testosterone",
+    "CAS_as_printed": "58-22-0",
+    "measured_logS": "-4.09",
+    "ESOL_logS": "-3.64",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 6013,
+    "SMILES": "C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/58-22-0/property/CanonicalSMILES,IsomericSMILES/JSON"
+  },
+  {
+    "name_as_printed": "theophylline",
+    "CAS_as_printed": "58-55-9",
+    "measured_logS": "-1.39",
+    "ESOL_logS": "-1.52",
+    "source": "Delaney 2004 Table 4, p.1003",
+    "note": "",
+    "PubChem_CID": 2153,
+    "SMILES": "CN1C2=C(C(=O)N(C1=O)C)NC=N2",
+    "structure_source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/58-55-9/property/CanonicalSMILES,IsomericSMILES/JSON"
+  }
+]

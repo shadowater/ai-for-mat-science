@@ -1,0 +1,43 @@
+{
+  "source": "https://chem1.com/acad/webtext/dynamics/dynamics-3.html",
+  "slope_K": -33104.58633594288,
+  "intercept": 35.550343347769996,
+  "Ea_kJ_mol": 275.2468455745506,
+  "A_s_inv": 2749906614832918.0,
+  "sse_log_space": 0.030868411083824307,
+  "prediction_550_C_s_inv": 0.009404081865945707,
+  "rows": [
+    {
+      "temperature_C": 477,
+      "temperature_K": 750.15,
+      "inverse_T_K_inv": 0.0013330667199893355,
+      "k_s_inv": 0.00018,
+      "log_k": -8.622553707074063,
+      "fitted_k_s_inv": 0.00018777258611213116
+    },
+    {
+      "temperature_C": 523,
+      "temperature_K": 796.15,
+      "inverse_T_K_inv": 0.0012560447151918608,
+      "k_s_inv": 0.0027,
+      "log_k": -5.914503505971854,
+      "fitted_k_s_inv": 0.0024042978601210457
+    },
+    {
+      "temperature_C": 577,
+      "temperature_K": 850.15,
+      "inverse_T_K_inv": 0.0011762630124095748,
+      "k_s_inv": 0.03,
+      "log_k": -3.506557897319982,
+      "fitted_k_s_inv": 0.03373035516492575
+    },
+    {
+      "temperature_C": 623,
+      "temperature_K": 896.15,
+      "inverse_T_K_inv": 0.0011158846175305475,
+      "k_s_inv": 0.26,
+      "log_k": -1.3470736479666092,
+      "fitted_k_s_inv": 0.24893702797005615
+    }
+  ]
+}
