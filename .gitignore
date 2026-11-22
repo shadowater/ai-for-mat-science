@@ -7,3 +7,10 @@
 
 # Locally generated distribution archives
 # 预习课/*.zip
+
+# 本地 MNIST 练习项目与生成文件（不提交）
+/mnist_demo/
+/lesson02/MNIST/data/
+/lesson02/MNIST/outputs/
+**/__pycache__/
+*.pyc

@@ -1,5 +1,5 @@
-# data/
-# outputs/
-# mnist_demo/
-# __pycache__/
-# *.pyc
+data/
+outputs/
+mnist_demo/
+__pycache__/
+*.pyc
