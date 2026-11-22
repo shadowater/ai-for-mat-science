@@ -1,5 +1,0 @@
-data/
-outputs/
-mnist_demo/
-__pycache__/
-*.pyc

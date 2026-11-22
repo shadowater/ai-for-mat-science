@@ -1,6 +1,6 @@
 # MNIST 手写数字识别：90 分钟课堂实战
 
-[返回第一课入口](../../README.md) · [学生提示词卡](课堂提示词.md) · [参考脚本](mnist_reference.py) · [环境检查](check_env.py)
+[返回第二课入口](../README.md) · [返回 Vision 先导](../Vision/README.md) · [学生提示词卡](课堂提示词.md) · [参考脚本](mnist_reference.py) · [环境检查](check_env.py)
 
 **给谁用**：材料、化学、化工研究生；已用过 Claude Code，但不要求会写 PyTorch。
 
@@ -17,7 +17,7 @@
 
 ## 0. 先记住三件事
 
-**课堂文件夹**：在 VS Code 中打开 `lesson01/演示/MNIST`，再启动 Claude Code。下面所有提示词都以这个文件夹为当前目录；学生项目会生成在 `mnist_demo/` 子文件夹里。
+**课堂文件夹**：在 VS Code 中打开 `lesson02/MNIST`，再启动 Claude Code。下面所有提示词都以这个文件夹为当前目录；学生项目会生成在 `mnist_demo/` 子文件夹里。
 
 1. **一次只让 Agent 做一件事。** 不要一次说“帮我做个 MNIST 项目”，它会写一大堆你看不过来的代码。按下面的 8 张卡，一张一张来。
 2. **每步都要求它运行并贴真实输出。** 只说“代码写好了”不算完成。没有运行输出，就不知道对不对。
@@ -32,7 +32,7 @@
 在 VS Code 中打开课程文件夹，进入本目录：
 
 ```bash
-cd lesson01/演示/MNIST
+cd lesson02/MNIST
 python check_env.py
 ```
 
