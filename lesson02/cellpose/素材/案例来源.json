@@ -1,0 +1,61 @@
+[
+  {
+    "file": "05_cellpose_002_img.png",
+    "title": "荧光细胞",
+    "source": "Cellpose 官方在线演示",
+    "url": "https://huggingface.co/spaces/mouseland/cellpose/resolve/main/samples/002_img.png",
+    "processing": "原始文件，按课程顺序重命名",
+    "sha256": "c8da96493de75cd85bdfd4dbcf27ca77fe75f955a505037e576bdbb11a489752"
+  },
+  {
+    "file": "06_cellpose_016_img.png",
+    "title": "细胞轮廓",
+    "source": "Cellpose 官方在线演示",
+    "url": "https://huggingface.co/spaces/mouseland/cellpose/resolve/main/samples/016_img.png",
+    "processing": "原始文件，按课程顺序重命名",
+    "sha256": "bf72416f7ed5f56e050bc620422e5d288d8e5faa84dbd5cf25da2ff8fe4c210f"
+  },
+  {
+    "file": "07_cellpose_039_img.png",
+    "title": "杆状与球状目标",
+    "source": "Cellpose 官方在线演示",
+    "url": "https://huggingface.co/spaces/mouseland/cellpose/resolve/main/samples/039_img.png",
+    "processing": "原始文件，按课程顺序重命名",
+    "sha256": "b97805af1046c1875a14711c582f8e93292490a07d2e375d7e5aa5b44da1f74a"
+  },
+  {
+    "file": "08_cellpose_033_img.png",
+    "title": "多边形颗粒",
+    "source": "Cellpose 官方在线演示",
+    "url": "https://huggingface.co/spaces/mouseland/cellpose/resolve/main/samples/033_img.png",
+    "processing": "原始文件，按课程顺序重命名",
+    "sha256": "6654a591bb186069608dcfbda2f886318ff1f039171d0a0930f8f1cba6ffae5e"
+  },
+  {
+    "file": "09_TiO2_SEM_1908248.tif",
+    "title": "TiO2 SEM",
+    "source": "BAMresearch/automatic-sem-image-segmentation",
+    "url": "https://raw.githubusercontent.com/BAMresearch/automatic-sem-image-segmentation/master/Datasets/Electron%20Microscopy%20Images/SEM/1908248.tif",
+    "processing": "原始文件，按课程顺序重命名",
+    "license": "CC BY-NC-ND 4.0",
+    "sha256": "f5a20c3a172a6f608424103505fd633afb77b863da6028828236ed1f893390a4"
+  },
+  {
+    "file": "10_TiO2_SEM_1908250.tif",
+    "title": "TiO2 SEM",
+    "source": "BAMresearch/automatic-sem-image-segmentation",
+    "url": "https://raw.githubusercontent.com/BAMresearch/automatic-sem-image-segmentation/master/Datasets/Electron%20Microscopy%20Images/SEM/1908250.tif",
+    "processing": "原始文件，按课程顺序重命名",
+    "license": "CC BY-NC-ND 4.0",
+    "sha256": "8028a33c544059895ed22323ab34caaa79282e6b3bf0c9f79d19f700c23c0a6c"
+  },
+  {
+    "file": "11_TiO2_TSEM_1908249.tif",
+    "title": "TiO2 TSEM",
+    "source": "BAMresearch/automatic-sem-image-segmentation",
+    "url": "https://raw.githubusercontent.com/BAMresearch/automatic-sem-image-segmentation/master/Datasets/Electron%20Microscopy%20Images/TSEM/1908249.tif",
+    "processing": "原始文件，按课程顺序重命名",
+    "license": "CC BY-NC-ND 4.0",
+    "sha256": "ae91520af3f099edab8e9ec430420fa3118444ee84e68fd34fe439e7f19f9686"
+  }
+]
