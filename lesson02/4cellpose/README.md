@@ -1,6 +1,6 @@
 # Cellpose：跟 Agent 一起做颗粒分割与尺寸测量
 
-[返回第二课入口](../README.md) · [学生提示词卡](课堂提示词.md) · [参考 Notebook](颗粒分割与测量.ipynb) · [素材与来源](素材/README.md)
+[返回第二课入口](../README.md) · [课堂讲义](课堂讲义.md) · [学生提示词卡](课堂提示词.md) · [参考 Notebook](颗粒分割与测量.ipynb) · [素材与来源](素材/README.md)
 
 **给谁用**：材料、化学、化工研究生。课前应已了解像素、灰度与 RGB 图像，也知道训练、预测和评估的基本含义；会用 VS Code 打开文件夹并启动 Agent，不要求会写 Python。
 
@@ -308,7 +308,7 @@ uv run python run_examples.py 09_TiO2_SEM_1908248.tif
 
 Notebook 默认 `SOURCE = "reference"`，用几何参考标签演示完整流程，得到 **9 个颗粒、剔除 4 个边缘颗粒、保留 5 个**。改成 `SOURCE = "cellpose"` 并设置 `IMAGE_NAME`，即可运行真实模型。
 
-Notebook 输出包括全部颗粒表、保留颗粒表、标签图、轮廓叠加图，以及记录参数和软件版本的 JSON 文件，均保存在 `outputs/`。所有图像统一保存为 PNG。标签图有两份：彩色 `*_mask.png` 便于直接查看，`*_mask_labels.png` 为 16 位原始编号。另存逐对象 JSON（`objects` 字段，每个对象含包围盒和 `points_xy` 像素坐标），便于直接查看或由脚本读取。CSV 使用 UTF-8 编码并附带字节顺序标记，便于 Excel 打开。
+Notebook 输出包括全部颗粒表、保留颗粒表、标签图、轮廓叠加图，以及记录参数和软件版本的 JSON 文件，均保存在 `outputs/`。所有图像统一保存为 PNG。标签图保存为彩色 `*_mask.png`，可直接查看；每个对象的像素编号另存于 JSON 的 `objects` 字段（含包围盒和 `points_xy` 像素坐标），可用 `points_xy` 的 `[x, y]` 还原整张标签图。CSV 使用 UTF-8 编码并附带字节顺序标记，便于 Excel 打开。
 
 ---
 
