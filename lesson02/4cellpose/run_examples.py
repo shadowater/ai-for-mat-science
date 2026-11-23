@@ -8,7 +8,14 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 import time
+
+# Notepad 风格的 GBK 控制台无法输出“px²”等字符，统一切到 UTF-8。
+for stream in (sys.stdout, sys.stderr):
+    reconfigure = getattr(stream, 'reconfigure', None)
+    if reconfigure is not None:
+        reconfigure(encoding='utf-8')
 
 os.environ.setdefault('MPLBACKEND', 'Agg')
 import matplotlib.pyplot as plt
