@@ -1,7 +1,7 @@
 """运行 Notebook 真实推理路径，批量保存案例预测和测量结果。
 
 python run_examples.py [图片文件名 ...]
-默认运行素材/案例来源.json 中的七张显微图。
+默认运行素材/案例来源.json 中的显微图。
 """
 import argparse
 import json
@@ -18,8 +18,8 @@ os.chdir(root)
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('images', nargs='*')
 args = parser.parse_args()
-images = args.images or [item['file'] for item in json.loads((root / '素材/案例来源.json').read_text())]
-nb = json.loads((root / '颗粒分割与测量.ipynb').read_text())
+images = args.images or [item['file'] for item in json.loads((root / '素材/案例来源.json').read_text(encoding='utf-8'))]
+nb = json.loads((root / '颗粒分割与测量.ipynb').read_text(encoding='utf-8'))
 namespace = {}
 summary = []
 for filename in images:
@@ -36,5 +36,6 @@ for filename in images:
     row = dict(file=filename, all=len(table), kept=int(table.kept.sum()),
                removed=int(table.touches_edge.sum()), seconds=round(time.monotonic()-start, 2))
     summary.append(row)
-    (root / 'outputs/batch_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n')
+    (root / 'outputs/batch_summary.json').write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print('完成：', row, flush=True)

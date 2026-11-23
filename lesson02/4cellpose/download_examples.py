@@ -1,4 +1,4 @@
-"""按来源清单下载七张显微图，并检查文件 SHA-256。"""
+"""按来源清单下载显微图，并检查文件 SHA-256。"""
 from pathlib import Path
 import hashlib
 import json

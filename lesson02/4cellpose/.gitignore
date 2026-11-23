@@ -1,2 +1,4 @@
 outputs/
 models/
+agent_demo/
+.venv/

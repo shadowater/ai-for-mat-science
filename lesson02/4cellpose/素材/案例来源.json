@@ -1,21 +1,5 @@
 [
   {
-    "file": "05_cellpose_002_img.png",
-    "title": "荧光细胞",
-    "source": "Cellpose 官方在线演示",
-    "url": "https://huggingface.co/spaces/mouseland/cellpose/resolve/main/samples/002_img.png",
-    "processing": "原始文件，按课程顺序重命名",
-    "sha256": "c8da96493de75cd85bdfd4dbcf27ca77fe75f955a505037e576bdbb11a489752"
-  },
-  {
-    "file": "06_cellpose_016_img.png",
-    "title": "细胞轮廓",
-    "source": "Cellpose 官方在线演示",
-    "url": "https://huggingface.co/spaces/mouseland/cellpose/resolve/main/samples/016_img.png",
-    "processing": "原始文件，按课程顺序重命名",
-    "sha256": "bf72416f7ed5f56e050bc620422e5d288d8e5faa84dbd5cf25da2ff8fe4c210f"
-  },
-  {
     "file": "07_cellpose_039_img.png",
     "title": "杆状与球状目标",
     "source": "Cellpose 官方在线演示",
