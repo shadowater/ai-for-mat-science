@@ -308,7 +308,7 @@ uv run python run_examples.py 09_TiO2_SEM_1908248.tif
 
 Notebook 默认 `SOURCE = "reference"`，用几何参考标签演示完整流程，得到 **9 个颗粒、剔除 4 个边缘颗粒、保留 5 个**。改成 `SOURCE = "cellpose"` 并设置 `IMAGE_NAME`，即可运行真实模型。
 
-Notebook 输出包括全部颗粒表、保留颗粒表、标签图、轮廓叠加图，以及记录参数和软件版本的 JSON 文件，均保存在 `outputs/`。所有图像统一保存为 PNG（标签图为 16 位 PNG）；标签图另存一份逐对象 JSON（`objects` 字段，每个对象含包围盒和二值 mask），便于直接查看或由脚本读取。CSV 使用 UTF-8 编码并附带字节顺序标记，便于 Excel 打开。
+Notebook 输出包括全部颗粒表、保留颗粒表、标签图、轮廓叠加图，以及记录参数和软件版本的 JSON 文件，均保存在 `outputs/`。所有图像统一保存为 PNG。标签图有两份：彩色 `*_mask.png` 便于直接查看，`*_mask_labels.png` 为 16 位原始编号。另存逐对象 JSON（`objects` 字段，每个对象含包围盒和 `points_xy` 像素坐标），便于直接查看或由脚本读取。CSV 使用 UTF-8 编码并附带字节顺序标记，便于 Excel 打开。
 
 ---
 
