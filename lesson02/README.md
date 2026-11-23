@@ -6,14 +6,14 @@
 
 ### Vision：计算机视觉先导
 
-- [Vision 目录说明](Vision/README.md)
-- [从投稿图到像素：计算机视觉先导](Vision/计算机视觉先导.md) —— 主文档
-- [素材与来源](Vision/assets/来源说明.md)
+- [Vision 目录说明](1_Vision/README.md)
+- [从投稿图到像素：计算机视觉先导](1_Vision/计算机视觉先导.md) —— 主文档
+- [素材与来源](1_Vision/assets/来源说明.md)
 
 ### MNIST 手写数字识别
 
 - [90 分钟课堂实战](MNIST/README.md)
-- [学生 Agent 提示词卡](MNIST/课堂提示词.md)
+- [学生 Agent 提示词卡](MNIST/课堂提示词_新.md)
 
 ## 建议顺序
 
