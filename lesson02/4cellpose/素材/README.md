@@ -27,7 +27,7 @@ BAM 数据集的研究对象为 TiO₂ 颗粒，相关研究为 [Rühle、Krumre
 
 ## 示意图
 
-`figures/` 存放 README 使用的说明图，全部由本课程脚本基于 `素材/` 中的 TiO₂ 图和 `scripts/fixtures/` 的几何参考图生成，不引入额外下载的第三方图片：
+`figures/` 存放 README 和[课堂讲义](../课堂讲义.md)使用的说明图，全部由本课程脚本基于 `素材/` 中的图和 `scripts/fixtures/` 的几何参考图生成，不引入额外下载的第三方图片：
 
 | 文件 | 内容 | 数据来源 |
 | --- | --- | --- |
@@ -37,11 +37,23 @@ BAM 数据集的研究对象为 TiO₂ 颗粒，相关研究为 [Rühle、Krumre
 | `fig_edge_removal.png` | 边缘剔除前后：9 个 → 保留 5 个 | `scripts/fixtures/03_particles_reference_mask.tif` |
 | `fig_tio2_roi.png` | 分析区、标尺与像素尺寸换算 | `09_TiO2_SEM_1908248.tif` 的信息栏 |
 | `fig_agent_loop.png` | 学生与 Agent 的协作循环 | 课程绘制 |
+| `fig_case09_original.png` | 09 图分析区原图 | `09_TiO2_SEM_1908248.tif` 前 712 行 |
+| `fig_case09_labels.png` | 09 图的彩色实例标签 | `outputs` 中的 cpsam 预测 |
+| `fig_case09_result.png` | 原图、214 个实例、保留/边缘轮廓三联图 | `outputs` 中的 cpsam 预测 |
+| `fig_case07_overlay.png` | 07 图保留（绿）与边缘（红）轮廓 | `outputs` 中的 cpsam 预测 |
+| `fig_case08_overlay.png` | 08 图保留（绿）与边缘（红）轮廓 | `outputs` 中的 cpsam 预测 |
 
-在课程目录运行以下命令重新生成（依赖 numpy、matplotlib、scikit-image、tifffile）：
+示意图重新生成（依赖 numpy、matplotlib、scikit-image、tifffile）：
 
 ```bash
 uv run python scripts/make_figures.py
+```
+
+案例结果图需要先跑预测，再从 `outputs` 生成：
+
+```bash
+uv run python run_examples.py 09_TiO2_SEM_1908248.tif 07_cellpose_039_img.png 08_cellpose_033_img.png
+uv run python scripts/make_case_figures.py
 ```
 
 图中的中文使用系统自带字体（Windows 为微软雅黑），其他系统会回退到常见开源中文字体。TiO₂ 实测计数见 [验证记录](../验证记录.md)。
