@@ -21,6 +21,10 @@
 2. 再做 MNIST：用 Agent 调 PyTorch，完成训练、测试与错例分析。
 3. 有余力再讨论猫狗分类的预处理差异。
 
+### Cellpose 颗粒分割与测量
+
+- [安装说明、显微图案例与 Notebook](4cellpose/README.md)
+
 ## 返回
 
 [第一课入口](../lesson01/README.md) · [课程首页](../README.md)
